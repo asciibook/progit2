@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Getting Started - Pro Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="highlight.css" />
+    <link rel="stylesheet" href="html.css" />
+    <script src="html.js" defer></script>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="toolbar-title">
+        <a href="index.html">
+          Pro Git
+        </a>
+      </div>
+      <div class="toolbar-action">
+        <div class="dropdown">
+          <button id="drawer-button" type="button" class="dropdown-toggle button button-icon">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="toolbar-toc" class="dropdown-menu">
+            
+              <ol>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_asciibook_introduction.html">Asciibook Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_table_of_contents.html">Table of Contents</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_licence.html">Licence</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_scott_chacon.html">Preface by Scott Chacon</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_ben_straub.html">Preface by Ben Straub</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_dedications.html">Dedications</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_contributors.html">Contributors</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_introduction.html">Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch01-getting-started.html">Getting Started</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_about_version_control">About Version Control</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_a_short_history_of_git">A Short History of Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_what_is_git">What is Git?</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_the_command_line">The Command Line</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_installing_git">Installing Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_first_time">First-Time Git Setup</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_git_help">Getting Help</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_summary">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html">Git Basics</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_getting_a_repo">Getting a Git Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_recording_changes_to_the_repository">Recording Changes to the Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_viewing_history">Viewing the Commit History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_undoing">Undoing Things</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_remote_repos">Working with Remotes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_tagging">Tagging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_aliases">Git Aliases</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_summary_2">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch03-git-branching.html">Git Branching</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_git_branches_overview">Branches in a Nutshell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_basic_branching_and_merging">Basic Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branch_management">Branch Management</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branching_workflows">Branching Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_remote_branches">Remote Branches</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_rebasing">Rebasing</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_summary_3">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch04-git-on-the-server.html">Git on the Server</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_the_protocols">The Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_getting_git_on_a_server">Getting Git on a Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_generate_ssh_key">Generating Your SSH Public Key</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_setting_up_server">Setting Up the Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_git_daemon">Git Daemon</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_smart_http_2">Smart HTTP</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitweb">GitWeb</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitlab">GitLab</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_third_party_hosted_options">Third Party Hosted Options</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_summary_4">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch05-distributed-git.html">Distributed Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_distributed_workflows">Distributed Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_contributing_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_maintaining_a_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_summary_6">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch06-github.html">GitHub</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_account_setup_and_configuration">Account Setup and Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_contributing_to_a_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_maintaining_gh_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#ch06-github_orgs">Managing an organization</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_scripting_github">Scripting GitHub</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_summary_7">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch07-git-tools.html">Git Tools</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_revision_selection">Revision Selection</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_interactive_staging">Interactive Staging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_stashing">Stashing and Cleaning</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_signing">Signing Your Work</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_searching">Searching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_reset">Reset Demystified</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_advanced_merging">Advanced Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#ref_rerere">Rerere</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_debugging_with_git">Debugging with Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_submodules">Submodules</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_bundling">Bundling</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_replace">Replace</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_credential_caching">Credential Storage</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_summary_9">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch08-customizing-git.html">Customizing Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_config">Git Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_attributes">Git Attributes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_hooks">Git Hooks</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_summary_10">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html">Git and Other Systems</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_git_as_a_client">Git as a Client</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_migrating">Migrating to Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_summary_12">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch10-git-internals.html">Git Internals</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_plumbing_porcelain">Plumbing and Porcelain</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_objects">Git Objects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_git_refs">Git References</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_packfiles">Packfiles</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_refspec">The Refspec</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_transfer_protocols">Transfer Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_maintenance_and_data_recovery">Maintenance and Data Recovery</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_environment_variables">Environment Variables</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_summary_13">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="A-git-in-other-environments.html">Git in Other Environments</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_graphical_interfaces">Graphical Interfaces</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio">Git in Visual Studio</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio_code">Git in Visual Studio Code</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_eclipse">Git in Eclipse</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_intellij_pycharm_webstorm_phpstorm_rubymine">Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_sublime_text">Git in Sublime Text</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_bash">Git in Bash</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_zsh">Git in Zsh</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_powershell">Git in PowerShell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_summary_15">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html">Embedding Git in your Applications</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_command_line_git">Command-line Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_libgit2">Libgit2</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_jgit">JGit</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_go_git">go-git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_dulwich">Dulwich</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="C-git-commands.html">Git Commands</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_setup_and_config">Setup and Config</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_getting_and_creating_projects">Getting and Creating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_basic_snapshotting">Basic Snapshotting</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_branching_and_merging">Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_sharing_and_updating_projects">Sharing and Updating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_inspection_and_comparison">Inspection and Comparison</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_debugging_2">Debugging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_patching">Patching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_email">Email</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_external_systems">External Systems</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_administration_2">Administration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_plumbing_commands">Plumbing Commands</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_index.html">Index</a>
+                    
+                  </li>
+                
+              </ol>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <section class="chapter" id="ch01-getting-started">
+  <h1>Getting Started</h1>
+  <p >This chapter will be about getting started with Git.
+We will begin by explaining some background on version control tools, then move on to how to get Git running on your system and finally how to get it set up to start working with.
+At the end of this chapter you should understand why Git is around, why you should use it and you should be all set up to do so.</p>
+
+<section class="section" id="_about_version_control">
+  <h2>About Version Control</h2>
+  <p ><a class="indexterm" id="_indexterm_1">&#8203;</a>
+What is ``version control'', and why should you care?
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+For the examples in this book, you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.</p>
+
+<p >If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use.
+It allows you to revert selected files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more.
+Using a VCS also generally means that if you screw things up or lose files, you can easily recover.
+In addition, you get all this for very little overhead.</p>
+
+<section class="section" id="_local_version_control_systems">
+  <h3>Local Version Control Systems</h3>
+  <p ><a class="indexterm" id="_indexterm_2">&#8203;</a>
+Many people&#8217;s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they&#8217;re clever).
+This approach is very common because it is so simple, but it is also incredibly error prone.
+It is easy to forget which directory you&#8217;re in and accidentally write to the wrong file or copy over files you don&#8217;t mean to.</p>
+
+<p >To deal with this issue, programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control.</p>
+
+<figure class="image" >
+  
+    <img src="images/local.png"
+         alt="Local version control diagram"
+         
+          />
+  
+  
+    <figcaption>Figure 1. Local version control.</figcaption>
+  
+</figure>
+
+<p >One of the most popular VCS tools was a system called RCS, which is still distributed with many computers today.
+<a class="link" href="https://www.gnu.org/software/rcs/"
+     
+      >RCS</a> works by keeping patch sets (that is, the differences between files) in a special format on disk; it can then re-create what any file looked like at any point in time by adding up all the patches.</p>
+
+</section>
+
+<section class="section" id="_centralized_version_control_systems">
+  <h3>Centralized Version Control Systems</h3>
+  <p ><a class="indexterm" id="_indexterm_3">&#8203;</a>
+The next major issue that people encounter is that they need to collaborate with developers on other systems.
+To deal with this problem, Centralized Version Control Systems (CVCSs) were developed.
+These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central place. <a class="indexterm" id="_indexterm_4">&#8203;</a><a class="indexterm" id="_indexterm_5">&#8203;</a><a class="indexterm" id="_indexterm_6">&#8203;</a>
+For many years, this has been the standard for version control.</p>
+
+<figure class="image" >
+  
+    <img src="images/centralized.png"
+         alt="Centralized version control diagram"
+         
+          />
+  
+  
+    <figcaption>Figure 2. Centralized version control.</figcaption>
+  
+</figure>
+
+<p >This setup offers many advantages, especially over local VCSs.
+For example, everyone knows to a certain degree what everyone else on the project is doing.
+Administrators have fine-grained control over who can do what, and it&#8217;s far easier to administer a CVCS than it is to deal with local databases on every client.</p>
+
+<p >However, this setup also has some serious downsides.
+The most obvious is the single point of failure that the centralized server represents.
+If that server goes down for an hour, then during that hour nobody can collaborate at all or save versioned changes to anything they&#8217;re working on.
+If the hard disk the central database is on becomes corrupted, and proper backups haven&#8217;t been kept, you lose absolutely everything&#8201;&#8212;&#8201;the entire history of the project except whatever single snapshots people happen to have on their local machines.
+Local VCS systems suffer from this same problem&#8201;&#8212;&#8201;whenever you have the entire history of the project in a single place, you risk losing everything.</p>
+
+</section>
+
+<section class="section" id="_distributed_version_control_systems">
+  <h3>Distributed Version Control Systems</h3>
+  <p ><a class="indexterm" id="_indexterm_7">&#8203;</a>
+This is where Distributed Version Control Systems (DVCSs) step in.
+In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don&#8217;t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history.
+Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it.
+Every clone is really a full backup of all the data.</p>
+
+<figure class="image" >
+  
+    <img src="images/distributed.png"
+         alt="Distributed version control diagram"
+         
+          />
+  
+  
+    <figcaption>Figure 3. Distributed version control.</figcaption>
+  
+</figure>
+
+<p >Furthermore, many of these systems deal pretty well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project.
+This allows you to set up several types of workflows that aren&#8217;t possible in centralized systems, such as hierarchical models.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_a_short_history_of_git">
+  <h2>A Short History of Git</h2>
+  <p >As with many great things in life, Git began with a bit of creative destruction and fiery controversy.</p>
+
+<p >The Linux kernel is an open source software project of fairly large scope.<a class="indexterm" id="_indexterm_8">&#8203;</a>
+For most of the lifetime of the Linux kernel maintenance (1991–2002), changes to the software were passed around as patches and archived files.
+In 2002, the Linux kernel project began using a proprietary DVCS called BitKeeper.<a class="indexterm" id="_indexterm_9">&#8203;</a></p>
+
+<p >In 2005, the relationship between the community that developed the Linux kernel and the commercial company that developed BitKeeper broke down, and the tool&#8217;s free-of-charge status was revoked.
+This prompted the Linux development community (and in particular Linus Torvalds, the creator of Linux) to develop their own tool based on some of the lessons they learned while using BitKeeper.<a class="indexterm" id="_indexterm_10">&#8203;</a>
+Some of the goals of the new system were as follows:</p>
+
+<ul class="ulist" >
+  
+    <li>
+      <p>Speed</p>
+      
+    </li>
+  
+    <li>
+      <p>Simple design</p>
+      
+    </li>
+  
+    <li>
+      <p>Strong support for non-linear development (thousands of parallel branches)</p>
+      
+    </li>
+  
+    <li>
+      <p>Fully distributed</p>
+      
+    </li>
+  
+    <li>
+      <p>Able to handle large projects like the Linux kernel efficiently (speed and data size)</p>
+      
+    </li>
+  
+</ul>
+
+<p >Since its birth in 2005, Git has evolved and matured to be easy to use and yet retain these initial qualities.
+It&#8217;s amazingly fast, it&#8217;s very efficient with large projects, and it has an incredible branching system for non-linear development (See <a class="xref" href="ch03-git-branching.html">Git Branching</a>).</p>
+
+</section>
+
+<section class="section" id="_what_is_git">
+  <h2>What is Git?</h2>
+  <p >So, what is Git in a nutshell?
+This is an important section to absorb, because if you understand what Git is and the fundamentals of how it works, then using Git effectively will probably be much easier for you.
+As you learn Git, try to clear your mind of the things you may know about other VCSs, such as CVS, Subversion or Perforce&#8201;&#8212;&#8201;doing so will help you avoid subtle confusion when using the tool.
+Even though Git&#8217;s user interface is fairly similar to these other VCSs, Git stores and thinks about information in a very different way, and understanding these differences will help you avoid becoming confused while using it.<a class="indexterm" id="_indexterm_11">&#8203;</a><a class="indexterm" id="_indexterm_12">&#8203;</a></p>
+
+<section class="section" id="_snapshots_not_differences">
+  <h3>Snapshots, Not Differences</h3>
+  <p >The major difference between Git and any other VCS (Subversion and friends included) is the way Git thinks about its data.
+Conceptually, most other systems store information as a list of file-based changes.
+These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (this is commonly described as <em>delta-based</em> version control).</p>
+
+<figure class="image" >
+  
+    <img src="images/deltas.png"
+         alt="Storing data as changes to a base version of each file."
+         
+          />
+  
+  
+    <figcaption>Figure 4. Storing data as changes to a base version of each file.</figcaption>
+  
+</figure>
+
+<p >Git doesn&#8217;t think of or store its data this way.
+Instead, Git thinks of its data more like a series of snapshots of a miniature filesystem.
+With Git, every time you commit, or save the state of your project, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
+To be efficient, if files have not changed, Git doesn&#8217;t store the file again, just a link to the previous identical file it has already stored.
+Git thinks about its data more like a <strong>stream of snapshots</strong>.</p>
+
+<figure class="image" >
+  
+    <img src="images/snapshots.png"
+         alt="Git stores data as snapshots of the project over time."
+         
+          />
+  
+  
+    <figcaption>Figure 5. Storing data as snapshots of the project over time.</figcaption>
+  
+</figure>
+
+<p >This is an important distinction between Git and nearly all other VCSs.
+It makes Git reconsider almost every aspect of version control that most other systems copied from the previous generation.
+This makes Git more like a mini filesystem with some incredibly powerful tools built on top of it, rather than simply a VCS.
+We&#8217;ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in <a class="xref" href="ch03-git-branching.html">Git Branching</a>.</p>
+
+</section>
+
+<section class="section" id="_nearly_every_operation_is_local">
+  <h3>Nearly Every Operation Is Local</h3>
+  <p >Most operations in Git need only local files and resources to operate&#8201;&#8212;&#8201;generally no information is needed from another computer on your network.
+If you&#8217;re used to a CVCS where most operations have that network latency overhead, this aspect of Git will make you think that the gods of speed have blessed Git with unworldly powers.
+Because you have the entire history of the project right there on your local disk, most operations seem almost instantaneous.</p>
+
+<p >For example, to browse the history of the project, Git doesn&#8217;t need to go out to the server to get the history and display it for you&#8201;&#8212;&#8201;it simply reads it directly from your local database.
+This means you see the project history almost instantly.
+If you want to see the changes introduced between the current version of a file and the file a month ago, Git can look up the file a month ago and do a local difference calculation, instead of having to either ask a remote server to do it or pull an older version of the file from the remote server to do it locally.</p>
+
+<p >This also means that there is very little you can&#8217;t do if you&#8217;re offline or off VPN.
+If you get on an airplane or a train and want to do a little work, you can commit happily (to your <em>local</em> copy, remember?) until you get to a network connection to upload.
+If you go home and can&#8217;t get your VPN client working properly, you can still work.
+In many other systems, doing so is either impossible or painful.
+In Perforce, for example, you can&#8217;t do much when you aren&#8217;t connected to the server; in Subversion and CVS, you can edit files, but you can&#8217;t commit changes to your database (because your database is offline).
+This may not seem like a huge deal, but you may be surprised what a big difference it can make.</p>
+
+</section>
+
+<section class="section" id="_git_has_integrity">
+  <h3>Git Has Integrity</h3>
+  <p >Everything in Git is checksummed before it is stored and is then referred to by that checksum.
+This means it&#8217;s impossible to change the contents of any file or directory without Git knowing about it.
+This functionality is built into Git at the lowest levels and is integral to its philosophy.
+You can&#8217;t lose information in transit or get file corruption without Git being able to detect it.</p>
+
+<p >The mechanism that Git uses for this checksumming is called a SHA-1 hash.<a class="indexterm" id="_indexterm_13">&#8203;</a>
+This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git.
+A SHA-1 hash looks something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>24b9da6552252987aa493b52f8696cd6d3b00373</pre>
+</figure>
+
+<p >You will see these hash values all over the place in Git because it uses them so much.
+In fact, Git stores everything in its database not by file name but by the hash value of its contents.</p>
+
+</section>
+
+<section class="section" id="_git_generally_only_adds_data">
+  <h3>Git Generally Only Adds Data</h3>
+  <p >When you do actions in Git, nearly all of them only <em>add</em> data to the Git database.
+It is hard to get the system to do anything that is not undoable or to make it erase data in any way.
+As with any VCS, you can lose or mess up changes you haven&#8217;t committed yet, but after you commit a snapshot into Git, it is very difficult to lose, especially if you regularly push your database to another repository.</p>
+
+<p >This makes using Git a joy because we know we can experiment without the danger of severely screwing things up.
+For a more in-depth look at how Git stores its data and how you can recover data that seems lost, see <a class="xref" href="ch02-git-basics-chapter.html#_undoing">Undoing Things</a>.</p>
+
+</section>
+
+<section class="section" id="_the_three_states">
+  <h3>The Three States</h3>
+  <p >Pay attention now&#8201;&#8212;&#8201;here is the main thing to remember about Git if you want the rest of your learning process to go smoothly.
+Git has three main states that your files can reside in: <em>modified</em>, <em>staged</em>, and <em>committed</em>:</p>
+
+<ul class="ulist" >
+  
+    <li>
+      <p>Modified means that you have changed the file but have not committed it to your database yet.</p>
+      
+    </li>
+  
+    <li>
+      <p>Staged means that you have marked a modified file in its current version to go into your next commit snapshot.</p>
+      
+    </li>
+  
+    <li>
+      <p>Committed means that the data is safely stored in your local database.</p>
+      
+    </li>
+  
+</ul>
+
+<p >This leads us to the three main sections of a Git project: the working tree, the staging area, and the Git directory.</p>
+
+<figure class="image" >
+  
+    <img src="images/areas.png"
+         alt="Working tree, staging area, and Git directory."
+         
+          />
+  
+  
+    <figcaption>Figure 6. Working tree, staging area, and Git directory.</figcaption>
+  
+</figure>
+
+<p >The working tree is a single checkout of one version of the project.
+These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.</p>
+
+<p >The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit.
+Its technical name in Git parlance is the <code>index'', but the phrase </code>staging area'' works just as well.</p>
+
+<p >The Git directory is where Git stores the metadata and object database for your project.
+This is the most important part of Git, and it is what is copied when you <em>clone</em> a repository from another computer.</p>
+
+<p >The basic Git workflow goes something like this:</p>
+
+<ol class="olist" >
+  
+    <li>
+      <p>You modify files in your working tree.</p>
+      
+    </li>
+  
+    <li>
+      <p>You selectively stage just those changes you want to be part of your next commit, which adds <em>only</em> those changes to the staging area.</p>
+      
+    </li>
+  
+    <li>
+      <p>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.</p>
+      
+    </li>
+  
+</ol>
+
+<p >If a particular version of a file is in the Git directory, it&#8217;s considered <em>committed</em>.
+If it has been modified and was added to the staging area, it is <em>staged</em>.
+And if it was changed since it was checked out but has not been staged, it is <em>modified</em>.
+In <a class="xref" href="ch02-git-basics-chapter.html">Git Basics</a>, you&#8217;ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_the_command_line">
+  <h2>The Command Line</h2>
+  <p >There are a lot of different ways to use Git.
+There are the original command-line tools, and there are many graphical user interfaces of varying capabilities.
+For this book, we will be using Git on the command line.
+For one, the command line is the only place you can run <em>all</em> Git commands&#8201;&#8212;&#8201;most of the GUIs implement only a partial subset of Git functionality for simplicity.
+If you know how to run the command-line version, you can probably also figure out how to run the GUI version, while the opposite is not necessarily true.
+Also, while your choice of graphical client is a matter of personal taste, <em>all</em> users will have the command-line tools installed and available.</p>
+
+<p >So we will expect you to know how to open Terminal in macOS or Command Prompt or PowerShell in Windows.
+If you don&#8217;t know what we&#8217;re talking about here, you may need to stop and research that quickly so that you can follow the rest of the examples and descriptions in this book.</p>
+
+</section>
+
+<section class="section" id="_installing_git">
+  <h2>Installing Git</h2>
+  <p >Before you start using Git, you have to make it available on your computer.
+Even if it&#8217;s already installed, it&#8217;s probably a good idea to update to the latest version.
+You can either install it as a package or via another installer, or download the source code and compile it yourself.</p>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >This book was written using Git version <strong>2.8.0</strong>.
+Though most of the commands we use should work even in ancient versions of Git, some of them might not or might act slightly differently if you&#8217;re using an older version.
+Since Git is quite excellent at preserving backwards compatibility, any version after 2.8 should work just fine.</p>
+
+  </div>
+</div>
+
+<section class="section" id="_installing_on_linux">
+  <h3>Installing on Linux</h3>
+  <p ><a class="indexterm" id="_indexterm_14">&#8203;</a>
+If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the package management tool that comes with your distribution.
+If you&#8217;re on Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS), you can use <code>dnf</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ sudo dnf install git-all</pre>
+</figure>
+
+<p >If you&#8217;re on a Debian-based distribution, such as Ubuntu, try <code>apt</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ sudo apt install git-all</pre>
+</figure>
+
+<p >For more options, there are instructions for installing on several different Unix distributions on the Git website, at <a class="link" href="https://git-scm.com/download/linux"
+     
+      >https://git-scm.com/download/linux</a>.</p>
+
+</section>
+
+<section class="section" id="_installing_on_macos">
+  <h3>Installing on macOS</h3>
+  <p ><a class="indexterm" id="_indexterm_15">&#8203;</a>
+There are several ways to install Git on a Mac.
+The easiest is probably to install the Xcode Command Line Tools.<a class="indexterm" id="_indexterm_16">&#8203;</a>
+On Mavericks (10.9) or above you can do this simply by trying to run 'git' from the Terminal the very first time.</p>
+
+<figure class="listing" >
+  
+  <pre>$ git --version</pre>
+</figure>
+
+<p >If you don&#8217;t have it installed already, it will prompt you to install it.</p>
+
+<p >If you want a more up to date version, you can also install it via a binary installer.
+A macOS Git installer is maintained and available for download at the Git website, at <a class="link" href="https://git-scm.com/download/mac"
+     
+      >https://git-scm.com/download/mac</a>.</p>
+
+<figure class="image" >
+  
+    <img src="images/git-osx-installer.png"
+         alt="Git macOS installer."
+         
+          />
+  
+  
+    <figcaption>Figure 7. Git macOS Installer.</figcaption>
+  
+</figure>
+
+<p >You can also install it as part of the GitHub for macOS install.
+Their GUI Git tool has an option to install command line tools as well.
+You can download that tool from the GitHub for macOS website, at <a class="link" href="https://desktop.github.com"
+     
+      >https://desktop.github.com</a>.</p>
+
+</section>
+
+<section class="section" id="_installing_on_windows">
+  <h3>Installing on Windows</h3>
+  <p >There are also a few ways to install Git on Windows.<a class="indexterm" id="_indexterm_17">&#8203;</a>
+The most official build is available for download on the Git website.
+Just go to <a class="link" href="https://git-scm.com/download/win"
+     
+      >https://git-scm.com/download/win</a> and the download will start automatically.
+Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to <a class="link" href="https://gitforwindows.org"
+     
+      >https://gitforwindows.org</a>.</p>
+
+<p >To get an automated installation you can use the <a class="link" href="https://chocolatey.org/packages/git"
+     
+      >Git Chocolatey package</a>.
+Note that the Chocolatey package is community maintained.</p>
+
+<p >Another easy way to get Git installed is by installing GitHub Desktop.
+The installer includes a command line version of Git as well as the GUI.
+It also works well with PowerShell, and sets up solid credential caching and sane CRLF settings.<a class="indexterm" id="_indexterm_18">&#8203;</a><a class="indexterm" id="_indexterm_19">&#8203;</a><a class="indexterm" id="_indexterm_20">&#8203;</a>
+We&#8217;ll learn more about those things a little later, but suffice it to say they&#8217;re things you want.
+You can download this from the <a class="link" href="https://desktop.github.com"
+     
+      >GitHub Desktop website</a>.</p>
+
+</section>
+
+<section class="section" id="_installing_from_source">
+  <h3>Installing from Source</h3>
+  <p >Some people may instead find it useful to install Git from source, because you&#8217;ll get the most recent version.
+The binary installers tend to be a bit behind, though as Git has matured in recent years, this has made less of a difference.</p>
+
+<p >If you do want to install Git from source, you need to have the following libraries that Git depends on: autotools, curl, zlib, openssl, expat, and libiconv.
+For example, if you&#8217;re on a system that has <code>dnf</code> (such as Fedora) or <code>apt-get</code> (such as a Debian-based system), you can use one of these commands to install the minimal dependencies for compiling and installing the Git binaries:</p>
+
+<figure class="listing" >
+  
+  <pre>$ sudo dnf install dh-autoreconf curl-devel expat-devel gettext-devel \
+  openssl-devel perl-devel zlib-devel
+$ sudo apt-get install dh-autoreconf libcurl4-gnutls-dev libexpat1-dev \
+  gettext libz-dev libssl-dev</pre>
+</figure>
+
+<p >In order to be able to add the documentation in various formats (doc, html, info), these additional dependencies are required:</p>
+
+<figure class="listing" >
+  
+  <pre>$ sudo dnf install asciidoc xmlto docbook2X
+$ sudo apt-get install asciidoc xmlto docbook2x</pre>
+</figure>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >Users of RHEL and RHEL-derivatives like CentOS and Scientific Linux will have to <a class="link" href="https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F"
+     
+      >enable the EPEL repository</a> to download the <code>docbook2X</code> package.</p>
+
+  </div>
+</div>
+
+<p >If you&#8217;re using a Debian-based distribution (Debian/Ubuntu/Ubuntu-derivatives), you also need the <code>install-info</code> package:</p>
+
+<figure class="listing" >
+  
+  <pre>$ sudo apt-get install install-info</pre>
+</figure>
+
+<p >If you&#8217;re using a RPM-based distribution (Fedora/RHEL/RHEL-derivatives), you also need the <code>getopt</code> package (which is already installed on a Debian-based distro):</p>
+
+<figure class="listing" >
+  
+  <pre>$ sudo dnf install getopt</pre>
+</figure>
+
+<p >Additionally, if you&#8217;re using Fedora/RHEL/RHEL-derivatives, you need to do this</p>
+
+<figure class="listing" >
+  
+  <pre>$ sudo ln -s /usr/bin/db2x_docbook2texi /usr/bin/docbook2x-texi</pre>
+</figure>
+
+<p >due to binary name differences.</p>
+
+<p >When you have all the necessary dependencies, you can go ahead and grab the latest tagged release tarball from several places.
+You can get it via the kernel.org site, at <a class="link" href="https://www.kernel.org/pub/software/scm/git"
+     
+      >https://www.kernel.org/pub/software/scm/git</a>, or the mirror on the GitHub website, at <a class="link" href="https://github.com/git/git/releases"
+     
+      >https://github.com/git/git/releases</a>.
+It&#8217;s generally a little clearer what the latest version is on the GitHub page, but the kernel.org page also has release signatures if you want to verify your download.</p>
+
+<p >Then, compile and install:</p>
+
+<figure class="listing" >
+  
+  <pre>$ tar -zxf git-2.8.0.tar.gz
+$ cd git-2.8.0
+$ make configure
+$ ./configure --prefix=/usr
+$ make all doc info
+$ sudo make install install-doc install-html install-info</pre>
+</figure>
+
+<p >After this is done, you can also get Git via Git itself for updates:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git clone git://git.kernel.org/pub/scm/git/git.git</pre>
+</figure>
+
+</section>
+
+</section>
+
+<section class="section" id="_first_time">
+  <h2>First-Time Git Setup</h2>
+  <p >Now that you have Git on your system, you&#8217;ll want to do a few things to customize your Git environment.
+You should have to do these things only once on any given computer; they&#8217;ll stick around between upgrades.
+You can also change them at any time by running through the commands again.</p>
+
+<p >Git comes with a tool called <code>git config</code> that lets you get and set configuration variables that control all aspects of how Git looks and operates.<a class="indexterm" id="_indexterm_21">&#8203;</a>
+These variables can be stored in three different places:</p>
+
+<ol class="olist" >
+  
+    <li>
+      <p><code>/etc/gitconfig</code> file: Contains values applied to every user on the system and all their repositories.
+If you pass the option <code>--system</code> to <code>git config</code>, it reads and writes from this file specifically.
+(Because this is a system configuration file, you would need administrative or superuser privilege to make changes to it.)</p>
+      
+    </li>
+  
+    <li>
+      <p><code>~/.gitconfig</code> or <code>~/.config/git/config</code> file: Values specific personally to you, the user.
+You can make Git read and write to this file specifically by passing the <code>--global</code> option, and this affects <em>all</em> of the repositories you work with on your system.</p>
+      
+    </li>
+  
+    <li>
+      <p><code>config</code> file in the Git directory (that is, <code>.git/config</code>) of whatever repository you&#8217;re currently using: Specific to that single repository.
+You can force Git to read from and write to this file with the <code>--local</code> option, but that is in fact the default.
+(Unsurprisingly, you need to be located somewhere in a Git repository for this option to work properly.)</p>
+      
+    </li>
+  
+</ol>
+
+<p >Each level overrides values in the previous level, so values in <code>.git/config</code> trump those in <code>/etc/gitconfig</code>.</p>
+
+<p >On Windows systems, Git looks for the <code>.gitconfig</code> file in the <code>$HOME</code> directory (<code>C:\Users\$USER</code> for most people).
+It also still looks for <code>/etc/gitconfig</code>, although it&#8217;s relative to the MSys root, which is wherever you decide to install Git on your Windows system when you run the installer.
+If you are using version 2.x or later of Git for Windows, there is also a system-level config file at
+<code>C:\Documents and Settings\All Users\Application Data\Git\config</code> on Windows XP, and in <code>C:\ProgramData\Git\config</code> on Windows Vista and newer.
+This config file can only be changed by <code>git config -f &lt;file&gt;</code> as an admin.</p>
+
+<p >You can view all of your settings and where they are coming from using:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git config --list --show-origin</pre>
+</figure>
+
+<section class="section" id="_your_identity">
+  <h3>Your Identity</h3>
+  <p >The first thing you should do when you install Git is to set your user name and email address.
+This is important because every Git commit uses this information, and it&#8217;s immutably baked into the commits you start creating:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com</pre>
+</figure>
+
+<p >Again, you need to do this only once if you pass the <code>--global</code> option, because then Git will always use that information for anything you do on that system.
+If you want to override this with a different name or email address for specific projects, you can run the command without the <code>--global</code> option when you&#8217;re in that project.</p>
+
+<p >Many of the GUI tools will help you do this when you first run them.</p>
+
+</section>
+
+<section class="section" id="_editor">
+  <h3>Your Editor</h3>
+  <p >Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message.
+If not configured, Git uses your system&#8217;s default editor.</p>
+
+<p >If you want to use a different text editor, such as Emacs, you can do the following:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git config --global core.editor emacs</pre>
+</figure>
+
+<p >On a Windows system, if you want to use a different text editor, you must specify the full path to its executable file.
+This can be different depending on how your editor is packaged.</p>
+
+<p >In the case of Notepad++, a popular programming editor, you are likely to want to use the 32-bit version, since at the time of writing the 64-bit version doesn&#8217;t support all plug-ins.
+If you are on a 32-bit Windows system, or you have a 64-bit editor on a 64-bit system, you&#8217;ll type something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</pre>
+</figure>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >Vim, Emacs and Notepad++ are popular text editors often used by developers on Unix-based systems like Linux and macOS or a Windows system.
+If you are using another editor, or a 32-bit version, please find specific instructions for how to set up your favorite editor with Git in <a class="xref" href="C-git-commands.html#_core_editor">git config core.editor commands</a>.</p>
+
+  </div>
+</div>
+
+<div class="admonition admonition-warning" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >You may find, if you don&#8217;t setup your editor like this, you get into a really confusing state when Git attempts to launch it.
+An example on a Windows system may include a prematurely terminated Git operation during a Git initiated edit.</p>
+
+  </div>
+</div>
+
+</section>
+
+<section class="section" id="_checking_your_settings">
+  <h3>Checking Your Settings</h3>
+  <p >If you want to check your configuration settings, you can use the <code>git config --list</code> command to list all the settings Git can find at that point:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git config --list
+user.name=John Doe
+user.email=johndoe@example.com
+color.status=auto
+color.branch=auto
+color.interactive=auto
+color.diff=auto
+...</pre>
+</figure>
+
+<p >You may see keys more than once, because Git reads the same key from different files (<code>/etc/gitconfig</code> and <code>~/.gitconfig</code>, for example).
+In this case, Git uses the last value for each unique key it sees.</p>
+
+<p >You can also check what Git thinks a specific key&#8217;s value is by typing <code>git config &lt;key&gt;</code>:<a class="indexterm" id="_indexterm_22">&#8203;</a></p>
+
+<figure class="listing" >
+  
+  <pre>$ git config user.name
+John Doe</pre>
+</figure>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >Since Git might read the same configuration variable value from more than one file, it&#8217;s possible that you have an unexpected value for one of these values and you don&#8217;t know why.
+In cases like that, you can query Git as to the <em>origin</em> for that value, and it will tell you which configuration file had the final say in setting that value:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git config --show-origin rerere.autoUpdate
+file:/home/johndoe/.gitconfig	false</pre>
+</figure>
+
+  </div>
+</div>
+
+</section>
+
+</section>
+
+<section class="section" id="_git_help">
+  <h2>Getting Help</h2>
+  <p >If you ever need help while using Git, there are three equivalent ways to get the comprehensive manual page (manpage) help for any of the Git commands:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git help &lt;verb&gt;
+$ git &lt;verb&gt; --help
+$ man git-&lt;verb&gt;</pre>
+</figure>
+
+<p >For example, you can get the manpage help for the <code>git config</code> command by running<a class="indexterm" id="_indexterm_23">&#8203;</a></p>
+
+<figure class="listing" >
+  
+  <pre>$ git help config</pre>
+</figure>
+
+<p >These commands are nice because you can access them anywhere, even offline.
+If the manpages and this book aren&#8217;t enough and you need in-person help, you can try the <code>#git</code> or <code>#github</code> channel on the Freenode IRC server, which can be found at <a class="link" href="https://freenode.net"
+     
+      >https://freenode.net</a>.
+These channels are regularly filled with hundreds of people who are all very knowledgeable about Git and are often willing to help.<a class="indexterm" id="_indexterm_24">&#8203;</a></p>
+
+<p >In addition, if you don&#8217;t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise <code>`help'' output with the `-h</code> option, as in:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git add -h
+usage: git add [&lt;options&gt;] [--] &lt;pathspec&gt;...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_summary">
+  <h2>Summary</h2>
+  <p >You should have a basic understanding of what Git is and how it&#8217;s different from any centralized version control systems you may have been using previously.
+You should also now have a working version of Git on your system that&#8217;s set up with your personal identity.
+It&#8217;s now time to learn some Git basics.</p>
+
+</section>
+
+</section>
+
+      </div>
+      <div class="paginator">
+        <a href="_introduction.html" class="paginator-prev ">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="ch02-git-basics-chapter.html" class="paginator-next ">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

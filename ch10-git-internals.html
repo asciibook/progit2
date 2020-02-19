@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git Internals - Pro Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="highlight.css" />
+    <link rel="stylesheet" href="html.css" />
+    <script src="html.js" defer></script>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="toolbar-title">
+        <a href="index.html">
+          Pro Git
+        </a>
+      </div>
+      <div class="toolbar-action">
+        <div class="dropdown">
+          <button id="drawer-button" type="button" class="dropdown-toggle button button-icon">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="toolbar-toc" class="dropdown-menu">
+            
+              <ol>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_asciibook_introduction.html">Asciibook Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_table_of_contents.html">Table of Contents</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_licence.html">Licence</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_scott_chacon.html">Preface by Scott Chacon</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_ben_straub.html">Preface by Ben Straub</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_dedications.html">Dedications</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_contributors.html">Contributors</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_introduction.html">Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch01-getting-started.html">Getting Started</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_about_version_control">About Version Control</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_a_short_history_of_git">A Short History of Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_what_is_git">What is Git?</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_the_command_line">The Command Line</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_installing_git">Installing Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_first_time">First-Time Git Setup</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_git_help">Getting Help</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_summary">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html">Git Basics</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_getting_a_repo">Getting a Git Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_recording_changes_to_the_repository">Recording Changes to the Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_viewing_history">Viewing the Commit History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_undoing">Undoing Things</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_remote_repos">Working with Remotes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_tagging">Tagging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_aliases">Git Aliases</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_summary_2">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch03-git-branching.html">Git Branching</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_git_branches_overview">Branches in a Nutshell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_basic_branching_and_merging">Basic Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branch_management">Branch Management</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branching_workflows">Branching Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_remote_branches">Remote Branches</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_rebasing">Rebasing</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_summary_3">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch04-git-on-the-server.html">Git on the Server</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_the_protocols">The Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_getting_git_on_a_server">Getting Git on a Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_generate_ssh_key">Generating Your SSH Public Key</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_setting_up_server">Setting Up the Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_git_daemon">Git Daemon</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_smart_http_2">Smart HTTP</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitweb">GitWeb</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitlab">GitLab</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_third_party_hosted_options">Third Party Hosted Options</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_summary_4">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch05-distributed-git.html">Distributed Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_distributed_workflows">Distributed Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_contributing_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_maintaining_a_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_summary_6">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch06-github.html">GitHub</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_account_setup_and_configuration">Account Setup and Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_contributing_to_a_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_maintaining_gh_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#ch06-github_orgs">Managing an organization</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_scripting_github">Scripting GitHub</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_summary_7">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch07-git-tools.html">Git Tools</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_revision_selection">Revision Selection</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_interactive_staging">Interactive Staging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_stashing">Stashing and Cleaning</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_signing">Signing Your Work</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_searching">Searching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_reset">Reset Demystified</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_advanced_merging">Advanced Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#ref_rerere">Rerere</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_debugging_with_git">Debugging with Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_submodules">Submodules</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_bundling">Bundling</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_replace">Replace</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_credential_caching">Credential Storage</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_summary_9">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch08-customizing-git.html">Customizing Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_config">Git Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_attributes">Git Attributes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_hooks">Git Hooks</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_summary_10">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html">Git and Other Systems</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_git_as_a_client">Git as a Client</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_migrating">Migrating to Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_summary_12">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch10-git-internals.html">Git Internals</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_plumbing_porcelain">Plumbing and Porcelain</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_objects">Git Objects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_git_refs">Git References</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_packfiles">Packfiles</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_refspec">The Refspec</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_transfer_protocols">Transfer Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_maintenance_and_data_recovery">Maintenance and Data Recovery</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_environment_variables">Environment Variables</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_summary_13">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="A-git-in-other-environments.html">Git in Other Environments</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_graphical_interfaces">Graphical Interfaces</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio">Git in Visual Studio</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio_code">Git in Visual Studio Code</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_eclipse">Git in Eclipse</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_intellij_pycharm_webstorm_phpstorm_rubymine">Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_sublime_text">Git in Sublime Text</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_bash">Git in Bash</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_zsh">Git in Zsh</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_powershell">Git in PowerShell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_summary_15">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html">Embedding Git in your Applications</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_command_line_git">Command-line Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_libgit2">Libgit2</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_jgit">JGit</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_go_git">go-git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_dulwich">Dulwich</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="C-git-commands.html">Git Commands</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_setup_and_config">Setup and Config</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_getting_and_creating_projects">Getting and Creating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_basic_snapshotting">Basic Snapshotting</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_branching_and_merging">Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_sharing_and_updating_projects">Sharing and Updating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_inspection_and_comparison">Inspection and Comparison</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_debugging_2">Debugging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_patching">Patching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_email">Email</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_external_systems">External Systems</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_administration_2">Administration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_plumbing_commands">Plumbing Commands</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_index.html">Index</a>
+                    
+                  </li>
+                
+              </ol>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <section class="chapter" id="ch10-git-internals">
+  <h1>Git Internals</h1>
+  <p >You may have skipped to this chapter from a much earlier chapter, or you may have gotten here after sequentially reading the entire book up to this point&#8201;&#8212;&#8201;in either case, this is where we&#8217;ll go over the inner workings and implementation of Git.
+We found that understanding this information was fundamentally important to appreciating how useful and powerful Git is, but others have argued to us that it can be confusing and unnecessarily complex for beginners.
+Thus, we&#8217;ve made this discussion the last chapter in the book so you could read it early or later in your learning process.
+We leave it up to you to decide.</p>
+
+<p >Now that you&#8217;re here, let&#8217;s get started.
+First, if it isn&#8217;t yet clear, Git is fundamentally a content-addressable filesystem with a VCS user interface written on top of it.
+You&#8217;ll learn more about what this means in a bit.</p>
+
+<p >In the early days of Git (mostly pre 1.5), the user interface was much more complex because it emphasized this filesystem rather than a polished VCS.
+In the last few years, the UI has been refined until it&#8217;s as clean and easy to use as any system out there; however, the stereotype lingers about the early Git UI that was complex and difficult to learn.</p>
+
+<p >The content-addressable filesystem layer is amazingly cool, so we&#8217;ll cover that first in this chapter; then, you&#8217;ll learn about the transport mechanisms and the repository maintenance tasks that you may eventually have to deal with.</p>
+
+<section class="section" id="_plumbing_porcelain">
+  <h2>Plumbing and Porcelain</h2>
+  <p >This book covers primarily how to use Git with 30 or so subcommands such as <code>checkout</code>, <code>branch</code>, <code>remote</code>, and so on.
+But because Git was initially a toolkit for a version control system rather than a full user-friendly VCS, it has a number of subcommands that do low-level work and were designed to be chained together UNIX-style or called from scripts.
+These commands are generally referred to as Git&#8217;s <code>plumbing'' commands, while the more user-friendly commands are called </code>porcelain'' commands.</p>
+
+<p >As you will have noticed by now, this book&#8217;s first nine chapters deal almost exclusively with porcelain commands.
+But in this chapter, you&#8217;ll be dealing mostly with the lower-level plumbing commands, because they give you access to the inner workings of Git, and help demonstrate how and why Git does what it does.
+Many of these commands aren&#8217;t meant to be used manually on the command line, but rather to be used as building blocks for new tools and custom scripts.</p>
+
+<p >When you run <code>git init</code> in a new or existing directory, Git creates the <code>.git</code> directory, which is where almost everything that Git stores and manipulates is located.
+If you want to back up or clone your repository, copying this single directory elsewhere gives you nearly everything you need.
+This entire chapter basically deals with what you can see in this directory.
+Here&#8217;s what a newly-initialized <code>.git</code> directory typically looks like:</p>
+
+<figure class="listing" >
+  
+  <pre>$ ls -F1
+config
+description
+HEAD
+hooks/
+info/
+objects/
+refs/</pre>
+</figure>
+
+<p >Depending on your version of Git, you may see some additional content there, but this is a fresh <code>git init</code> repository&#8201;&#8212;&#8201;it&#8217;s what you see by default.
+The <code>description</code> file is used only by the GitWeb program, so don&#8217;t worry about it.
+The <code>config</code> file contains your project-specific configuration options, and the <code>info</code> directory keeps a global exclude file <a class="indexterm" id="_indexterm_221">&#8203;</a> for ignored patterns that you don&#8217;t want to track in a <code>.gitignore</code> file.
+The <code>hooks</code> directory contains your client- or server-side hook scripts, which are discussed in detail in <a class="xref" href="ch08-customizing-git.html#_git_hooks">Git Hooks</a>.</p>
+
+<p >This leaves four important entries: the <code>HEAD</code> and (yet to be created) <code>index</code> files, and the <code>objects</code> and <code>refs</code> directories.
+These are the core parts of Git.
+The <code>objects</code> directory stores all the content for your database, the <code>refs</code> directory stores pointers into commit objects in that data (branches, tags, remotes and more), the <code>HEAD</code> file points to the branch you currently have checked out, and the <code>index</code> file is where Git stores your staging area information.
+You&#8217;ll now look at each of these sections in detail to see how Git operates.</p>
+
+</section>
+
+<section class="section" id="_objects">
+  <h2>Git Objects</h2>
+  <p >Git is a content-addressable filesystem.
+Great.
+What does that mean?
+It means that at the core of Git is a simple key-value data store.
+What this means is that you can insert any kind of content into a Git repository, for which Git will hand you back a unique key you can use later to retrieve that content.</p>
+
+<p >As a demonstration, let&#8217;s look at the plumbing command <code>git hash-object</code>, which takes some data, stores it in your <code>.git/objects</code> directory (the <em>object database</em>), and gives you back the unique key that now refers to that data object.</p>
+
+<p >First, you initialize a new Git repository and verify that there is (predictably) nothing in the <code>objects</code> directory:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git init test
+Initialized empty Git repository in /tmp/test/.git/
+$ cd test
+$ find .git/objects
+.git/objects
+.git/objects/info
+.git/objects/pack
+$ find .git/objects -type f</pre>
+</figure>
+
+<p >Git has initialized the <code>objects</code> directory and created <code>pack</code> and <code>info</code> subdirectories in it, but there are no regular files.
+Now, let&#8217;s use <code>git hash-object</code> to create a new data object and manually store it in your new Git database:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo 'test content' | git hash-object -w --stdin
+d670460b4b4aece5915caf5c68d12f560a9fe3e4</pre>
+</figure>
+
+<p >In its simplest form, <code>git hash-object</code> would take the content you handed to it and merely return the unique key that <em>would</em> be used to store it in your Git database.
+The <code>-w</code> option then tells the command to not simply return the key, but to write that object to the database.
+Finally, the <code>--stdin</code> option tells <code>git hash-object</code> to get the content to be processed from stdin; otherwise, the command would expect a filename argument at the end of the command containing the content to be used.</p>
+
+<p >The output from the above command is a 40-character checksum hash.
+This is the SHA-1 hash&#8201;&#8212;&#8201;a checksum of the content you&#8217;re storing plus a header, which you&#8217;ll learn about in a bit.
+Now you can see how Git has stored your data:</p>
+
+<figure class="listing" >
+  
+  <pre>$ find .git/objects -type f
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4</pre>
+</figure>
+
+<p >If you again examine your <code>objects</code> directory, you can see that it now contains a file for that new content.
+This is how Git stores the content initially&#8201;&#8212;&#8201;as a single file per piece of content, named with the SHA-1 checksum of the content and its header.
+The subdirectory is named with the first 2 characters of the SHA-1, and the filename is the remaining 38 characters.</p>
+
+<p >Once you have content in your object database, you can examine that content with the <code>git cat-file</code> command.
+This command is sort of a Swiss army knife for inspecting Git objects.
+Passing <code>-p</code> to <code>cat-file</code> instructs the command to first figure out the type of content, then display it appropriately:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p d670460b4b4aece5915caf5c68d12f560a9fe3e4
+test content</pre>
+</figure>
+
+<p >Now, you can add content to Git and pull it back out again.
+You can also do this with content in files.
+For example, you can do some simple version control on a file.
+First, create a new file and save its contents in your database:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo 'version 1' &gt; test.txt
+$ git hash-object -w test.txt
+83baae61804e65cc73a7201a7252750c76066a30</pre>
+</figure>
+
+<p >Then, write some new content to the file, and save it again:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo 'version 2' &gt; test.txt
+$ git hash-object -w test.txt
+1f7a7a472abf3dd9643fd615f6da379c4acb3e3a</pre>
+</figure>
+
+<p >Your object database now contains both versions of this new file (as well as the first content you stored there):</p>
+
+<figure class="listing" >
+  
+  <pre>$ find .git/objects -type f
+.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a
+.git/objects/83/baae61804e65cc73a7201a7252750c76066a30
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4</pre>
+</figure>
+
+<p >At this point, you can delete your local copy of that <code>test.txt</code> file, then use Git to retrieve, from the object database, either the first version you saved:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p 83baae61804e65cc73a7201a7252750c76066a30 &gt; test.txt
+$ cat test.txt
+version 1</pre>
+</figure>
+
+<p >or the second version:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a &gt; test.txt
+$ cat test.txt
+version 2</pre>
+</figure>
+
+<p >But remembering the SHA-1 key for each version of your file isn&#8217;t practical; plus, you aren&#8217;t storing the filename in your system&#8201;&#8212;&#8201;just the content.
+This object type is called a <em>blob</em>.
+You can have Git tell you the object type of any object in Git, given its SHA-1 key, with <code>git cat-file -t</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -t 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a
+blob</pre>
+</figure>
+
+<section class="section" id="_tree_objects">
+  <h3>Tree Objects</h3>
+  <p >The next type of Git object we&#8217;ll examine is the <em>tree</em>, which solves the problem of storing the filename and also allows you to store a group of files together.
+Git stores content in a manner similar to a UNIX filesystem, but a bit simplified.
+All the content is stored as tree and blob objects, with trees corresponding to UNIX directory entries and blobs corresponding more or less to inodes or file contents.
+A single tree object contains one or more entries, each of which is the SHA-1 hash of a blob or subtree with its associated mode, type, and filename.
+For example, the most recent tree in a project may look something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p master^{tree}
+100644 blob a906cb2a4a904a152e80877d4088654daad0c859      README
+100644 blob 8f94139338f9404f26296befa88755fc2598c289      Rakefile
+040000 tree 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0      lib</pre>
+</figure>
+
+<p >The <code>master^{tree}</code> syntax specifies the tree object that is pointed to by the last commit on your <code>master</code> branch.
+Notice that the <code>lib</code> subdirectory isn&#8217;t a blob but a pointer to another tree:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0
+100644 blob 47c6340d6459e05787f644c2447d2595f5d3a54b      simplegit.rb</pre>
+</figure>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >Depending on what shell you use, you may encounter errors when using the <code>master^{tree}</code> syntax.</p>
+
+<p >In CMD on Windows, the <code>^</code> character is used for escaping, so you have to double it to avoid this: <code>git cat-file -p master^^{tree}</code>.
+When using PowerShell, parameters using {} characters have to be quoted to avoid the parameter being parsed incorrectly: <code>git cat-file -p 'master^{tree}'</code>.</p>
+
+<p >If you&#8217;re using ZSH, the <code>^</code> character is used for globbing, so you have to enclose the whole expression in quotes: <code>git cat-file -p "master^{tree}"</code>.</p>
+
+  </div>
+</div>
+
+<p >Conceptually, the data that Git is storing looks something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/data-model-1.png"
+         alt="Simple version of the Git data model."
+         
+          />
+  
+  
+    <figcaption>Figure 149. Simple version of the Git data model.</figcaption>
+  
+</figure>
+
+<p >You can fairly easily create your own tree.
+Git normally creates a tree by taking the state of your staging area or index and writing a series of tree objects from it.
+So, to create a tree object, you first have to set up an index by staging some files.
+To create an index with a single entry&#8201;&#8212;&#8201;the first version of your <code>test.txt</code> file&#8201;&#8212;&#8201;you can use the plumbing command <code>git update-index</code>.
+You use this command to artificially add the earlier version of the <code>test.txt</code> file to a new staging area.
+You must pass it the <code>--add</code> option because the file doesn&#8217;t yet exist in your staging area (you don&#8217;t even have a staging area set up yet) and <code>--cacheinfo</code> because the file you&#8217;re adding isn&#8217;t in your directory but is in your database.
+Then, you specify the mode, SHA-1, and filename:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git update-index --add --cacheinfo 100644 \
+  83baae61804e65cc73a7201a7252750c76066a30 test.txt</pre>
+</figure>
+
+<p >In this case, you&#8217;re specifying a mode of <code>100644</code>, which means it&#8217;s a normal file.
+Other options are <code>100755</code>, which means it&#8217;s an executable file; and <code>120000</code>, which specifies a symbolic link.
+The mode is taken from normal UNIX modes but is much less flexible&#8201;&#8212;&#8201;these three modes are the only ones that are valid for files (blobs) in Git (although other modes are used for directories and submodules).</p>
+
+<p >Now, you can use <code>git write-tree</code> to write the staging area out to a tree object.
+No <code>-w</code> option is needed&#8201;&#8212;&#8201;calling this command automatically creates a tree object from the state of the index if that tree doesn&#8217;t yet exist:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git write-tree
+d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+$ git cat-file -p d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+100644 blob 83baae61804e65cc73a7201a7252750c76066a30      test.txt</pre>
+</figure>
+
+<p >You can also verify that this is a tree object using the same <code>git cat-file</code> command you saw earlier:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -t d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+tree</pre>
+</figure>
+
+<p >You&#8217;ll now create a new tree with the second version of <code>test.txt</code> and a new file as well:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo 'new file' &gt; new.txt
+$ git update-index --add --cacheinfo 100644 \
+  1f7a7a472abf3dd9643fd615f6da379c4acb3e3a test.txt
+$ git update-index --add new.txt</pre>
+</figure>
+
+<p >Your staging area now has the new version of <code>test.txt</code> as well as the new file <code>new.txt</code>.
+Write out that tree (recording the state of the staging area or index to a tree object) and see what it looks like:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git write-tree
+0155eb4229851634a0f03eb265b69f5a2d56f341
+$ git cat-file -p 0155eb4229851634a0f03eb265b69f5a2d56f341
+100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt
+100644 blob 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a      test.txt</pre>
+</figure>
+
+<p >Notice that this tree has both file entries and also that the <code>test.txt</code> SHA-1 is the <code>`version 2'' SHA-1 from earlier (`1f7a7a</code>).
+Just for fun, you&#8217;ll add the first tree as a subdirectory into this one.
+You can read trees into your staging area by calling <code>git read-tree</code>.
+In this case, you can read an existing tree into your staging area as a subtree by using the <code>--prefix</code> option with this command:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git read-tree --prefix=bak d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+$ git write-tree
+3c4e9cd789d88d8d89c1073707c3585e41b0e614
+$ git cat-file -p 3c4e9cd789d88d8d89c1073707c3585e41b0e614
+040000 tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579      bak
+100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt
+100644 blob 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a      test.txt</pre>
+</figure>
+
+<p >If you created a working directory from the new tree you just wrote, you would get the two files in the top level of the working directory and a subdirectory named <code>bak</code> that contained the first version of the <code>test.txt</code> file.
+You can think of the data that Git contains for these structures as being like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/data-model-2.png"
+         alt="The content structure of your current Git data."
+         
+          />
+  
+  
+    <figcaption>Figure 150. The content structure of your current Git data.</figcaption>
+  
+</figure>
+
+</section>
+
+<section class="section" id="_git_commit_objects">
+  <h3>Commit Objects</h3>
+  <p >If you&#8217;ve done all of the above, you now have three trees that represent the different snapshots of your project that you want to track, but the earlier problem remains: you must remember all three SHA-1 values in order to recall the snapshots.
+You also don&#8217;t have any information about who saved the snapshots, when they were saved, or why they were saved.
+This is the basic information that the commit object stores for you.</p>
+
+<p >To create a commit object, you call <code>commit-tree</code> and specify a single tree SHA-1 and which commit objects, if any, directly preceded it.
+Start with the first tree you wrote:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo 'first commit' | git commit-tree d8329f
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d</pre>
+</figure>
+
+<p >You will get a different hash value because of different creation time and author data.
+Replace commit and tag hashes with your own checksums further in this chapter.
+Now you can look at your new commit object with <code>git cat-file</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p fdf4fc3
+tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+author Scott Chacon &lt;schacon@gmail.com&gt; 1243040974 -0700
+committer Scott Chacon &lt;schacon@gmail.com&gt; 1243040974 -0700
+
+first commit</pre>
+</figure>
+
+<p >The format for a commit object is simple: it specifies the top-level tree for the snapshot of the project at that point; the parent commits if any (the commit object described above does not have any parents); the author/committer information (which uses your <code>user.name</code> and <code>user.email</code> configuration settings and a timestamp); a blank line, and then the commit message.</p>
+
+<p >Next, you&#8217;ll write the other two commit objects, each referencing the commit that came directly before it:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo 'second commit' | git commit-tree 0155eb -p fdf4fc3
+cac0cab538b970a37ea1e769cbbde608743bc96d
+$ echo 'third commit'  | git commit-tree 3c4e9c -p cac0cab
+1a410efbd13591db07496601ebc7a059dd55cfe9</pre>
+</figure>
+
+<p >Each of the three commit objects points to one of the three snapshot trees you created.
+Oddly enough, you have a real Git history now that you can view with the <code>git log</code> command, if you run it on the last commit SHA-1:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log --stat 1a410e
+commit 1a410efbd13591db07496601ebc7a059dd55cfe9
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:15:24 2009 -0700
+
+	third commit
+
+ bak/test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit cac0cab538b970a37ea1e769cbbde608743bc96d
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:14:29 2009 -0700
+
+	second commit
+
+ new.txt  | 1 +
+ test.txt | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit fdf4fc3344e67ab068f836878b6c4951e3b15f3d
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:09:34 2009 -0700
+
+    first commit
+
+ test.txt | 1 +
+ 1 file changed, 1 insertion(+)</pre>
+</figure>
+
+<p >Amazing.
+You&#8217;ve just done the low-level operations to build up a Git history without using any of the front end commands.
+This is essentially what Git does when you run the <code>git add</code> and <code>git commit</code> commands&#8201;&#8212;&#8201;it stores blobs for the files that have changed, updates the index, writes out trees, and writes commit objects that reference the top-level trees and the commits that came immediately before them.
+These three main Git objects&#8201;&#8212;&#8201;the blob, the tree, and the commit&#8201;&#8212;&#8201;are initially stored as separate files in your <code>.git/objects</code> directory.
+Here are all the objects in the example directory now, commented with what they store:</p>
+
+<figure class="listing" >
+  
+  <pre>$ find .git/objects -type f
+.git/objects/01/55eb4229851634a0f03eb265b69f5a2d56f341 # tree 2
+.git/objects/1a/410efbd13591db07496601ebc7a059dd55cfe9 # commit 3
+.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a # test.txt v2
+.git/objects/3c/4e9cd789d88d8d89c1073707c3585e41b0e614 # tree 3
+.git/objects/83/baae61804e65cc73a7201a7252750c76066a30 # test.txt v1
+.git/objects/ca/c0cab538b970a37ea1e769cbbde608743bc96d # commit 2
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4 # 'test content'
+.git/objects/d8/329fc1cc938780ffdd9f94e0d364e0ea74f579 # tree 1
+.git/objects/fa/49b077972391ad58037050f2a75f74e3671e92 # new.txt
+.git/objects/fd/f4fc3344e67ab068f836878b6c4951e3b15f3d # commit 1</pre>
+</figure>
+
+<p >If you follow all the internal pointers, you get an object graph something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/data-model-3.png"
+         alt="All the reachable objects in your Git directory."
+         
+          />
+  
+  
+    <figcaption>Figure 151. All the reachable objects in your Git directory.</figcaption>
+  
+</figure>
+
+</section>
+
+<section class="section" id="_object_storage">
+  <h3>Object Storage</h3>
+  <p >We mentioned earlier that there is a header stored with every object you commit to your Git object database.
+Let&#8217;s take a minute to see how Git stores its objects.
+You&#8217;ll see how to store a blob object&#8201;&#8212;&#8201;in this case, the string ``what is up, doc?''&#8201;&#8212;&#8201;interactively in the Ruby scripting language.</p>
+
+<p >You can start up interactive Ruby mode with the <code>irb</code> command:</p>
+
+<figure class="listing" >
+  
+  <pre>$ irb
+&gt;&gt; content = "what is up, doc?"
+=&gt; "what is up, doc?"</pre>
+</figure>
+
+<p >Git first constructs a header which starts by identifying the type of object&#8201;&#8212;&#8201;in this case, a blob.
+To that first part of the header, Git adds a space followed by the size in bytes  of the content, and adding a final null byte:</p>
+
+<figure class="listing" >
+  
+  <pre>&gt;&gt; header = "blob #{content.length}\0"
+=&gt; "blob 16\u0000"</pre>
+</figure>
+
+<p >Git concatenates the header and the original content and then calculates the SHA-1 checksum of that new content.
+You can calculate the SHA-1 value of a string in Ruby by including the SHA1 digest library with the <code>require</code> command and then calling <code>Digest::SHA1.hexdigest()</code> with the string:</p>
+
+<figure class="listing" >
+  
+  <pre>&gt;&gt; store = header + content
+=&gt; "blob 16\u0000what is up, doc?"
+&gt;&gt; require 'digest/sha1'
+=&gt; true
+&gt;&gt; sha1 = Digest::SHA1.hexdigest(store)
+=&gt; "bd9dbf5aae1a3862dd1526723246b20206e5fc37"</pre>
+</figure>
+
+<p >Let&#8217;s compare that to the output of <code>git hash-object</code>.
+Here we use <code>echo -n</code> to prevent adding a newline to the input.</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo -n "what is up, doc?" | git hash-object --stdin
+bd9dbf5aae1a3862dd1526723246b20206e5fc37</pre>
+</figure>
+
+<p >Git compresses the new content with zlib, which you can do in Ruby with the zlib library.
+First, you need to require the library and then run <code>Zlib::Deflate.deflate()</code> on the content:</p>
+
+<figure class="listing" >
+  
+  <pre>&gt;&gt; require 'zlib'
+=&gt; true
+&gt;&gt; zlib_content = Zlib::Deflate.deflate(store)
+=&gt; "x\x9CK\xCA\xC9OR04c(\xCFH,Q\xC8,V(-\xD0QH\xC9O\xB6\a\x00_\x1C\a\x9D"</pre>
+</figure>
+
+<p >Finally, you&#8217;ll write your zlib-deflated content to an object on disk.
+You&#8217;ll determine the path of the object you want to write out (the first two characters of the SHA-1 value being the subdirectory name, and the last 38 characters being the filename within that directory).
+In Ruby, you can use the <code>FileUtils.mkdir_p()</code> function to create the subdirectory if it doesn&#8217;t exist.
+Then, open the file with <code>File.open()</code> and write out the previously zlib-compressed content to the file with a <code>write()</code> call on the resulting file handle:</p>
+
+<figure class="listing" >
+  
+  <pre>&gt;&gt; path = '.git/objects/' + sha1[0,2] + '/' + sha1[2,38]
+=&gt; ".git/objects/bd/9dbf5aae1a3862dd1526723246b20206e5fc37"
+&gt;&gt; require 'fileutils'
+=&gt; true
+&gt;&gt; FileUtils.mkdir_p(File.dirname(path))
+=&gt; ".git/objects/bd"
+&gt;&gt; File.open(path, 'w') { |f| f.write zlib_content }
+=&gt; 32</pre>
+</figure>
+
+<p >Let&#8217;s check the content of the object using <code>git cat-file</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>---
+$ git cat-file -p bd9dbf5aae1a3862dd1526723246b20206e5fc37
+what is up, doc?
+---</pre>
+</figure>
+
+<p >That&#8217;s it – you&#8217;ve created a valid Git blob object.</p>
+
+<p >All Git objects are stored the same way, just with different types – instead of the string blob, the header will begin with commit or tree.
+Also, although the blob content can be nearly anything, the commit and tree content are very specifically formatted.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_git_refs">
+  <h2>Git References</h2>
+  <p >If you were interested in seeing the history of your repository reachable from commit, say, <code>1a410e</code>, you could run something like <code>git log 1a410e</code> to display that history, but you would still have to remember that <code>1a410e</code> is the commit you want to use as the starting point for that history.
+Instead, it would be easier if you had a file in which you could store that SHA-1 value under a simple name so you could use that simple name rather than the raw SHA-1 value.</p>
+
+<p >In Git, these simple names are called <code>references'' or </code>refs''; you can find the files that contain those SHA-1 values in the <code>.git/refs</code> directory.
+In the current project, this directory contains no files, but it does contain a simple structure:</p>
+
+<figure class="listing" >
+  
+  <pre>$ find .git/refs
+.git/refs
+.git/refs/heads
+.git/refs/tags
+$ find .git/refs -type f</pre>
+</figure>
+
+<p >To create a new reference that will help you remember where your latest commit is, you can technically do something as simple as this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo 1a410efbd13591db07496601ebc7a059dd55cfe9 &gt; .git/refs/heads/master</pre>
+</figure>
+
+<p >Now, you can use the head reference you just created instead of the SHA-1 value in your Git commands:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log --pretty=oneline master
+1a410efbd13591db07496601ebc7a059dd55cfe9 third commit
+cac0cab538b970a37ea1e769cbbde608743bc96d second commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d first commit</pre>
+</figure>
+
+<p >You aren&#8217;t encouraged to directly edit the reference files; instead, Git provides the safer command <code>git update-ref</code> to do this if you want to update a reference:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git update-ref refs/heads/master 1a410efbd13591db07496601ebc7a059dd55cfe9</pre>
+</figure>
+
+<p >That&#8217;s basically what a branch in Git is: a simple pointer or reference to the head of a line of work.
+To create a branch back at the second commit, you can do this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git update-ref refs/heads/test cac0ca</pre>
+</figure>
+
+<p >Your branch will contain only work from that commit down:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log --pretty=oneline test
+cac0cab538b970a37ea1e769cbbde608743bc96d second commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d first commit</pre>
+</figure>
+
+<p >Now, your Git database conceptually looks something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/data-model-4.png"
+         alt="Git directory objects with branch head references included."
+         
+          />
+  
+  
+    <figcaption>Figure 152. Git directory objects with branch head references included.</figcaption>
+  
+</figure>
+
+<p >When you run commands like <code>git branch &lt;branch&gt;</code>, Git basically runs that <code>update-ref</code> command to add the SHA-1 of the last commit of the branch you&#8217;re on into whatever new reference you want to create.</p>
+
+<section class="section" id="ref_the_ref">
+  <h3>The HEAD</h3>
+  <p >The question now is, when you run <code>git branch &lt;branch&gt;</code>, how does Git know the SHA-1 of the last commit?
+The answer is the HEAD file.</p>
+
+<p >Usually the HEAD file is a symbolic reference to the branch you&#8217;re currently on.
+By symbolic reference, we mean that unlike a normal reference, it contains a pointer to another reference.</p>
+
+<p >However in some rare cases the HEAD file may contain the SHA-1 value of a git object.
+This happens when you checkout a tag, commit, or remote branch, which puts your repository in <a class="link" href="https://git-scm.com/docs/git-checkout#_detached_head"
+     
+      >"detached HEAD"</a> state.</p>
+
+<p >If you look at the file, you&#8217;ll normally see something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ cat .git/HEAD
+ref: refs/heads/master</pre>
+</figure>
+
+<p >If you run <code>git checkout test</code>, Git updates the file to look like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ cat .git/HEAD
+ref: refs/heads/test</pre>
+</figure>
+
+<p >When you run <code>git commit</code>, it creates the commit object, specifying the parent of that commit object to be whatever SHA-1 value the reference in HEAD points to.</p>
+
+<p >You can also manually edit this file, but again a safer command exists to do so: <code>git symbolic-ref</code>.
+You can read the value of your HEAD via this command:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git symbolic-ref HEAD
+refs/heads/master</pre>
+</figure>
+
+<p >You can also set the value of HEAD using the same command:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git symbolic-ref HEAD refs/heads/test
+$ cat .git/HEAD
+ref: refs/heads/test</pre>
+</figure>
+
+<p >You can&#8217;t set a symbolic reference outside of the refs style:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git symbolic-ref HEAD test
+fatal: Refusing to point HEAD outside of refs/</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_tags">
+  <h3>Tags</h3>
+  <p >We just finished discussing Git&#8217;s three main object types (<em>blobs</em>, <em>trees</em> and <em>commits</em>), but there is a fourth.
+The <em>tag</em> object is very much like a commit object&#8201;&#8212;&#8201;it contains a tagger, a date, a message, and a pointer.
+The main difference is that a tag object generally points to a commit rather than a tree.
+It&#8217;s like a branch reference, but it never moves&#8201;&#8212;&#8201;it always points to the same commit but gives it a friendlier name.</p>
+
+<p >As discussed in <a class="xref" href="ch02-git-basics-chapter.html">Git Basics</a>, there are two types of tags: annotated and lightweight.
+You can make a lightweight tag by running something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git update-ref refs/tags/v1.0 cac0cab538b970a37ea1e769cbbde608743bc96d</pre>
+</figure>
+
+<p >That is all a lightweight tag is&#8201;&#8212;&#8201;a reference that never moves.
+An annotated tag is more complex, however.
+If you create an annotated tag, Git creates a tag object and then writes a reference to point to it rather than directly to the commit.
+You can see this by creating an annotated tag (using the <code>-a</code> option):</p>
+
+<figure class="listing" >
+  
+  <pre>$ git tag -a v1.1 1a410efbd13591db07496601ebc7a059dd55cfe9 -m 'test tag'</pre>
+</figure>
+
+<p >Here&#8217;s the object SHA-1 value it created:</p>
+
+<figure class="listing" >
+  
+  <pre>$ cat .git/refs/tags/v1.1
+9585191f37f7b0fb9444f35a9bf50de191beadc2</pre>
+</figure>
+
+<p >Now, run <code>git cat-file -p</code> on that SHA-1 value:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p 9585191f37f7b0fb9444f35a9bf50de191beadc2
+object 1a410efbd13591db07496601ebc7a059dd55cfe9
+type commit
+tag v1.1
+tagger Scott Chacon &lt;schacon@gmail.com&gt; Sat May 23 16:48:58 2009 -0700
+
+test tag</pre>
+</figure>
+
+<p >Notice that the object entry points to the commit SHA-1 value that you tagged.
+Also notice that it doesn&#8217;t need to point to a commit; you can tag any Git object.
+In the Git source code, for example, the maintainer has added their GPG public key as a blob object and then tagged it.
+You can view the public key by running this in a clone of the Git repository:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file blob junio-gpg-pub</pre>
+</figure>
+
+<p >The Linux kernel repository also has a non-commit-pointing tag object&#8201;&#8212;&#8201;the first tag created points to the initial tree of the import of the source code.</p>
+
+</section>
+
+<section class="section" id="_remotes">
+  <h3>Remotes</h3>
+  <p >The third type of reference that you&#8217;ll see is a remote reference.
+If you add a remote and push to it, Git stores the value you last pushed to that remote for each branch in the <code>refs/remotes</code> directory.
+For instance, you can add a remote called <code>origin</code> and push your <code>master</code> branch to it:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git remote add origin git@github.com:schacon/simplegit-progit.git
+$ git push origin master
+Counting objects: 11, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 716 bytes, done.
+Total 7 (delta 2), reused 4 (delta 1)
+To git@github.com:schacon/simplegit-progit.git
+  a11bef0..ca82a6d  master -&gt; master</pre>
+</figure>
+
+<p >Then, you can see what the <code>master</code> branch on the <code>origin</code> remote was the last time you communicated with the server, by checking the <code>refs/remotes/origin/master</code> file:</p>
+
+<figure class="listing" >
+  
+  <pre>$ cat .git/refs/remotes/origin/master
+ca82a6dff817ec66f44342007202690a93763949</pre>
+</figure>
+
+<p >Remote references differ from branches (<code>refs/heads</code> references) mainly in that they&#8217;re considered read-only.
+You can <code>git checkout</code> to one, but Git won&#8217;t point HEAD at one, so you&#8217;ll never update it with a <code>commit</code> command.
+Git manages them as bookmarks to the last known state of where those branches were on those servers.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_packfiles">
+  <h2>Packfiles</h2>
+  <p >If you followed all of the instructions in the example from the previous section, you should now have a test Git repository with 11 objects&#8201;&#8212;&#8201;four blobs, three trees, three commits, and one tag:</p>
+
+<figure class="listing" >
+  
+  <pre>$ find .git/objects -type f
+.git/objects/01/55eb4229851634a0f03eb265b69f5a2d56f341 # tree 2
+.git/objects/1a/410efbd13591db07496601ebc7a059dd55cfe9 # commit 3
+.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a # test.txt v2
+.git/objects/3c/4e9cd789d88d8d89c1073707c3585e41b0e614 # tree 3
+.git/objects/83/baae61804e65cc73a7201a7252750c76066a30 # test.txt v1
+.git/objects/95/85191f37f7b0fb9444f35a9bf50de191beadc2 # tag
+.git/objects/ca/c0cab538b970a37ea1e769cbbde608743bc96d # commit 2
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4 # 'test content'
+.git/objects/d8/329fc1cc938780ffdd9f94e0d364e0ea74f579 # tree 1
+.git/objects/fa/49b077972391ad58037050f2a75f74e3671e92 # new.txt
+.git/objects/fd/f4fc3344e67ab068f836878b6c4951e3b15f3d # commit 1</pre>
+</figure>
+
+<p >Git compresses the contents of these files with zlib, and you&#8217;re not storing much, so all these files collectively take up only 925 bytes.
+Now you&#8217;ll add some more sizable content to the repository to demonstrate an interesting feature of Git.
+To demonstrate, we&#8217;ll add the <code>repo.rb</code> file from the Grit library&#8201;&#8212;&#8201;this is about a 22K source code file:</p>
+
+<figure class="listing" >
+  
+  <pre>$ curl https://raw.githubusercontent.com/mojombo/grit/master/lib/grit/repo.rb &gt; repo.rb
+$ git checkout master
+$ git add repo.rb
+$ git commit -m 'added repo.rb'
+[master 484a592] added repo.rb
+ 3 files changed, 709 insertions(+), 2 deletions(-)
+ delete mode 100644 bak/test.txt
+ create mode 100644 repo.rb
+ rewrite test.txt (100%)</pre>
+</figure>
+
+<p >If you look at the resulting tree, you can see the SHA-1 value that was calculated for your new <code>repo.rb</code> blob object:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p master^{tree}
+100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt
+100644 blob 033b4468fa6b2a9547a70d88d1bbe8bf3f9ed0d5      repo.rb
+100644 blob e3f094f522629ae358806b17daf78246c27c007b      test.txt</pre>
+</figure>
+
+<p >You can then use <code>git cat-file</code> to see how large that object is:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -s 033b4468fa6b2a9547a70d88d1bbe8bf3f9ed0d5
+22044</pre>
+</figure>
+
+<p >At this point, modify that file a little, and see what happens:</p>
+
+<figure class="listing" >
+  
+  <pre>$ echo '# testing' &gt;&gt; repo.rb
+$ git commit -am 'modified repo.rb a bit'
+[master 2431da6] modified repo.rb a bit
+ 1 file changed, 1 insertion(+)</pre>
+</figure>
+
+<p >Check the tree created by that last commit, and you see something interesting:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p master^{tree}
+100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt
+100644 blob b042a60ef7dff760008df33cee372b945b6e884e      repo.rb
+100644 blob e3f094f522629ae358806b17daf78246c27c007b      test.txt</pre>
+</figure>
+
+<p >The blob is now a different blob, which means that although you added only a single line to the end of a 400-line file, Git stored that new content as a completely new object:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -s b042a60ef7dff760008df33cee372b945b6e884e
+22054</pre>
+</figure>
+
+<p >You have two nearly identical 22K objects on your disk (each compressed to approximately 7K).
+Wouldn&#8217;t it be nice if Git could store one of them in full but then the second object only as the delta between it and the first?</p>
+
+<p >It turns out that it can.
+The initial format in which Git saves objects on disk is called a <code>loose'' object format.
+However, occasionally Git packs up several of these objects into a single binary file called a </code>packfile'' in order to save space and be more efficient.
+Git does this if you have too many loose objects around, if you run the <code>git gc</code> command manually, or if you push to a remote server.
+To see what happens, you can manually ask Git to pack up the objects by calling the <code>git gc</code> command:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git gc
+Counting objects: 18, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (18/18), done.
+Total 18 (delta 3), reused 0 (delta 0)</pre>
+</figure>
+
+<p >If you look in your <code>objects</code> directory, you&#8217;ll find that most of your objects are gone, and a new pair of files has appeared:</p>
+
+<figure class="listing" >
+  
+  <pre>$ find .git/objects -type f
+.git/objects/bd/9dbf5aae1a3862dd1526723246b20206e5fc37
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4
+.git/objects/info/packs
+.git/objects/pack/pack-978e03944f5c581011e6998cd0e9e30000905586.idx
+.git/objects/pack/pack-978e03944f5c581011e6998cd0e9e30000905586.pack</pre>
+</figure>
+
+<p >The objects that remain are the blobs that aren&#8217;t pointed to by any commit&#8201;&#8212;&#8201;in this case, the <code>what is up, doc?'' example and the </code>test content'' example blobs you created earlier.
+Because you never added them to any commits, they&#8217;re considered dangling and aren&#8217;t packed up in your new packfile.</p>
+
+<p >The other files are your new packfile and an index.
+The packfile is a single file containing the contents of all the objects that were removed from your filesystem.
+The index is a file that contains offsets into that packfile so you can quickly seek to a specific object.
+What is cool is that although the objects on disk before you ran the <code>gc</code> command were collectively about 15K in size, the new packfile is only 7K.
+You&#8217;ve cut your disk usage by half by packing your objects.</p>
+
+<p >How does Git do this?
+When Git packs objects, it looks for files that are named and sized similarly, and stores just the deltas from one version of the file to the next.
+You can look into the packfile and see what Git did to save space.
+The <code>git verify-pack</code> plumbing command allows you to see what was packed up:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git verify-pack -v .git/objects/pack/pack-978e03944f5c581011e6998cd0e9e30000905586.idx
+2431da676938450a4d72e260db3bf7b0f587bbc1 commit 223 155 12
+69bcdaff5328278ab1c0812ce0e07fa7d26a96d7 commit 214 152 167
+80d02664cb23ed55b226516648c7ad5d0a3deb90 commit 214 145 319
+43168a18b7613d1281e5560855a83eb8fde3d687 commit 213 146 464
+092917823486a802e94d727c820a9024e14a1fc2 commit 214 146 610
+702470739ce72005e2edff522fde85d52a65df9b commit 165 118 756
+d368d0ac0678cbe6cce505be58126d3526706e54 tag    130 122 874
+fe879577cb8cffcdf25441725141e310dd7d239b tree   136 136 996
+d8329fc1cc938780ffdd9f94e0d364e0ea74f579 tree   36 46 1132
+deef2e1b793907545e50a2ea2ddb5ba6c58c4506 tree   136 136 1178
+d982c7cb2c2a972ee391a85da481fc1f9127a01d tree   6 17 1314 1 \
+  deef2e1b793907545e50a2ea2ddb5ba6c58c4506
+3c4e9cd789d88d8d89c1073707c3585e41b0e614 tree   8 19 1331 1 \
+  deef2e1b793907545e50a2ea2ddb5ba6c58c4506
+0155eb4229851634a0f03eb265b69f5a2d56f341 tree   71 76 1350
+83baae61804e65cc73a7201a7252750c76066a30 blob   10 19 1426
+fa49b077972391ad58037050f2a75f74e3671e92 blob   9 18 1445
+b042a60ef7dff760008df33cee372b945b6e884e blob   22054 5799 1463
+033b4468fa6b2a9547a70d88d1bbe8bf3f9ed0d5 blob   9 20 7262 1 \
+  b042a60ef7dff760008df33cee372b945b6e884e
+1f7a7a472abf3dd9643fd615f6da379c4acb3e3a blob   10 19 7282
+non delta: 15 objects
+chain length = 1: 3 objects
+.git/objects/pack/pack-978e03944f5c581011e6998cd0e9e30000905586.pack: ok</pre>
+</figure>
+
+<p >Here, the <code>033b4</code> blob, which if you remember was the first version of your <code>repo.rb</code> file, is referencing the <code>b042a</code> blob, which was the second version of the file.
+The third column in the output is the size of the object in the pack, so you can see that <code>b042a</code> takes up 22K of the file, but that <code>033b4</code> only takes up 9 bytes.
+What is also interesting is that the second version of the file is the one that is stored intact, whereas the original version is stored as a delta&#8201;&#8212;&#8201;this is because you&#8217;re most likely to need faster access to the most recent version of the file.</p>
+
+<p >The really nice thing about this is that it can be repacked at any time.
+Git will occasionally repack your database automatically, always trying to save more space, but you can also manually repack at any time by running <code>git gc</code> by hand.</p>
+
+</section>
+
+<section class="section" id="_refspec">
+  <h2>The Refspec</h2>
+  <p >Throughout this book, we&#8217;ve used simple mappings from remote branches to local references, but they can be more complex.
+Suppose you were following along with the last couple sections and had created a small local Git repository, and now wanted to add a <em>remote</em> to it:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git remote add origin https://github.com/schacon/simplegit-progit</pre>
+</figure>
+
+<p >Running the command above adds a section to your repository&#8217;s <code>.git/config</code> file, specifying the name of the remote (<code>origin</code>), the URL of the remote repository, and the <em>refspec</em> to be used for fetching:</p>
+
+<figure class="listing" >
+  
+  <pre>[remote "origin"]
+	url = https://github.com/schacon/simplegit-progit
+	fetch = +refs/heads/*:refs/remotes/origin/*</pre>
+</figure>
+
+<p >The format of the refspec is, first, an optional <code>+</code>, followed by <code>&lt;src&gt;:&lt;dst&gt;</code>, where <code>&lt;src&gt;</code> is the pattern for references on the remote side and <code>&lt;dst&gt;</code> is where those references will be tracked locally.
+The <code>+</code> tells Git to update the reference even if it isn&#8217;t a fast-forward.</p>
+
+<p >In the default case that is automatically written by a <code>git remote add origin</code> command, Git fetches all the references under <code>refs/heads/</code> on the server and writes them to <code>refs/remotes/origin/</code> locally.
+So, if there is a <code>master</code> branch on the server, you can access the log of that branch locally via any of the following:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log origin/master
+$ git log remotes/origin/master
+$ git log refs/remotes/origin/master</pre>
+</figure>
+
+<p >They&#8217;re all equivalent, because Git expands each of them to <code>refs/remotes/origin/master</code>.</p>
+
+<p >If you want Git instead to pull down only the <code>master</code> branch each time, and not every other branch on the remote server, you can change the fetch line to refer to that branch only:</p>
+
+<figure class="listing" >
+  
+  <pre>fetch = +refs/heads/master:refs/remotes/origin/master</pre>
+</figure>
+
+<p >This is just the default refspec for <code>git fetch</code> for that remote.
+If you want to do a one-time only fetch, you can specify the specific refspec on the command line, too.
+To pull the <code>master</code> branch on the remote down to <code>origin/mymaster</code> locally, you can run:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git fetch origin master:refs/remotes/origin/mymaster</pre>
+</figure>
+
+<p >You can also specify multiple refspecs.
+On the command line, you can pull down several branches like so:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git fetch origin master:refs/remotes/origin/mymaster \
+	 topic:refs/remotes/origin/topic
+From git@github.com:schacon/simplegit
+ ! [rejected]        master     -&gt; origin/mymaster  (non fast forward)
+ * [new branch]      topic      -&gt; origin/topic</pre>
+</figure>
+
+<p >In this case, the <code>master</code> branch pull was rejected because it wasn&#8217;t listed as a fast-forward reference.
+You can override that by specifying the <code>+</code> in front of the refspec.</p>
+
+<p >You can also specify multiple refspecs for fetching in your configuration file.
+If you want to always fetch the <code>master</code> and <code>experiment</code> branches from the <code>origin</code> remote, add two lines:</p>
+
+<figure class="listing" >
+  
+  <pre>[remote "origin"]
+	url = https://github.com/schacon/simplegit-progit
+	fetch = +refs/heads/master:refs/remotes/origin/master
+	fetch = +refs/heads/experiment:refs/remotes/origin/experiment</pre>
+</figure>
+
+<p >You can&#8217;t use partial globs in the pattern, so this would be invalid:</p>
+
+<figure class="listing" >
+  
+  <pre>fetch = +refs/heads/qa*:refs/remotes/origin/qa*</pre>
+</figure>
+
+<p >However, you can use namespaces (or directories) to accomplish something like that.
+If you have a QA team that pushes a series of branches, and you want to get the <code>master</code> branch and any of the QA team&#8217;s branches but nothing else, you can use a config section like this:</p>
+
+<figure class="listing" >
+  
+  <pre>[remote "origin"]
+	url = https://github.com/schacon/simplegit-progit
+	fetch = +refs/heads/master:refs/remotes/origin/master
+	fetch = +refs/heads/qa/*:refs/remotes/origin/qa/*</pre>
+</figure>
+
+<p >If you have a complex workflow process that has a QA team pushing branches, developers pushing branches, and integration teams pushing and collaborating on remote branches, you can namespace them easily this way.</p>
+
+<section class="section" id="_pushing_refspecs">
+  <h3>Pushing Refspecs</h3>
+  <p >It&#8217;s nice that you can fetch namespaced references that way, but how does the QA team get their branches into a <code>qa/</code> namespace in the first place?
+You accomplish that by using refspecs to push.</p>
+
+<p >If the QA team wants to push their <code>master</code> branch to <code>qa/master</code> on the remote server, they can run</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push origin master:refs/heads/qa/master</pre>
+</figure>
+
+<p >If they want Git to do that automatically each time they run <code>git push origin</code>, they can add a <code>push</code> value to their config file:</p>
+
+<figure class="listing" >
+  
+  <pre>[remote "origin"]
+	url = https://github.com/schacon/simplegit-progit
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	push = refs/heads/master:refs/heads/qa/master</pre>
+</figure>
+
+<p >Again, this will cause a <code>git push origin</code> to push the local <code>master</code> branch to the remote <code>qa/master</code> branch by default.</p>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >You cannot use the refspec to fetch from one repository and push to another one.
+For an example to do so, refer to <a class="xref" href="ch06-github.html#_fetch_and_push_on_different_repositories">Keep your GitHub public repository up-to-date</a>.</p>
+
+  </div>
+</div>
+
+</section>
+
+<section class="section" id="_deleting_references">
+  <h3>Deleting References</h3>
+  <p >You can also use the refspec to delete references from the remote server by running something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push origin :topic</pre>
+</figure>
+
+<p >Because the refspec is <code>&lt;src&gt;:&lt;dst&gt;</code>, by leaving off the <code>&lt;src&gt;</code> part, this basically says to make the <code>topic</code> branch on the remote nothing, which deletes it.</p>
+
+<p >Or you can use the newer syntax (available since Git v1.7.0):</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push origin --delete topic</pre>
+</figure>
+
+</section>
+
+</section>
+
+<section class="section" id="_transfer_protocols">
+  <h2>Transfer Protocols</h2>
+  <p >Git can transfer data between two repositories in two major ways: the <code>dumb'' protocol and the </code>smart'' protocol.
+This section will quickly cover how these two main protocols operate.</p>
+
+<section class="section" id="_the_dumb_protocol">
+  <h3>The Dumb Protocol</h3>
+  <p >If you&#8217;re setting up a repository to be served read-only over HTTP, the dumb protocol is likely what will be used.
+This protocol is called <code>`dumb'' because it requires no Git-specific code on the server side during the transport process; the fetch process is a series of HTTP `GET</code> requests, where the client can assume the layout of the Git repository on the server.</p>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >The dumb protocol is fairly rarely used these days.
+It&#8217;s difficult to secure or make private, so most Git hosts (both cloud-based and on-premises) will refuse to use it.
+It&#8217;s generally advised to use the smart protocol, which we describe a bit further on.</p>
+
+  </div>
+</div>
+
+<p >Let&#8217;s follow the <code>http-fetch</code> process for the simplegit library:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git clone http://server/simplegit-progit.git</pre>
+</figure>
+
+<p >The first thing this command does is pull down the <code>info/refs</code> file.
+This file is written by the <code>update-server-info</code> command, which is why you need to enable that as a <code>post-receive</code> hook in order for the HTTP transport to work properly:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET info/refs
+ca82a6dff817ec66f44342007202690a93763949     refs/heads/master</pre>
+</figure>
+
+<p >Now you have a list of the remote references and SHA-1s.
+Next, you look for what the HEAD reference is so you know what to check out when you&#8217;re finished:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET HEAD
+ref: refs/heads/master</pre>
+</figure>
+
+<p >You need to check out the <code>master</code> branch when you&#8217;ve completed the process.
+At this point, you&#8217;re ready to start the walking process.
+Because your starting point is the <code>ca82a6</code> commit object you saw in the <code>info/refs</code> file, you start by fetching that:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET objects/ca/82a6dff817ec66f44342007202690a93763949
+(179 bytes of binary data)</pre>
+</figure>
+
+<p >You get an object back – that object is in loose format on the server, and you fetched it over a static HTTP GET request.
+You can zlib-uncompress it, strip off the header, and look at the commit content:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cat-file -p ca82a6dff817ec66f44342007202690a93763949
+tree cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+parent 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+author Scott Chacon &lt;schacon@gmail.com&gt; 1205815931 -0700
+committer Scott Chacon &lt;schacon@gmail.com&gt; 1240030591 -0700
+
+changed the version number</pre>
+</figure>
+
+<p >Next, you have two more objects to retrieve – <code>cfda3b</code>, which is the tree of content that the commit we just retrieved points to; and <code>085bb3</code>, which is the parent commit:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET objects/08/5bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+(179 bytes of data)</pre>
+</figure>
+
+<p >That gives you your next commit object.
+Grab the tree object:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET objects/cf/da3bf379e4f8dba8717dee55aab78aef7f4daf
+(404 - Not Found)</pre>
+</figure>
+
+<p >Oops – it looks like that tree object isn&#8217;t in loose format on the server, so you get a 404 response back.
+There are a couple of reasons for this – the object could be in an alternate repository, or it could be in a packfile in this repository.
+Git checks for any listed alternates first:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET objects/info/http-alternates
+(empty file)</pre>
+</figure>
+
+<p >If this comes back with a list of alternate URLs, Git checks for loose files and packfiles there – this is a nice mechanism for projects that are forks of one another to share objects on disk.
+However, because no alternates are listed in this case, your object must be in a packfile.
+To see what packfiles are available on this server, you need to get the <code>objects/info/packs</code> file, which contains a listing of them (also generated by <code>update-server-info</code>):</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET objects/info/packs
+P pack-816a9b2334da9953e530f27bcac22082a9f5b835.pack</pre>
+</figure>
+
+<p >There is only one packfile on the server, so your object is obviously in there, but you&#8217;ll check the index file to make sure.
+This is also useful if you have multiple packfiles on the server, so you can see which packfile contains the object you need:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET objects/pack/pack-816a9b2334da9953e530f27bcac22082a9f5b835.idx
+(4k of binary data)</pre>
+</figure>
+
+<p >Now that you have the packfile index, you can see if your object is in it – because the index lists the SHA-1s of the objects contained in the packfile and the offsets to those objects.
+Your object is there, so go ahead and get the whole packfile:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET objects/pack/pack-816a9b2334da9953e530f27bcac22082a9f5b835.pack
+(13k of binary data)</pre>
+</figure>
+
+<p >You have your tree object, so you continue walking your commits.
+They&#8217;re all also within the packfile you just downloaded, so you don&#8217;t have to do any more requests to your server.
+Git checks out a working copy of the <code>master</code> branch that was pointed to by the HEAD reference you downloaded at the beginning.</p>
+
+</section>
+
+<section class="section" id="_the_smart_protocol">
+  <h3>The Smart Protocol</h3>
+  <p >The dumb protocol is simple but a bit inefficient, and it can&#8217;t handle writing of data from the client to the server.
+The smart protocol is a more common method of transferring data, but it requires a process on the remote end that is intelligent about Git – it can read local data, figure out what the client has and needs, and generate a custom packfile for it.
+There are two sets of processes for transferring data: a pair for uploading data and a pair for downloading data.</p>
+
+<section class="section" id="_uploading_data">
+  <h4>Uploading Data</h4>
+  <p ><a class="indexterm" id="_indexterm_222">&#8203;</a><a class="indexterm" id="_indexterm_223">&#8203;</a>
+To upload data to a remote process, Git uses the <code>send-pack</code> and <code>receive-pack</code> processes.
+The <code>send-pack</code> process runs on the client and connects to a <code>receive-pack</code> process on the remote side.</p>
+
+<section class="section" id="_ssh">
+  <h5>SSH</h5>
+  <p >For example, say you run <code>git push origin master</code> in your project, and <code>origin</code> is defined as a URL that uses the SSH protocol.
+Git fires up the <code>send-pack</code> process, which initiates a connection over SSH to your server.
+It tries to run a command on the remote server via an SSH call that looks something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ ssh -x git@server "git-receive-pack 'simplegit-progit.git'"
+00a5ca82a6dff817ec66f4437202690a93763949 refs/heads/master□report-status \
+	delete-refs side-band-64k quiet ofs-delta \
+	agent=git/2:2.1.1+github-607-gfba4028 delete-refs
+0000</pre>
+</figure>
+
+<p >The <code>git-receive-pack</code> command immediately responds with one line for each reference it currently has – in this case, just the <code>master</code> branch and its SHA-1.
+The first line also has a list of the server&#8217;s capabilities (here, <code>report-status</code>, <code>delete-refs</code>, and some others, including the client identifier).</p>
+
+<p >Each line starts with a 4-character hex value specifying how long the rest of the line is.
+Your first line starts with 00a5, which is hexadecimal for 165, meaning that 165 bytes remain on that line.
+The next line is 0000, meaning the server is done with its references listing.</p>
+
+<p >Now that it knows the server&#8217;s state, your <code>send-pack</code> process determines what commits it has that the server doesn&#8217;t.
+For each reference that this push will update, the <code>send-pack</code> process tells the <code>receive-pack</code> process that information.
+For instance, if you&#8217;re updating the <code>master</code> branch and adding an <code>experiment</code> branch, the <code>send-pack</code> response may look something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>0076ca82a6dff817ec66f44342007202690a93763949 15027957951b64cf874c3557a0f3547bd83b3ff6 \
+	refs/heads/master report-status
+006c0000000000000000000000000000000000000000 cdfdb42577e2506715f8cfeacdbabc092bf63e8d \
+	refs/heads/experiment
+0000</pre>
+</figure>
+
+<p >Git sends a line for each reference you&#8217;re updating with the line&#8217;s length, the old SHA-1, the new SHA-1, and the reference that is being updated.
+The first line also has the client&#8217;s capabilities.
+The SHA-1 value of all '0&#8217;s means that nothing was there before – because you&#8217;re adding the experiment reference.
+If you were deleting a reference, you would see the opposite: all '0&#8217;s on the right side.</p>
+
+<p >Next, the client sends a packfile of all the objects the server doesn&#8217;t have yet.
+Finally, the server responds with a success (or failure) indication:</p>
+
+<figure class="listing" >
+  
+  <pre>000eunpack ok</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_https">
+  <h5>HTTP(S)</h5>
+  <p >This process is mostly the same over HTTP, though the handshaking is a bit different.
+The connection is initiated with this request:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET http://server/simplegit-progit.git/info/refs?service=git-receive-pack
+001f# service=git-receive-pack
+00ab6c5f0e45abd7832bf23074a333f739977c9e8188 refs/heads/master□report-status \
+	delete-refs side-band-64k quiet ofs-delta \
+	agent=git/2:2.1.1~vmg-bitmaps-bugaloo-608-g116744e
+0000</pre>
+</figure>
+
+<p >That&#8217;s the end of the first client-server exchange.
+The client then makes another request, this time a <code>POST</code>, with the data that <code>send-pack</code> provides.</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; POST http://server/simplegit-progit.git/git-receive-pack</pre>
+</figure>
+
+<p >The <code>POST</code> request includes the <code>send-pack</code> output and the packfile as its payload.
+The server then indicates success or failure with its HTTP response.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_downloading_data">
+  <h4>Downloading Data</h4>
+  <p ><a class="indexterm" id="_indexterm_224">&#8203;</a><a class="indexterm" id="_indexterm_225">&#8203;</a>
+When you download data, the <code>fetch-pack</code> and <code>upload-pack</code> processes are involved.
+The client initiates a <code>fetch-pack</code> process that connects to an <code>upload-pack</code> process on the remote side to negotiate what data will be transferred down.</p>
+
+<section class="section" id="_ssh_2">
+  <h5>SSH</h5>
+  <p >If you&#8217;re doing the fetch over SSH, <code>fetch-pack</code> runs something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ ssh -x git@server "git-upload-pack 'simplegit-progit.git'"</pre>
+</figure>
+
+<p >After <code>fetch-pack</code> connects, <code>upload-pack</code> sends back something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>00dfca82a6dff817ec66f44342007202690a93763949 HEAD□multi_ack thin-pack \
+	side-band side-band-64k ofs-delta shallow no-progress include-tag \
+	multi_ack_detailed symref=HEAD:refs/heads/master \
+	agent=git/2:2.1.1+github-607-gfba4028
+003fe2409a098dc3e53539a9028a94b6224db9d6a6b6 refs/heads/master
+0000</pre>
+</figure>
+
+<p >This is very similar to what <code>receive-pack</code> responds with, but the capabilities are different.
+In addition, it sends back what HEAD points to (<code>symref=HEAD:refs/heads/master</code>) so the client knows what to check out if this is a clone.</p>
+
+<p >At this point, the <code>fetch-pack</code> process looks at what objects it has and responds with the objects that it needs by sending <code>want'' and then the SHA-1 it wants.
+It sends all the objects it already has with </code>have'' and then the SHA-1.
+At the end of this list, it writes <code>`done'' to initiate the `upload-pack</code> process to begin sending the packfile of the data it needs:</p>
+
+<figure class="listing" >
+  
+  <pre>003cwant ca82a6dff817ec66f44342007202690a93763949 ofs-delta
+0032have 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+0009done
+0000</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_https_2">
+  <h5>HTTP(S)</h5>
+  <p >The handshake for a fetch operation takes two HTTP requests.
+The first is a <code>GET</code> to the same endpoint used in the dumb protocol:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; GET $GIT_URL/info/refs?service=git-upload-pack
+001e# service=git-upload-pack
+00e7ca82a6dff817ec66f44342007202690a93763949 HEAD□multi_ack thin-pack \
+	side-band side-band-64k ofs-delta shallow no-progress include-tag \
+	multi_ack_detailed no-done symref=HEAD:refs/heads/master \
+	agent=git/2:2.1.1+github-607-gfba4028
+003fca82a6dff817ec66f44342007202690a93763949 refs/heads/master
+0000</pre>
+</figure>
+
+<p >This is very similar to invoking <code>git-upload-pack</code> over an SSH connection, but the second exchange is performed as a separate request:</p>
+
+<figure class="listing" >
+  
+  <pre>=&gt; POST $GIT_URL/git-upload-pack HTTP/1.0
+0032want 0a53e9ddeaddad63ad106860237bbf53411d11a7
+0032have 441b40d833fdfa93eb2908e52742248faf0ee993
+0000</pre>
+</figure>
+
+<p >Again, this is the same format as above.
+The response to this request indicates success or failure, and includes the packfile.</p>
+
+</section>
+
+</section>
+
+</section>
+
+<section class="section" id="_protocols_summary">
+  <h3>Protocols Summary</h3>
+  <p >This section contains a very basic overview of the transfer protocols.
+The protocol includes many other features, such as <code>multi_ack</code> or <code>side-band</code> capabilities, but covering them is outside the scope of this book.
+We&#8217;ve tried to give you a sense of the general back-and-forth between client and server; if you need more knowledge than this, you&#8217;ll probably want to take a look at the Git source code.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_maintenance_and_data_recovery">
+  <h2>Maintenance and Data Recovery</h2>
+  <p >Occasionally, you may have to do some cleanup – make a repository more compact, clean up an imported repository, or recover lost work.
+This section will cover some of these scenarios.</p>
+
+<section class="section" id="_git_gc">
+  <h3>Maintenance</h3>
+  <p >Occasionally, Git automatically runs a command called <code>auto gc''.
+Most of the time, this command does nothing.
+However, if there are too many loose objects (objects not in a packfile) or too many packfiles, Git launches a full-fledged <code>git gc</code> command.
+The </code>gc'' stands for garbage collect, and the command does a number of things: it gathers up all the loose objects and places them in packfiles, it consolidates packfiles into one big packfile, and it removes objects that aren&#8217;t reachable from any commit and are a few months old.</p>
+
+<p >You can run auto gc manually as follows:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git gc --auto</pre>
+</figure>
+
+<p >Again, this generally does nothing.
+You must have around 7,000 loose objects or more than 50 packfiles for Git to fire up a real gc command.
+You can modify these limits with the <code>gc.auto</code> and <code>gc.autopacklimit</code> config settings, respectively.</p>
+
+<p >The other thing <code>gc</code> will do is pack up your references into a single file.
+Suppose your repository contains the following branches and tags:</p>
+
+<figure class="listing" >
+  
+  <pre>$ find .git/refs -type f
+.git/refs/heads/experiment
+.git/refs/heads/master
+.git/refs/tags/v1.0
+.git/refs/tags/v1.1</pre>
+</figure>
+
+<p >If you run <code>git gc</code>, you&#8217;ll no longer have these files in the <code>refs</code> directory.
+Git will move them for the sake of efficiency into a file named <code>.git/packed-refs</code> that looks like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ cat .git/packed-refs
+# pack-refs with: peeled fully-peeled
+cac0cab538b970a37ea1e769cbbde608743bc96d refs/heads/experiment
+ab1afef80fac8e34258ff41fc1b867c702daa24b refs/heads/master
+cac0cab538b970a37ea1e769cbbde608743bc96d refs/tags/v1.0
+9585191f37f7b0fb9444f35a9bf50de191beadc2 refs/tags/v1.1
+^1a410efbd13591db07496601ebc7a059dd55cfe9</pre>
+</figure>
+
+<p >If you update a reference, Git doesn&#8217;t edit this file but instead writes a new file to <code>refs/heads</code>.
+To get the appropriate SHA-1 for a given reference, Git checks for that reference in the <code>refs</code> directory and then checks the <code>packed-refs</code> file as a fallback.
+However, if you can&#8217;t find a reference in the <code>refs</code> directory, it&#8217;s probably in your <code>packed-refs</code> file.</p>
+
+<p >Notice the last line of the file, which begins with a <code>^</code>.
+This means the tag directly above is an annotated tag and that line is the commit that the annotated tag points to.</p>
+
+</section>
+
+<section class="section" id="_data_recovery">
+  <h3>Data Recovery</h3>
+  <p >At some point in your Git journey, you may accidentally lose a commit.
+Generally, this happens because you force-delete a branch that had work on it, and it turns out you wanted the branch after all; or you hard-reset a branch, thus abandoning commits that you wanted something from.
+Assuming this happens, how can you get your commits back?</p>
+
+<p >Here&#8217;s an example that hard-resets the <code>master</code> branch in your test repository to an older commit and then recovers the lost commits.
+First, let&#8217;s review where your repository is at this point:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log --pretty=oneline
+ab1afef80fac8e34258ff41fc1b867c702daa24b modified repo a bit
+484a59275031909e19aadb7c92262719cfcdf19a added repo.rb
+1a410efbd13591db07496601ebc7a059dd55cfe9 third commit
+cac0cab538b970a37ea1e769cbbde608743bc96d second commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d first commit</pre>
+</figure>
+
+<p >Now, move the <code>master</code> branch back to the middle commit:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git reset --hard 1a410efbd13591db07496601ebc7a059dd55cfe9
+HEAD is now at 1a410ef third commit
+$ git log --pretty=oneline
+1a410efbd13591db07496601ebc7a059dd55cfe9 third commit
+cac0cab538b970a37ea1e769cbbde608743bc96d second commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d first commit</pre>
+</figure>
+
+<p >You&#8217;ve effectively lost the top two commits – you have no branch from which those commits are reachable.
+You need to find the latest commit SHA-1 and then add a branch that points to it.
+The trick is finding that latest commit SHA-1 – it&#8217;s not like you&#8217;ve memorized it, right?</p>
+
+<p >Often, the quickest way is to use a tool called <code>git reflog</code>.
+As you&#8217;re working, Git silently records what your HEAD is every time you change it.
+Each time you commit or change branches, the reflog is updated.
+The reflog is also updated by the <code>git update-ref</code> command, which is another reason to use it instead of just writing the SHA-1 value to your ref files, as we covered in <a class="xref" href="ch10-git-internals.html#_git_refs">Git References</a>.
+You can see where you&#8217;ve been at any time by running <code>git reflog</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git reflog
+1a410ef HEAD@{0}: reset: moving to 1a410ef
+ab1afef HEAD@{1}: commit: modified repo.rb a bit
+484a592 HEAD@{2}: commit: added repo.rb</pre>
+</figure>
+
+<p >Here we can see the two commits that we have had checked out, however there is not much information here.
+To see the same information in a much more useful way, we can run <code>git log -g</code>, which will give you a normal log output for your reflog.</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log -g
+commit 1a410efbd13591db07496601ebc7a059dd55cfe9
+Reflog: HEAD@{0} (Scott Chacon &lt;schacon@gmail.com&gt;)
+Reflog message: updating HEAD
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:22:37 2009 -0700
+
+		third commit
+
+commit ab1afef80fac8e34258ff41fc1b867c702daa24b
+Reflog: HEAD@{1} (Scott Chacon &lt;schacon@gmail.com&gt;)
+Reflog message: updating HEAD
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:15:24 2009 -0700
+
+       modified repo.rb a bit</pre>
+</figure>
+
+<p >It looks like the bottom commit is the one you lost, so you can recover it by creating a new branch at that commit.
+For example, you can start a branch named <code>recover-branch</code> at that commit (ab1afef):</p>
+
+<figure class="listing" >
+  
+  <pre>$ git branch recover-branch ab1afef
+$ git log --pretty=oneline recover-branch
+ab1afef80fac8e34258ff41fc1b867c702daa24b modified repo a bit
+484a59275031909e19aadb7c92262719cfcdf19a added repo.rb
+1a410efbd13591db07496601ebc7a059dd55cfe9 third commit
+cac0cab538b970a37ea1e769cbbde608743bc96d second commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d first commit</pre>
+</figure>
+
+<p >Cool – now you have a branch named <code>recover-branch</code> that is where your <code>master</code> branch used to be, making the first two commits reachable again.
+Next, suppose your loss was for some reason not in the reflog – you can simulate that by removing <code>recover-branch</code> and deleting the reflog.
+Now the first two commits aren&#8217;t reachable by anything:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git branch -D recover-branch
+$ rm -Rf .git/logs/</pre>
+</figure>
+
+<p >Because the reflog data is kept in the <code>.git/logs/</code> directory, you effectively have no reflog.
+How can you recover that commit at this point?
+One way is to use the <code>git fsck</code> utility, which checks your database for integrity.
+If you run it with the <code>--full</code> option, it shows you all objects that aren&#8217;t pointed to by another object:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git fsck --full
+Checking object directories: 100% (256/256), done.
+Checking objects: 100% (18/18), done.
+dangling blob d670460b4b4aece5915caf5c68d12f560a9fe3e4
+dangling commit ab1afef80fac8e34258ff41fc1b867c702daa24b
+dangling tree aea790b9a58f6cf6f2804eeac9f0abbe9631e4c9
+dangling blob 7108f7ecb345ee9d0084193f147cdad4d2998293</pre>
+</figure>
+
+<p >In this case, you can see your missing commit after the string ``dangling commit''.
+You can recover it the same way, by adding a branch that points to that SHA-1.</p>
+
+</section>
+
+<section class="section" id="_removing_objects">
+  <h3>Removing Objects</h3>
+  <p >There are a lot of great things about Git, but one feature that can cause issues is the fact that a <code>git clone</code> downloads the entire history of the project, including every version of every file.
+This is fine if the whole thing is source code, because Git is highly optimized to compress that data efficiently.
+However, if someone at any point in the history of your project added a single huge file, every clone for all time will be forced to download that large file, even if it was removed from the project in the very next commit.
+Because it&#8217;s reachable from the history, it will always be there.</p>
+
+<p >This can be a huge problem when you&#8217;re converting Subversion or Perforce repositories into Git.
+Because you don&#8217;t download the whole history in those systems, this type of addition carries few consequences.
+If you did an import from another system or otherwise find that your repository is much larger than it should be, here is how you can find and remove large objects.</p>
+
+<p ><strong>Be warned: this technique is destructive to your commit history.</strong>
+It rewrites every commit object since the earliest tree you have to modify to remove a large file reference.
+If you do this immediately after an import, before anyone has started to base work on the commit, you&#8217;re fine – otherwise, you have to notify all contributors that they must rebase their work onto your new commits.</p>
+
+<p >To demonstrate, you&#8217;ll add a large file into your test repository, remove it in the next commit, find it, and remove it permanently from the repository.
+First, add a large object to your history:</p>
+
+<figure class="listing" >
+  
+  <pre>$ curl https://www.kernel.org/pub/software/scm/git/git-2.1.0.tar.gz &gt; git.tgz
+$ git add git.tgz
+$ git commit -m 'add git tarball'
+[master 7b30847] add git tarball
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git.tgz</pre>
+</figure>
+
+<p >Oops – you didn&#8217;t want to add a huge tarball to your project.
+Better get rid of it:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git rm git.tgz
+rm 'git.tgz'
+$ git commit -m 'oops - removed large tarball'
+[master dadf725] oops - removed large tarball
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 git.tgz</pre>
+</figure>
+
+<p >Now, <code>gc</code> your database and see how much space you&#8217;re using:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git gc
+Counting objects: 17, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (17/17), done.
+Total 17 (delta 1), reused 10 (delta 0)</pre>
+</figure>
+
+<p >You can run the <code>count-objects</code> command to quickly see how much space you&#8217;re using:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git count-objects -v
+count: 7
+size: 32
+in-pack: 17
+packs: 1
+size-pack: 4868
+prune-packable: 0
+garbage: 0
+size-garbage: 0</pre>
+</figure>
+
+<p >The <code>size-pack</code> entry is the size of your packfiles in kilobytes, so you&#8217;re using almost 5MB.
+Before the last commit, you were using closer to 2K – clearly, removing the file from the previous commit didn&#8217;t remove it from your history.
+Every time anyone clones this repository, they will have to clone all 5MB just to get this tiny project, because you accidentally added a big file.
+Let&#8217;s get rid of it.</p>
+
+<p >First you have to find it.
+In this case, you already know what file it is.
+But suppose you didn&#8217;t; how would you identify what file or files were taking up so much space?
+If you run <code>git gc</code>, all the objects are in a packfile; you can identify the big objects by running another plumbing command called <code>git verify-pack</code> and sorting on the third field in the output, which is file size.
+You can also pipe it through the <code>tail</code> command because you&#8217;re only interested in the last few largest files:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git verify-pack -v .git/objects/pack/pack-29…69.idx \
+  | sort -k 3 -n \
+  | tail -3
+dadf7258d699da2c8d89b09ef6670edb7d5f91b4 commit 229 159 12
+033b4468fa6b2a9547a70d88d1bbe8bf3f9ed0d5 blob   22044 5792 4977696
+82c99a3e86bb1267b236a4b6eff7868d97489af1 blob   4975916 4976258 1438</pre>
+</figure>
+
+<p >The big object is at the bottom: 5MB.
+To find out what file it is, you&#8217;ll use the <code>rev-list</code> command, which you used briefly in <a class="xref" href="ch08-customizing-git.html#_enforcing_commit_message_format">Enforcing a Specific Commit-Message Format</a>.
+If you pass <code>--objects</code> to <code>rev-list</code>, it lists all the commit SHA-1s and also the blob SHA-1s with the file paths associated with them.
+You can use this to find your blob&#8217;s name:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git rev-list --objects --all | grep 82c99a3
+82c99a3e86bb1267b236a4b6eff7868d97489af1 git.tgz</pre>
+</figure>
+
+<p >Now, you need to remove this file from all trees in your past.
+You can easily see what commits modified this file:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log --oneline --branches -- git.tgz
+dadf725 oops - removed large tarball
+7b30847 add git tarball</pre>
+</figure>
+
+<p >You must rewrite all the commits downstream from <code>7b30847</code> to fully remove this file from your Git history.
+To do so, you use <code>filter-branch</code>, which you used in <a class="xref" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git filter-branch --index-filter \
+  'git rm --ignore-unmatch --cached git.tgz' -- 7b30847^..
+Rewrite 7b30847d080183a1ab7d18fb202473b3096e9f34 (1/2)rm 'git.tgz'
+Rewrite dadf7258d699da2c8d89b09ef6670edb7d5f91b4 (2/2)
+Ref 'refs/heads/master' was rewritten</pre>
+</figure>
+
+<p >The <code>--index-filter</code> option is similar to the <code>--tree-filter</code> option used in <a class="xref" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a>, except that instead of passing a command that modifies files checked out on disk, you&#8217;re modifying your staging area or index each time.</p>
+
+<p >Rather than remove a specific file with something like <code>rm file</code>, you have to remove it with <code>git rm --cached</code> – you must remove it from the index, not from disk.
+The reason to do it this way is speed – because Git doesn&#8217;t have to check out each revision to disk before running your filter, the process can be much, much faster.
+You can accomplish the same task with <code>--tree-filter</code> if you want.
+The <code>--ignore-unmatch</code> option to <code>git rm</code> tells it not to error out if the pattern you&#8217;re trying to remove isn&#8217;t there.
+Finally, you ask <code>filter-branch</code> to rewrite your history only from the <code>7b30847</code> commit up, because you know that is where this problem started.
+Otherwise, it will start from the beginning and will unnecessarily take longer.</p>
+
+<p >Your history no longer contains a reference to that file.
+However, your reflog and a new set of refs that Git added when you did the <code>filter-branch</code> under <code>.git/refs/original</code> still do, so you have to remove them and then repack the database.
+You need to get rid of anything that has a pointer to those old commits before you repack:</p>
+
+<figure class="listing" >
+  
+  <pre>$ rm -Rf .git/refs/original
+$ rm -Rf .git/logs/
+$ git gc
+Counting objects: 15, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (15/15), done.
+Total 15 (delta 1), reused 12 (delta 0)</pre>
+</figure>
+
+<p >Let&#8217;s see how much space you saved.</p>
+
+<figure class="listing" >
+  
+  <pre>$ git count-objects -v
+count: 11
+size: 4904
+in-pack: 15
+packs: 1
+size-pack: 8
+prune-packable: 0
+garbage: 0
+size-garbage: 0</pre>
+</figure>
+
+<p >The packed repository size is down to 8K, which is much better than 5MB.
+You can see from the size value that the big object is still in your loose objects, so it&#8217;s not gone; but it won&#8217;t be transferred on a push or subsequent clone, which is what is important.
+If you really wanted to, you could remove the object completely by running <code>git prune</code> with the <code>--expire</code> option:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git prune --expire now
+$ git count-objects -v
+count: 0
+size: 0
+in-pack: 15
+packs: 1
+size-pack: 8
+prune-packable: 0
+garbage: 0
+size-garbage: 0</pre>
+</figure>
+
+</section>
+
+</section>
+
+<section class="section" id="_environment_variables">
+  <h2>Environment Variables</h2>
+  <p >Git always runs inside a <code>bash</code> shell, and uses a number of shell environment variables to determine how it behaves.
+Occasionally, it comes in handy to know what these are, and how they can be used to make Git behave the way you want it to.
+This isn&#8217;t an exhaustive list of all the environment variables Git pays attention to, but we&#8217;ll cover the most useful.</p>
+
+<section class="section" id="_global_behavior">
+  <h3>Global Behavior</h3>
+  <p >Some of Git&#8217;s general behavior as a computer program depends on environment variables.</p>
+
+<p ><strong><code>GIT_EXEC_PATH</code></strong> determines where Git looks for its sub-programs (like <code>git-commit</code>, <code>git-diff</code>, and others).
+  You can check the current setting by running <code>git --exec-path</code>.</p>
+
+<p ><strong><code>HOME</code></strong> isn&#8217;t usually considered customizable (too many other things depend on it), but it&#8217;s where Git looks for the global configuration file.
+  If you want a truly portable Git installation, complete with global configuration, you can override <code>HOME</code> in the portable Git&#8217;s shell profile.</p>
+
+<p ><strong><code>PREFIX</code></strong> is similar, but for the system-wide configuration.
+  Git looks for this file at <code>$PREFIX/etc/gitconfig</code>.</p>
+
+<p ><strong><code>GIT_CONFIG_NOSYSTEM</code></strong>, if set, disables the use of the system-wide configuration file.
+  This is useful if your system config is interfering with your commands, but you don&#8217;t have access to change or remove it.</p>
+
+<p ><strong><code>GIT_PAGER</code></strong> controls the program used to display multi-page output on the command line.
+If this is unset, <code>PAGER</code> will be used as a fallback.</p>
+
+<p ><strong><code>GIT_EDITOR</code></strong> is the editor Git will launch when the user needs to edit some text (a commit message, for example).
+If unset, <code>EDITOR</code> will be used.</p>
+
+</section>
+
+<section class="section" id="_repository_locations">
+  <h3>Repository Locations</h3>
+  <p >Git uses several environment variables to determine how it interfaces with the current repository.</p>
+
+<p ><strong><code>GIT_DIR</code></strong> is the location of the <code>.git</code> folder.
+If this isn&#8217;t specified, Git walks up the directory tree until it gets to <code>~</code> or <code>/</code>, looking for a <code>.git</code> directory at every step.</p>
+
+<p ><strong><code>GIT_CEILING_DIRECTORIES</code></strong> controls the behavior of searching for a <code>.git</code> directory.
+If you access directories that are slow to load (such as those on a tape drive, or across a slow network connection), you may want to have Git stop trying earlier than it might otherwise, especially if Git is invoked when building your shell prompt.</p>
+
+<p ><strong><code>GIT_WORK_TREE</code></strong> is the location of the root of the working directory for a non-bare repository.
+If <code>--git-dir</code> or <code>GIT_DIR</code> is specified but none of <code>--work-tree</code>, <code>GIT_WORK_TREE</code> or <code>core.worktree</code> is specified, the current working directory is regarded as the top level of your working tree.</p>
+
+<p ><strong><code>GIT_INDEX_FILE</code></strong> is the path to the index file (non-bare repositories only).</p>
+
+<p ><strong><code>GIT_OBJECT_DIRECTORY</code></strong> can be used to specify the location of the directory that usually resides at <code>.git/objects</code>.</p>
+
+<p ><strong><code>GIT_ALTERNATE_OBJECT_DIRECTORIES</code></strong> is a colon-separated list (formatted like <code>/dir/one:/dir/two:…</code>) which tells Git where to check for objects if they aren&#8217;t in <code>GIT_OBJECT_DIRECTORY</code>.
+If you happen to have a lot of projects with large files that have the exact same contents, this can be used to avoid storing too many copies of them.</p>
+
+</section>
+
+<section class="section" id="_pathspecs">
+  <h3>Pathspecs</h3>
+  <p >A <code>`pathspec'' refers to how you specify paths to things in Git, including the use of wildcards.
+These are used in the `.gitignore</code> file, but also on the command-line (<code>git add *.c</code>).</p>
+
+<p ><strong><code>GIT_GLOB_PATHSPECS</code></strong> and <strong><code>GIT_NOGLOB_PATHSPECS</code></strong> control the default behavior of wildcards in pathspecs.
+If <code>GIT_GLOB_PATHSPECS</code> is set to 1, wildcard characters act as wildcards (which is the default); if <code>GIT_NOGLOB_PATHSPECS</code> is set to 1, wildcard characters only match themselves, meaning something like <code><strong>.c</code> would only match a file <em>named</em> <code>`</strong>.c'', rather than any file whose name ends with `.c</code>.
+You can override this in individual cases by starting the pathspec with <code>:(glob)</code> or <code>:(literal)</code>, as in <code>:(glob)*.c</code>.</p>
+
+<p ><strong><code>GIT_LITERAL_PATHSPECS</code></strong> disables both of the above behaviors; no wildcard characters will work, and the override prefixes are disabled as well.</p>
+
+<p ><strong><code>GIT_ICASE_PATHSPECS</code></strong> sets all pathspecs to work in a case-insensitive manner.</p>
+
+</section>
+
+<section class="section" id="_committing">
+  <h3>Committing</h3>
+  <p >The final creation of a Git commit object is usually done by <code>git-commit-tree</code>, which uses these environment variables as its primary source of information, falling back to configuration values only if these aren&#8217;t present.</p>
+
+<p ><strong><code>GIT_AUTHOR_NAME</code></strong> is the human-readable name in the ``author'' field.</p>
+
+<p ><strong><code>GIT_AUTHOR_EMAIL</code></strong> is the email for the ``author'' field.</p>
+
+<p ><strong><code>GIT_AUTHOR_DATE</code></strong> is the timestamp used for the ``author'' field.</p>
+
+<p ><strong><code>GIT_COMMITTER_NAME</code></strong> sets the human name for the ``committer'' field.</p>
+
+<p ><strong><code>GIT_COMMITTER_EMAIL</code></strong> is the email address for the ``committer'' field.</p>
+
+<p ><strong><code>GIT_COMMITTER_DATE</code></strong> is used for the timestamp in the ``committer'' field.</p>
+
+<p ><strong><code>EMAIL</code></strong> is the fallback email address in case the <code>user.email</code> configuration value isn&#8217;t set.
+If <em>this</em> isn&#8217;t set, Git falls back to the system user and host names.</p>
+
+</section>
+
+<section class="section" id="_networking">
+  <h3>Networking</h3>
+  <p >Git uses the <code>curl</code> library to do network operations over HTTP, so <strong><code>GIT_CURL_VERBOSE</code></strong> tells Git to emit all the messages generated by that library.
+This is similar to doing <code>curl -v</code> on the command line.</p>
+
+<p ><strong><code>GIT_SSL_NO_VERIFY</code></strong> tells Git not to verify SSL certificates.
+This can sometimes be necessary if you&#8217;re using a self-signed certificate to serve Git repositories over HTTPS, or you&#8217;re in the middle of setting up a Git server but haven&#8217;t installed a full certificate yet.</p>
+
+<p >If the data rate of an HTTP operation is lower than <strong><code>GIT_HTTP_LOW_SPEED_LIMIT</code></strong> bytes per second for longer than <strong><code>GIT_HTTP_LOW_SPEED_TIME</code></strong> seconds, Git will abort that operation.
+These values override the <code>http.lowSpeedLimit</code> and <code>http.lowSpeedTime</code> configuration values.</p>
+
+<p ><strong><code>GIT_HTTP_USER_AGENT</code></strong> sets the user-agent string used by Git when communicating over HTTP.
+The default is a value like <code>git/2.0.0</code>.</p>
+
+</section>
+
+<section class="section" id="_diffing_and_merging">
+  <h3>Diffing and Merging</h3>
+  <p ><strong><code>GIT_DIFF_OPTS</code></strong> is a bit of a misnomer.
+The only valid values are <code>-u&lt;n&gt;</code> or <code>--unified=&lt;n&gt;</code>, which controls the number of context lines shown in a <code>git diff</code> command.</p>
+
+<p ><strong><code>GIT_EXTERNAL_DIFF</code></strong> is used as an override for the <code>diff.external</code> configuration value.
+If it&#8217;s set, Git will invoke this program when <code>git diff</code> is invoked.</p>
+
+<p ><strong><code>GIT_DIFF_PATH_COUNTER</code></strong> and <strong><code>GIT_DIFF_PATH_TOTAL</code></strong> are useful from inside the program specified by <code>GIT_EXTERNAL_DIFF</code> or <code>diff.external</code>.
+The former represents which file in a series is being diffed (starting with 1), and the latter is the total number of files in the batch.</p>
+
+<p ><strong><code>GIT_MERGE_VERBOSITY</code></strong> controls the output for the recursive merge strategy.
+The allowed values are as follows:</p>
+
+<ul class="ulist" >
+  
+    <li>
+      <p>0 outputs nothing, except possibly a single error message.</p>
+      
+    </li>
+  
+    <li>
+      <p>1 shows only conflicts.</p>
+      
+    </li>
+  
+    <li>
+      <p>2 also shows file changes.</p>
+      
+    </li>
+  
+    <li>
+      <p>3 shows when files are skipped because they haven&#8217;t changed.</p>
+      
+    </li>
+  
+    <li>
+      <p>4 shows all paths as they are processed.</p>
+      
+    </li>
+  
+    <li>
+      <p>5 and above show detailed debugging information.</p>
+      
+    </li>
+  
+</ul>
+
+<p >The default value is 2.</p>
+
+</section>
+
+<section class="section" id="_debugging">
+  <h3>Debugging</h3>
+  <p >Want to <em>really</em> know what Git is up to?
+Git has a fairly complete set of traces embedded, and all you need to do is turn them on.
+The possible values of these variables are as follows:</p>
+
+<ul class="ulist" >
+  
+    <li>
+      <p><code>true'', </code>1'', or ``2'' – the trace category is written to stderr.</p>
+      
+    </li>
+  
+    <li>
+      <p>An absolute path starting with <code>/</code> – the trace output will be written to that file.</p>
+      
+    </li>
+  
+</ul>
+
+<p ><strong><code>GIT_TRACE</code></strong> controls general traces, which don&#8217;t fit into any specific category.
+This includes the expansion of aliases, and delegation to other sub-programs.</p>
+
+<figure class="listing" >
+  
+  <pre>$ GIT_TRACE=true git lga
+20:12:49.877982 git.c:554               trace: exec: 'git-lga'
+20:12:49.878369 run-command.c:341       trace: run_command: 'git-lga'
+20:12:49.879529 git.c:282               trace: alias expansion: lga =&gt; 'log' '--graph' '--pretty=oneline' '--abbrev-commit' '--decorate' '--all'
+20:12:49.879885 git.c:349               trace: built-in: git 'log' '--graph' '--pretty=oneline' '--abbrev-commit' '--decorate' '--all'
+20:12:49.899217 run-command.c:341       trace: run_command: 'less'
+20:12:49.899675 run-command.c:192       trace: exec: 'less'</pre>
+</figure>
+
+<p ><strong><code>GIT_TRACE_PACK_ACCESS</code></strong> controls tracing of packfile access.
+The first field is the packfile being accessed, the second is the offset within that file:</p>
+
+<figure class="listing" >
+  
+  <pre>$ GIT_TRACE_PACK_ACCESS=true git status
+20:10:12.081397 sha1_file.c:2088        .git/objects/pack/pack-c3fa...291e.pack 12
+20:10:12.081886 sha1_file.c:2088        .git/objects/pack/pack-c3fa...291e.pack 34662
+20:10:12.082115 sha1_file.c:2088        .git/objects/pack/pack-c3fa...291e.pack 35175
+# […]
+20:10:12.087398 sha1_file.c:2088        .git/objects/pack/pack-e80e...e3d2.pack 56914983
+20:10:12.087419 sha1_file.c:2088        .git/objects/pack/pack-e80e...e3d2.pack 14303666
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean</pre>
+</figure>
+
+<p ><strong><code>GIT_TRACE_PACKET</code></strong> enables packet-level tracing for network operations.</p>
+
+<figure class="listing" >
+  
+  <pre>$ GIT_TRACE_PACKET=true git ls-remote origin
+20:15:14.867043 pkt-line.c:46           packet:          git&lt; # service=git-upload-pack
+20:15:14.867071 pkt-line.c:46           packet:          git&lt; 0000
+20:15:14.867079 pkt-line.c:46           packet:          git&lt; 97b8860c071898d9e162678ea1035a8ced2f8b1f HEAD\0multi_ack thin-pack side-band side-band-64k ofs-delta shallow no-progress include-tag multi_ack_detailed no-done symref=HEAD:refs/heads/master agent=git/2.0.4
+20:15:14.867088 pkt-line.c:46           packet:          git&lt; 0f20ae29889d61f2e93ae00fd34f1cdb53285702 refs/heads/ab/add-interactive-show-diff-func-name
+20:15:14.867094 pkt-line.c:46           packet:          git&lt; 36dc827bc9d17f80ed4f326de21247a5d1341fbc refs/heads/ah/doc-gitk-config
+# […]</pre>
+</figure>
+
+<p ><strong><code>GIT_TRACE_PERFORMANCE</code></strong> controls logging of performance data.
+The output shows how long each particular <code>git</code> invocation takes.</p>
+
+<figure class="listing" >
+  
+  <pre>$ GIT_TRACE_PERFORMANCE=true git gc
+20:18:19.499676 trace.c:414             performance: 0.374835000 s: git command: 'git' 'pack-refs' '--all' '--prune'
+20:18:19.845585 trace.c:414             performance: 0.343020000 s: git command: 'git' 'reflog' 'expire' '--all'
+Counting objects: 170994, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (43413/43413), done.
+Writing objects: 100% (170994/170994), done.
+Total 170994 (delta 126176), reused 170524 (delta 125706)
+20:18:23.567927 trace.c:414             performance: 3.715349000 s: git command: 'git' 'pack-objects' '--keep-true-parents' '--honor-pack-keep' '--non-empty' '--all' '--reflog' '--unpack-unreachable=2.weeks.ago' '--local' '--delta-base-offset' '.git/objects/pack/.tmp-49190-pack'
+20:18:23.584728 trace.c:414             performance: 0.000910000 s: git command: 'git' 'prune-packed'
+20:18:23.605218 trace.c:414             performance: 0.017972000 s: git command: 'git' 'update-server-info'
+20:18:23.606342 trace.c:414             performance: 3.756312000 s: git command: 'git' 'repack' '-d' '-l' '-A' '--unpack-unreachable=2.weeks.ago'
+Checking connectivity: 170994, done.
+20:18:25.225424 trace.c:414             performance: 1.616423000 s: git command: 'git' 'prune' '--expire' '2.weeks.ago'
+20:18:25.232403 trace.c:414             performance: 0.001051000 s: git command: 'git' 'rerere' 'gc'
+20:18:25.233159 trace.c:414             performance: 6.112217000 s: git command: 'git' 'gc'</pre>
+</figure>
+
+<p ><strong><code>GIT_TRACE_SETUP</code></strong> shows information about what Git is discovering about the repository and environment it&#8217;s interacting with.</p>
+
+<figure class="listing" >
+  
+  <pre>$ GIT_TRACE_SETUP=true git status
+20:19:47.086765 trace.c:315             setup: git_dir: .git
+20:19:47.087184 trace.c:316             setup: worktree: /Users/ben/src/git
+20:19:47.087191 trace.c:317             setup: cwd: /Users/ben/src/git
+20:19:47.087194 trace.c:318             setup: prefix: (null)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_miscellaneous">
+  <h3>Miscellaneous</h3>
+  <p ><strong><code>GIT_SSH</code></strong>, if specified, is a program that is invoked instead of <code>ssh</code> when Git tries to connect to an SSH host.
+It is invoked like <code>$GIT_SSH [username@]host [-p &lt;port&gt;] &lt;command&gt;</code>.
+Note that this isn&#8217;t the easiest way to customize how <code>ssh</code> is invoked; it won&#8217;t support extra command-line parameters, so you&#8217;d have to write a wrapper script and set <code>GIT_SSH</code> to point to it.
+It&#8217;s probably easier just to use the <code>~/.ssh/config</code> file for that.</p>
+
+<p ><strong><code>GIT_ASKPASS</code></strong> is an override for the <code>core.askpass</code> configuration value.
+This is the program invoked whenever Git needs to ask the user for credentials, which can expect a text prompt as a command-line argument, and should return the answer on <code>stdout</code>.
+(See <a class="xref" href="ch07-git-tools.html#_credential_caching">Credential Storage</a> for more on this subsystem.)</p>
+
+<p ><strong><code>GIT_NAMESPACE</code></strong> controls access to namespaced refs, and is equivalent to the <code>--namespace</code> flag.
+This is mostly useful on the server side, where you may want to store multiple forks of a single repository in one repository, only keeping the refs separate.</p>
+
+<p ><strong><code>GIT_FLUSH</code></strong> can be used to force Git to use non-buffered I/O when writing incrementally to stdout.
+A value of 1 causes Git to flush more often, a value of 0 causes all output to be buffered.
+The default value (if this variable is not set) is to choose an appropriate buffering scheme depending on the activity and the output mode.</p>
+
+<p ><strong><code>GIT_REFLOG_ACTION</code></strong> lets you specify the descriptive text written to the reflog.
+Here&#8217;s an example:</p>
+
+<figure class="listing" >
+  
+  <pre>$ GIT_REFLOG_ACTION="my action" git commit --allow-empty -m 'my message'
+[master 9e3d55a] my message
+$ git reflog -1
+9e3d55a HEAD@{0}: my action: my message</pre>
+</figure>
+
+</section>
+
+</section>
+
+<section class="section" id="_summary_13">
+  <h2>Summary</h2>
+  <p >At this point, you should have a pretty good understanding of what Git does in the background and, to some degree, how it&#8217;s implemented.
+This chapter has covered a number of plumbing commands&#8201;&#8212;&#8201;commands that are lower level and simpler than the porcelain commands you&#8217;ve learned about in the rest of the book.
+Understanding how Git works at a lower level should make it easier to understand why it&#8217;s doing what it&#8217;s doing and also to write your own tools and helper scripts to make your specific workflow work for you.</p>
+
+<p >Git as a content-addressable filesystem is a very powerful tool that you can easily use as more than just a VCS.
+We hope you can use your newfound knowledge of Git internals to implement your own cool application of this technology and feel more comfortable using Git in more advanced ways.</p>
+
+</section>
+
+</section>
+
+      </div>
+      <div class="paginator">
+        <a href="ch09-git-and-other-systems.html" class="paginator-prev ">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="A-git-in-other-environments.html" class="paginator-next ">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

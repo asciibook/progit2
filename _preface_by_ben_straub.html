@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Preface by Ben Straub - Pro Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="highlight.css" />
+    <link rel="stylesheet" href="html.css" />
+    <script src="html.js" defer></script>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="toolbar-title">
+        <a href="index.html">
+          Pro Git
+        </a>
+      </div>
+      <div class="toolbar-action">
+        <div class="dropdown">
+          <button id="drawer-button" type="button" class="dropdown-toggle button button-icon">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="toolbar-toc" class="dropdown-menu">
+            
+              <ol>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_asciibook_introduction.html">Asciibook Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_table_of_contents.html">Table of Contents</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_licence.html">Licence</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_scott_chacon.html">Preface by Scott Chacon</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_ben_straub.html">Preface by Ben Straub</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_dedications.html">Dedications</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_contributors.html">Contributors</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_introduction.html">Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch01-getting-started.html">Getting Started</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_about_version_control">About Version Control</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_a_short_history_of_git">A Short History of Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_what_is_git">What is Git?</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_the_command_line">The Command Line</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_installing_git">Installing Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_first_time">First-Time Git Setup</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_git_help">Getting Help</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_summary">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html">Git Basics</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_getting_a_repo">Getting a Git Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_recording_changes_to_the_repository">Recording Changes to the Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_viewing_history">Viewing the Commit History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_undoing">Undoing Things</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_remote_repos">Working with Remotes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_tagging">Tagging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_aliases">Git Aliases</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_summary_2">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch03-git-branching.html">Git Branching</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_git_branches_overview">Branches in a Nutshell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_basic_branching_and_merging">Basic Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branch_management">Branch Management</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branching_workflows">Branching Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_remote_branches">Remote Branches</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_rebasing">Rebasing</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_summary_3">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch04-git-on-the-server.html">Git on the Server</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_the_protocols">The Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_getting_git_on_a_server">Getting Git on a Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_generate_ssh_key">Generating Your SSH Public Key</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_setting_up_server">Setting Up the Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_git_daemon">Git Daemon</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_smart_http_2">Smart HTTP</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitweb">GitWeb</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitlab">GitLab</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_third_party_hosted_options">Third Party Hosted Options</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_summary_4">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch05-distributed-git.html">Distributed Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_distributed_workflows">Distributed Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_contributing_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_maintaining_a_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_summary_6">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch06-github.html">GitHub</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_account_setup_and_configuration">Account Setup and Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_contributing_to_a_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_maintaining_gh_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#ch06-github_orgs">Managing an organization</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_scripting_github">Scripting GitHub</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_summary_7">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch07-git-tools.html">Git Tools</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_revision_selection">Revision Selection</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_interactive_staging">Interactive Staging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_stashing">Stashing and Cleaning</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_signing">Signing Your Work</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_searching">Searching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_reset">Reset Demystified</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_advanced_merging">Advanced Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#ref_rerere">Rerere</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_debugging_with_git">Debugging with Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_submodules">Submodules</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_bundling">Bundling</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_replace">Replace</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_credential_caching">Credential Storage</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_summary_9">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch08-customizing-git.html">Customizing Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_config">Git Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_attributes">Git Attributes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_hooks">Git Hooks</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_summary_10">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html">Git and Other Systems</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_git_as_a_client">Git as a Client</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_migrating">Migrating to Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_summary_12">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch10-git-internals.html">Git Internals</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_plumbing_porcelain">Plumbing and Porcelain</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_objects">Git Objects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_git_refs">Git References</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_packfiles">Packfiles</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_refspec">The Refspec</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_transfer_protocols">Transfer Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_maintenance_and_data_recovery">Maintenance and Data Recovery</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_environment_variables">Environment Variables</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_summary_13">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="A-git-in-other-environments.html">Git in Other Environments</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_graphical_interfaces">Graphical Interfaces</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio">Git in Visual Studio</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio_code">Git in Visual Studio Code</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_eclipse">Git in Eclipse</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_intellij_pycharm_webstorm_phpstorm_rubymine">Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_sublime_text">Git in Sublime Text</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_bash">Git in Bash</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_zsh">Git in Zsh</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_powershell">Git in PowerShell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_summary_15">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html">Embedding Git in your Applications</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_command_line_git">Command-line Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_libgit2">Libgit2</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_jgit">JGit</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_go_git">go-git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_dulwich">Dulwich</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="C-git-commands.html">Git Commands</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_setup_and_config">Setup and Config</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_getting_and_creating_projects">Getting and Creating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_basic_snapshotting">Basic Snapshotting</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_branching_and_merging">Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_sharing_and_updating_projects">Sharing and Updating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_inspection_and_comparison">Inspection and Comparison</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_debugging_2">Debugging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_patching">Patching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_email">Email</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_external_systems">External Systems</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_administration_2">Administration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_plumbing_commands">Plumbing Commands</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_index.html">Index</a>
+                    
+                  </li>
+                
+              </ol>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <section class="preface" id="_preface_by_ben_straub">
+  <h1>Preface by Ben Straub</h1>
+  <p >The first edition of this book is what got me hooked on Git.
+This was my introduction to a style of making software that felt more natural than anything I had seen before.
+I had been a developer for several years by then, but this was the right turn that sent me down a much more interesting path than the one I was on.</p>
+
+<p >Now, years later, I&#8217;m a contributor to a major Git implementation, I&#8217;ve worked for the largest Git hosting company, and I&#8217;ve traveled the world teaching people about Git.
+When Scott asked if I&#8217;d be interested in working on the second edition, I didn&#8217;t even have to think.</p>
+
+<p >It&#8217;s been a great pleasure and privilege to work on this book.
+I hope it helps you as much as it did me.</p>
+
+</section>
+
+      </div>
+      <div class="paginator">
+        <a href="_preface_by_scott_chacon.html" class="paginator-prev ">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="_dedications.html" class="paginator-next ">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

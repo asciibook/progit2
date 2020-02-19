@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git in Other Environments - Pro Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="highlight.css" />
+    <link rel="stylesheet" href="html.css" />
+    <script src="html.js" defer></script>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="toolbar-title">
+        <a href="index.html">
+          Pro Git
+        </a>
+      </div>
+      <div class="toolbar-action">
+        <div class="dropdown">
+          <button id="drawer-button" type="button" class="dropdown-toggle button button-icon">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="toolbar-toc" class="dropdown-menu">
+            
+              <ol>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_asciibook_introduction.html">Asciibook Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_table_of_contents.html">Table of Contents</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_licence.html">Licence</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_scott_chacon.html">Preface by Scott Chacon</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_ben_straub.html">Preface by Ben Straub</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_dedications.html">Dedications</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_contributors.html">Contributors</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_introduction.html">Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch01-getting-started.html">Getting Started</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_about_version_control">About Version Control</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_a_short_history_of_git">A Short History of Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_what_is_git">What is Git?</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_the_command_line">The Command Line</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_installing_git">Installing Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_first_time">First-Time Git Setup</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_git_help">Getting Help</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_summary">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html">Git Basics</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_getting_a_repo">Getting a Git Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_recording_changes_to_the_repository">Recording Changes to the Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_viewing_history">Viewing the Commit History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_undoing">Undoing Things</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_remote_repos">Working with Remotes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_tagging">Tagging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_aliases">Git Aliases</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_summary_2">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch03-git-branching.html">Git Branching</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_git_branches_overview">Branches in a Nutshell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_basic_branching_and_merging">Basic Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branch_management">Branch Management</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branching_workflows">Branching Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_remote_branches">Remote Branches</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_rebasing">Rebasing</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_summary_3">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch04-git-on-the-server.html">Git on the Server</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_the_protocols">The Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_getting_git_on_a_server">Getting Git on a Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_generate_ssh_key">Generating Your SSH Public Key</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_setting_up_server">Setting Up the Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_git_daemon">Git Daemon</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_smart_http_2">Smart HTTP</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitweb">GitWeb</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitlab">GitLab</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_third_party_hosted_options">Third Party Hosted Options</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_summary_4">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch05-distributed-git.html">Distributed Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_distributed_workflows">Distributed Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_contributing_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_maintaining_a_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_summary_6">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch06-github.html">GitHub</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_account_setup_and_configuration">Account Setup and Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_contributing_to_a_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_maintaining_gh_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#ch06-github_orgs">Managing an organization</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_scripting_github">Scripting GitHub</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_summary_7">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch07-git-tools.html">Git Tools</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_revision_selection">Revision Selection</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_interactive_staging">Interactive Staging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_stashing">Stashing and Cleaning</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_signing">Signing Your Work</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_searching">Searching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_reset">Reset Demystified</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_advanced_merging">Advanced Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#ref_rerere">Rerere</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_debugging_with_git">Debugging with Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_submodules">Submodules</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_bundling">Bundling</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_replace">Replace</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_credential_caching">Credential Storage</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_summary_9">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch08-customizing-git.html">Customizing Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_config">Git Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_attributes">Git Attributes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_hooks">Git Hooks</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_summary_10">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html">Git and Other Systems</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_git_as_a_client">Git as a Client</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_migrating">Migrating to Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_summary_12">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch10-git-internals.html">Git Internals</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_plumbing_porcelain">Plumbing and Porcelain</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_objects">Git Objects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_git_refs">Git References</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_packfiles">Packfiles</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_refspec">The Refspec</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_transfer_protocols">Transfer Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_maintenance_and_data_recovery">Maintenance and Data Recovery</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_environment_variables">Environment Variables</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_summary_13">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="A-git-in-other-environments.html">Git in Other Environments</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_graphical_interfaces">Graphical Interfaces</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio">Git in Visual Studio</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio_code">Git in Visual Studio Code</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_eclipse">Git in Eclipse</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_intellij_pycharm_webstorm_phpstorm_rubymine">Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_sublime_text">Git in Sublime Text</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_bash">Git in Bash</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_zsh">Git in Zsh</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_powershell">Git in PowerShell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_summary_15">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html">Embedding Git in your Applications</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_command_line_git">Command-line Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_libgit2">Libgit2</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_jgit">JGit</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_go_git">go-git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_dulwich">Dulwich</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="C-git-commands.html">Git Commands</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_setup_and_config">Setup and Config</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_getting_and_creating_projects">Getting and Creating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_basic_snapshotting">Basic Snapshotting</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_branching_and_merging">Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_sharing_and_updating_projects">Sharing and Updating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_inspection_and_comparison">Inspection and Comparison</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_debugging_2">Debugging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_patching">Patching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_email">Email</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_external_systems">External Systems</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_administration_2">Administration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_plumbing_commands">Plumbing Commands</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_index.html">Index</a>
+                    
+                  </li>
+                
+              </ol>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <section class="appendix" id="A-git-in-other-environments">
+  <h1>Appendix A:  Git in Other Environments</h1>
+  <p >If you read through the whole book, you&#8217;ve learned a lot about how to use Git at the command line.
+You can work with local files, connect your repository to others over a network, and work effectively with others.
+But the story doesn&#8217;t end there; Git is usually used as part of a larger ecosystem, and the terminal isn&#8217;t always the best way to work with it.
+Now we&#8217;ll take a look at some of the other kinds of environments where Git can be useful, and how other applications (including yours) work alongside Git.</p>
+
+<section class="section" id="_graphical_interfaces">
+  <h2>Graphical Interfaces</h2>
+  <p ><a class="indexterm" id="_indexterm_226">&#8203;</a><a class="indexterm" id="_indexterm_227">&#8203;</a>
+Git&#8217;s native environment is in the terminal.
+New features show up there first, and only at the command line is the full power of Git completely at your disposal.
+But plain text isn&#8217;t the best choice for all tasks; sometimes a visual representation is what you need, and some users are much more comfortable with a point-and-click interface.</p>
+
+<p >It&#8217;s important to note that different interfaces are tailored for different workflows.
+Some clients expose only a carefully curated subset of Git functionality, in order to support a specific way of working that the author considers effective.
+When viewed in this light, none of these tools can be called ``better'' than any of the others, they&#8217;re simply more fit for their intended purpose.
+Also note that there&#8217;s nothing these graphical clients can do that the command-line client can&#8217;t; the command-line is still where you&#8217;ll have the most power and control when working with your repositories.</p>
+
+<section class="section" id="_gitk_and_git_gui">
+  <h3><code>gitk</code> and <code>git-gui</code></h3>
+  <p ><a class="indexterm" id="_indexterm_228">&#8203;</a><a class="indexterm" id="_indexterm_229">&#8203;</a><a class="indexterm" id="_indexterm_230">&#8203;</a>
+When you install Git, you also get its visual tools, <code>gitk</code> and <code>git-gui</code>.</p>
+
+<p ><code>gitk</code> is a graphical history viewer.
+Think of it like a powerful GUI shell over <code>git log</code> and <code>git grep</code>.
+This is the tool to use when you&#8217;re trying to find something that happened in the past, or visualize your project&#8217;s history.</p>
+
+<p >Gitk is easiest to invoke from the command-line.
+Just <code>cd</code> into a Git repository, and type:</p>
+
+<figure class="listing" >
+  
+  <pre>$ gitk [git log options]</pre>
+</figure>
+
+<p >Gitk accepts many command-line options, most of which are passed through to the underlying <code>git log</code> action.
+Probably one of the most useful is the <code>--all</code> flag, which tells gitk to show commits reachable from <em>any</em> ref, not just HEAD.
+Gitk&#8217;s interface looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/gitk.png"
+         alt="The `gitk` history viewer."
+         
+          />
+  
+  
+    <figcaption>Figure 153. The <code>gitk</code> history viewer.</figcaption>
+  
+</figure>
+
+<p >On the top is something that looks a bit like the output of <code>git log --graph</code>; each dot represents a commit, the lines represent parent relationships, and refs are shown as colored boxes.
+The yellow dot represents HEAD, and the red dot represents changes that are yet to become a commit.
+At the bottom is a view of the selected commit; the comments and patch on the left, and a summary view on the right.
+In between is a collection of controls used for searching history.</p>
+
+<p ><code>git-gui</code>, on the other hand, is primarily a tool for crafting commits.
+It, too, is easiest to invoke from the command line:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git gui</pre>
+</figure>
+
+<p >And it looks something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/git-gui.png"
+         alt="The `git-gui` commit tool."
+         
+          />
+  
+  
+    <figcaption>Figure 154. The <code>git-gui</code> commit tool.</figcaption>
+  
+</figure>
+
+<p >On the left is the index; unstaged changes are on top, staged changes on the bottom.
+You can move entire files between the two states by clicking on their icons, or you can select a file for viewing by clicking on its name.</p>
+
+<p >At top right is the diff view, which shows the changes for the currently-selected file.
+You can stage individual hunks (or individual lines) by right-clicking in this area.</p>
+
+<p >At the bottom right is the message and action area.
+Type your message into the text box and click <code>Commit'' to do something similar to <code>git commit</code>.
+You can also choose to amend the last commit by choosing the </code>Amend'' radio button, which will update the <code>Staged Changes'' area with the contents of the last commit.
+Then you can simply stage or unstage some changes, alter the commit message, and click </code>Commit'' again to replace the old commit with a new one.</p>
+
+<p ><code>gitk</code> and <code>git-gui</code> are examples of task-oriented tools.
+Each of them is tailored for a specific purpose (viewing history and creating commits, respectively), and omit the features not necessary for that task.</p>
+
+</section>
+
+<section class="section" id="_github_for_macos_and_windows">
+  <h3>GitHub for macOS and Windows</h3>
+  <p ><a class="indexterm" id="_indexterm_231">&#8203;</a><a class="indexterm" id="_indexterm_232">&#8203;</a>
+GitHub has created two workflow-oriented Git clients: one for Windows, and one for macOS.
+These clients are a good example of workflow-oriented tools – rather than expose <em>all</em> of Git&#8217;s functionality, they instead focus on a curated set of commonly-used features that work well together.
+They look like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/github_mac.png"
+         alt="GitHub for macOS."
+         
+          />
+  
+  
+    <figcaption>Figure 155. GitHub for macOS.</figcaption>
+  
+</figure>
+
+<figure class="image" >
+  
+    <img src="images/github_win.png"
+         alt="GitHub for Windows."
+         
+          />
+  
+  
+    <figcaption>Figure 156. GitHub for Windows.</figcaption>
+  
+</figure>
+
+<p >They are designed to look and work very much alike, so we&#8217;ll treat them like a single product in this chapter.
+We won&#8217;t be doing a detailed rundown of these tools (they have their own documentation), but a quick tour of the ``changes'' view (which is where you&#8217;ll spend most of your time) is in order.</p>
+
+<ul class="ulist" >
+  
+    <li>
+      <p>On the left is the list of repositories the client is tracking; you can add a repository (either by cloning or attaching locally) by clicking the ``+'' icon at the top of this area.</p>
+      
+    </li>
+  
+    <li>
+      <p>In the center is a commit-input area, which lets you input a commit message, and select which files should be included.
+(On Windows, the commit history is displayed directly below this; on macOS, it&#8217;s on a separate tab.)</p>
+      
+    </li>
+  
+    <li>
+      <p>On the right is a diff view, which shows what&#8217;s changed in your working directory, or which changes were included in the selected commit.</p>
+      
+    </li>
+  
+    <li>
+      <p>The last thing to notice is the ``Sync'' button at the top-right, which is the primary way you interact over the network.</p>
+      
+    </li>
+  
+</ul>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >You don&#8217;t need a GitHub account to use these tools.
+While they&#8217;re designed to highlight GitHub&#8217;s service and recommended workflow, they will happily work with any repository, and do network operations with any Git host.</p>
+
+  </div>
+</div>
+
+<section class="section" id="_installation_2">
+  <h4>Installation</h4>
+  <p >GitHub for Windows can be downloaded from <a class="link" href="https://windows.github.com"
+     
+      >https://windows.github.com</a>, and GitHub for macOS from <a class="link" href="https://mac.github.com"
+     
+      >https://mac.github.com</a>.
+When the applications are first run, they walk you through all the first-time Git setup, such as configuring your name and email address, and both set up sane defaults for many common configuration options, such as credential caches and CRLF behavior.</p>
+
+<p >Both are ``evergreen'' – updates are downloaded and installed in the background while the applications are open.
+This helpfully includes a bundled version of Git, which means you probably won&#8217;t have to worry about manually updating it again.
+On Windows, the client includes a shortcut to launch PowerShell with Posh-git, which we&#8217;ll talk more about later in this chapter.</p>
+
+<p >The next step is to give the tool some repositories to work with.
+The client shows you a list of the repositories you have access to on GitHub, and can clone them in one step.
+If you already have a local repository, just drag its directory from the Finder or Windows Explorer into the GitHub client window, and it will be included in the list of repositories on the left.</p>
+
+</section>
+
+<section class="section" id="_recommended_workflow">
+  <h4>Recommended Workflow</h4>
+  <p >Once it&#8217;s installed and configured, you can use the GitHub client for many common Git tasks.
+The intended workflow for this tool is sometimes called the ``GitHub Flow.''
+We cover this in more detail in <a class="xref" href="ch06-github.html#ch06-github_flow">The GitHub Flow</a>, but the general gist is that (a) you&#8217;ll be committing to a branch, and (b) you&#8217;ll be syncing up with a remote repository fairly regularly.</p>
+
+<p >Branch management is one of the areas where the two tools diverge.
+On macOS, there&#8217;s a button at the top of the window for creating a new branch:</p>
+
+<figure class="image" >
+  
+    <img src="images/branch_widget_mac.png"
+         alt="``Create Branch'' button on macOS."
+         
+          />
+  
+  
+    <figcaption>Figure 157. ``Create Branch'' button on macOS.</figcaption>
+  
+</figure>
+
+<p >On Windows, this is done by typing the new branch&#8217;s name in the branch-switching widget:</p>
+
+<figure class="image" >
+  
+    <img src="images/branch_widget_win.png"
+         alt="Creating a branch on Windows."
+         
+          />
+  
+  
+    <figcaption>Figure 158. Creating a branch on Windows.</figcaption>
+  
+</figure>
+
+<p >Once your branch is created, making new commits is fairly straightforward.
+Make some changes in your working directory, and when you switch to the GitHub client window, it will show you which files changed.
+Enter a commit message, select the files you&#8217;d like to include, and click the ``Commit'' button (ctrl-enter or ⌘-enter).</p>
+
+<p >The main way you interact with other repositories over the network is through the ``Sync'' feature.
+Git internally has separate operations for pushing, fetching, merging, and rebasing, but the GitHub clients collapse all of these into one multi-step feature.
+Here&#8217;s what happens when you click the Sync button:</p>
+
+<ol class="olist" >
+  
+    <li>
+      <p><code>git pull --rebase</code>.
+If this fails because of a merge conflict, fall back to <code>git pull --no-rebase</code>.</p>
+      
+    </li>
+  
+    <li>
+      <p><code>git push</code>.</p>
+      
+    </li>
+  
+</ol>
+
+<p >This is the most common sequence of network commands when working in this style, so squashing them into one command saves a lot of time.</p>
+
+</section>
+
+<section class="section" id="_summary_14">
+  <h4>Summary</h4>
+  <p >These tools are very well-suited for the workflow they&#8217;re designed for.
+Developers and non-developers alike can be collaborating on a project within minutes, and many of the best practices for this kind of workflow are baked into the tools.
+However, if your workflow is different, or you want more control over how and when network operations are done, we recommend you use another client or the command line.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_other_guis">
+  <h3>Other GUIs</h3>
+  <p >There are a number of other graphical Git clients, and they run the gamut from specialized, single-purpose tools all the way to apps that try to expose everything Git can do.
+The official Git website has a curated list of the most popular clients at <a class="link" href="https://git-scm.com/downloads/guis"
+     
+      >https://git-scm.com/downloads/guis</a>.
+A more comprehensive list is available on the Git wiki site, at <a class="link" href="https://git.wiki.kernel.org/index.php/Interfaces,_frontends,_and_tools#Graphical_Interfaces"
+     
+      >https://git.wiki.kernel.org/index.php/Interfaces,_frontends,_and_tools#Graphical_Interfaces</a>.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_git_in_visual_studio">
+  <h2>Git in Visual Studio</h2>
+  <p ><a class="indexterm" id="_indexterm_233">&#8203;</a>
+Starting with Visual Studio 2013 Update 1, Visual Studio users have a Git client built directly into their IDE.
+Visual Studio has had source-control integration features for quite some time, but they were oriented towards centralized, file-locking systems, and Git was not a good match for this workflow.
+Visual Studio 2013&#8217;s Git support has been separated from this older feature, and the result is a much better fit between Studio and Git.</p>
+
+<p >To locate the feature, open a project that&#8217;s controlled by Git (or just <code>git init</code> an existing project), and select View &gt; Team Explorer from the menu.
+You&#8217;ll see the "Connect" view, which looks a bit like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/vs-1.png"
+         alt="Connecting to a Git repository from Team Explorer."
+         
+          />
+  
+  
+    <figcaption>Figure 159. Connecting to a Git repository from Team Explorer.</figcaption>
+  
+</figure>
+
+<p >Visual Studio remembers all of the projects you&#8217;ve opened that are Git-controlled, and they&#8217;re available in the list at the bottom.
+If you don&#8217;t see the one you want there, click the "Add" link and type in the path to the working directory.
+Double clicking on one of the local Git repositories leads you to the Home view, which looks like <a class="xref" href="A-git-in-other-environments.html#vs_home">The "Home" view for a Git repository in Visual Studio.</a>.
+This is a hub for performing Git actions; when you&#8217;re <em>writing</em> code, you&#8217;ll probably spend most of your time in the "Changes" view, but when it comes time to pull down changes made by your teammates, you&#8217;ll use the "Unsynced Commits" and "Branches" views.</p>
+
+<figure class="image" id="vs_home">
+  
+    <img src="images/vs-2.png"
+         alt="The Home view for a Git repository in Visual Studio."
+         
+          />
+  
+  
+    <figcaption>Figure 160. The "Home" view for a Git repository in Visual Studio.</figcaption>
+  
+</figure>
+
+<p >Visual Studio now has a powerful task-focused UI for Git.
+It includes a linear history view, a diff viewer, remote commands, and many other capabilities.
+For complete documentation of this feature (which doesn&#8217;t fit here), go to <a class="link" href="http://msdn.microsoft.com/en-us/library/hh850437.aspx"
+     
+      >http://msdn.microsoft.com/en-us/library/hh850437.aspx</a>.</p>
+
+</section>
+
+<section class="section" id="_git_in_visual_studio_code">
+  <h2>Git in Visual Studio Code</h2>
+  <p >Visual Studio Code has git support built in.
+You will need to have git version 2.0.0 (or newer) installed.</p>
+
+<p >The main features are:</p>
+
+<ul class="ulist" >
+  
+    <li>
+      <p>See the diff of the file you are editing in the gutter.</p>
+      
+    </li>
+  
+    <li>
+      <p>The Git Status Bar (lower left) shows the current branch, dirty indicators, incoming and outgoing commits.</p>
+      
+    </li>
+  
+    <li>
+      <p>You can do the most common git operations from within the editor:</p>
+      <ul class="ulist" >
+  
+    <li>
+      <p>Initialize a repository.</p>
+      
+    </li>
+  
+    <li>
+      <p>Clone a repository.</p>
+      
+    </li>
+  
+    <li>
+      <p>Create branches and tags.</p>
+      
+    </li>
+  
+    <li>
+      <p>Stage and commit changes.</p>
+      
+    </li>
+  
+    <li>
+      <p>Push/pull/sync with a remote branch.</p>
+      
+    </li>
+  
+    <li>
+      <p>Resolve merge conflicts.</p>
+      
+    </li>
+  
+    <li>
+      <p>View diffs.</p>
+      
+    </li>
+  
+</ul>
+
+    </li>
+  
+    <li>
+      <p>With a extension, you can also handle GitHub Pull Requests:
+<a class="link" href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github"
+     
+      >https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github</a></p>
+      
+    </li>
+  
+</ul>
+
+<p >The official documentation can be found here: <a class="link" href="https://code.visualstudio.com/Docs/editor/versioncontrol"
+     
+      >https://code.visualstudio.com/Docs/editor/versioncontrol</a></p>
+
+</section>
+
+<section class="section" id="_git_in_eclipse">
+  <h2>Git in Eclipse</h2>
+  <p ><a class="indexterm" id="_indexterm_234">&#8203;</a>
+Eclipse ships with a plugin called Egit, which provides a fairly-complete interface to Git operations.
+It&#8217;s accessed by switching to the Git Perspective (Window &gt; Open Perspective &gt; Other…, and select "Git").</p>
+
+<figure class="image" >
+  
+    <img src="images/egit.png"
+         alt="Eclipse's EGit environment."
+         
+          />
+  
+  
+    <figcaption>Figure 161. Eclipse&#8217;s EGit environment.</figcaption>
+  
+</figure>
+
+<p >EGit comes with plenty of great documentation, which you can find by going to Help &gt; Help Contents, and choosing the "EGit Documentation" node from the contents listing.</p>
+
+</section>
+
+<section class="section" id="_git_in_intellij_pycharm_webstorm_phpstorm_rubymine">
+  <h2>Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine</h2>
+  <p >JetBrains IDEs (such as IntelliJ IDEA, PyCharm, WebStorm, PhpStorm, RubyMine, and others) ship with a Git Integration plugin.
+It provides a dedicated view in the IDE to work with Git and GitHub Pull Requests.</p>
+
+<figure class="image" >
+  
+    <img src="images/jb.png"
+         alt="Version Control ToolWindow in JetBrains IDEs."
+         
+          />
+  
+  
+    <figcaption>Figure 162. Version Control ToolWindow in JetBrains IDEs.</figcaption>
+  
+</figure>
+
+<p >The integration relies on the command-line git client, and requires one to be installed.
+The official documentation is available at <a class="link" href="https://www.jetbrains.com/help/idea/using-git-integration.html"
+     
+      >https://www.jetbrains.com/help/idea/using-git-integration.html</a>.</p>
+
+</section>
+
+<section class="section" id="_git_in_sublime_text">
+  <h2>Git in Sublime Text</h2>
+  <p >From version 3.2 onwards, Sublime Text has git integration in the editor.</p>
+
+<p >The features are:</p>
+
+<ul class="ulist" >
+  
+    <li>
+      <p>The sidebar will show the git status of files and folders with a badge/icon.</p>
+      
+    </li>
+  
+    <li>
+      <p>Files and folders that are in your .gitignore file will be faded out in the sidebar.</p>
+      
+    </li>
+  
+    <li>
+      <p>In the status bar, you can see the current git branch and how many modifications you have made.</p>
+      
+    </li>
+  
+    <li>
+      <p>All changes to a file are now visible via markers in the gutter.</p>
+      
+    </li>
+  
+    <li>
+      <p>You can use part of the Sublime Merge git client functionality from within Sublime Text.
+(This requires that Sublime Merge is installed. See: <a class="link" href="https://www.sublimemerge.com/"
+     
+      >https://www.sublimemerge.com/</a>)</p>
+      
+    </li>
+  
+</ul>
+
+<p >The official documentation for Sublime Text can be found here: <a class="link" href="https://www.sublimetext.com/docs/3/git_integration.html"
+     
+      >https://www.sublimetext.com/docs/3/git_integration.html</a></p>
+
+</section>
+
+<section class="section" id="_git_in_bash">
+  <h2>Git in Bash</h2>
+  <p ><a class="indexterm" id="_indexterm_235">&#8203;</a><a class="indexterm" id="_indexterm_236">&#8203;</a><a class="indexterm" id="_indexterm_237">&#8203;</a>
+If you&#8217;re a Bash user, you can tap into some of your shell&#8217;s features to make your experience with Git a lot friendlier.
+Git actually ships with plugins for several shells, but it&#8217;s not turned on by default.</p>
+
+<p >First, you need to get a copy of the <code>contrib/completion/git-completion.bash</code> file out of the Git source code.
+Copy it somewhere handy, like your home directory, and add this to your <code>.bashrc</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>. ~/git-completion.bash</pre>
+</figure>
+
+<p >Once that&#8217;s done, change your directory to a Git repository, and type:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git chec&lt;tab&gt;</pre>
+</figure>
+
+<p >…and Bash will auto-complete to <code>git checkout</code>.
+This works with all of Git&#8217;s subcommands, command-line parameters, and remotes and ref names where appropriate.</p>
+
+<p >It&#8217;s also useful to customize your prompt to show information about the current directory&#8217;s Git repository.
+This can be as simple or complex as you want, but there are generally a few key pieces of information that most people want, like the current branch, and the status of the working directory.
+To add these to your prompt, just copy the <code>contrib/completion/git-prompt.sh</code> file from Git&#8217;s source repository to your home directory, add something like this to your <code>.bashrc</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>. ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1='\w$(__git_ps1 " (%s)")\$ '</pre>
+</figure>
+
+<p >The <code>\w</code> means print the current working directory, the <code>\$</code> prints the <code>$</code> part of the prompt, and <code>__git_ps1 " (%s)"</code> calls the function provided by <code>git-prompt.sh</code> with a formatting argument.
+Now your bash prompt will look like this when you&#8217;re anywhere inside a Git-controlled project:</p>
+
+<figure class="image" >
+  
+    <img src="images/git-bash.png"
+         alt="Customized `bash` prompt."
+         
+          />
+  
+  
+    <figcaption>Figure 163. Customized <code>bash</code> prompt.</figcaption>
+  
+</figure>
+
+<p >Both of these scripts come with helpful documentation; take a look at the contents of <code>git-completion.bash</code> and <code>git-prompt.sh</code> for more information.</p>
+
+</section>
+
+<section class="section" id="_git_in_zsh">
+  <h2>Git in Zsh</h2>
+  <p ><a class="indexterm" id="_indexterm_238">&#8203;</a><a class="indexterm" id="_indexterm_239">&#8203;</a><a class="indexterm" id="_indexterm_240">&#8203;</a>
+Zsh also ships with a tab-completion library for Git.
+To use it, simply run <code>autoload -Uz compinit &amp;&amp; compinit</code> in your <code>.zshrc</code>.
+Zsh&#8217;s interface is a bit more powerful than Bash&#8217;s:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git che&lt;tab&gt;
+check-attr        -- display gitattributes information
+check-ref-format  -- ensure that a reference name is well formed
+checkout          -- checkout branch or paths to working tree
+checkout-index    -- copy files from index to working directory
+cherry            -- find commits not merged upstream
+cherry-pick       -- apply changes introduced by some existing commits</pre>
+</figure>
+
+<p >Ambiguous tab-completions aren&#8217;t just listed; they have helpful descriptions, and you can graphically navigate the list by repeatedly hitting tab.
+This works with Git commands, their arguments, and names of things inside the repository (like refs and remotes), as well as filenames and all the other things Zsh knows how to tab-complete.</p>
+
+<p >Zsh ships with a framework for getting information from version control systems, called <code>vcs_info</code>.
+To include the branch name in the prompt on the right side, add these lines to your <code>~/.zshrc</code> file:</p>
+
+<figure class="listing" >
+  
+  <pre>autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+# PROMPT=\$vcs_info_msg_0_'%# '
+zstyle ':vcs_info:git:*' formats '%b'</pre>
+</figure>
+
+<p >This results in a display of the current branch on the right-hand side of the terminal window, whenever your shell is inside a Git repository.
+(The left side is supported as well, of course; just uncomment the assignment to PROMPT.)
+It looks a bit like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/zsh-prompt.png"
+         alt="Customized `zsh` prompt."
+         
+          />
+  
+  
+    <figcaption>Figure 164. Customized <code>zsh</code> prompt.</figcaption>
+  
+</figure>
+
+<p >For more information on vcs_info, check out its documentation
+        in the <code>zshcontrib(1)</code> manual page,
+        or online at <a class="link" href="http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information"
+     
+      >http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information</a>.</p>
+
+<p >Instead of vcs_info, you might prefer the prompt customization script that ships with Git, called <code>git-prompt.sh</code>; see <a class="link" href="https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh"
+     
+      >https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh</a> for details.
+<code>git-prompt.sh</code> is compatible with both Bash and Zsh.</p>
+
+<p >Zsh is powerful enough that there are entire frameworks dedicated to making it better.
+One of them is called "oh-my-zsh", and it can be found at <a class="link" href="https://github.com/robbyrussell/oh-my-zsh"
+     
+      >https://github.com/robbyrussell/oh-my-zsh</a>.
+oh-my-zsh&#8217;s plugin system comes with powerful git tab-completion, and it has a variety of prompt "themes", many of which display version-control data.
+<a class="xref" href="A-git-in-other-environments.html#oh_my_zsh_git">An example of an oh-my-zsh theme.</a> is just one example of what can be done with this system.</p>
+
+<figure class="image" id="oh_my_zsh_git">
+  
+    <img src="images/zsh-oh-my.png"
+         alt="An example of an oh-my-zsh theme."
+         
+          />
+  
+  
+    <figcaption>Figure 165. An example of an oh-my-zsh theme.</figcaption>
+  
+</figure>
+
+</section>
+
+<section class="section" id="_git_powershell">
+  <h2>Git in PowerShell</h2>
+  <p ><a class="indexterm" id="_indexterm_241">&#8203;</a><a class="indexterm" id="_indexterm_242">&#8203;</a><a class="indexterm" id="_indexterm_243">&#8203;</a>
+<a class="indexterm" id="_indexterm_244">&#8203;</a>
+The legacy command-line terminal on Windows (<code>cmd.exe</code>) isn&#8217;t really capable of a customized Git experience, but if you&#8217;re using PowerShell, you&#8217;re in luck.
+This also works if you&#8217;re running PowerShell Core on Linux or macOS.
+A package called posh-git (<a class="link" href="https://github.com/dahlbyk/posh-git"
+     
+      >https://github.com/dahlbyk/posh-git</a>) provides powerful tab-completion facilities, as well as an enhanced prompt to help you stay on top of your repository status.
+It looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/posh-git.png"
+         alt="PowerShell with Posh-git."
+         
+          />
+  
+  
+    <figcaption>Figure 166. PowerShell with Posh-git.</figcaption>
+  
+</figure>
+
+<section class="section" id="_installation_3">
+  <h3>Installation</h3>
+  <section class="section" id="_prerequisites_windows_only">
+  <h4>Prerequisites (Windows only)</h4>
+  <p >Before you&#8217;re able to run PowerShell scripts on your machine, you need to set your local ExecutionPolicy to RemoteSigned (Basically anything except Undefined and Restricted).
+If you choose AllSigned instead of RemoteSigned, also local scripts (your own) need to be digitally signed in order to be executed.
+With RemoteSigned, only Scripts having the "ZoneIdentifier" set to Internet (were downloaded from the web) need to be signed, others not.
+If you&#8217;re an administrator and want to set it for all Users on that machine, use "-Scope LocalMachine".
+If you&#8217;re a normal user, without administrative rights, you can use "-Scope CurrentUser" to set it only for you.</p>
+
+<p >More about PowerShell Scopes: <a class="link" href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scopes"
+     
+      >https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scopes</a></p>
+
+<p >More about PowerShell ExecutionPolicy: <a class="link" href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy"
+     
+      >https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy</a></p>
+
+<figure class="listing" >
+  
+  <pre>&gt; Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_powershell_gallery">
+  <h4>PowerShell Gallery</h4>
+  <p >If you have at least PowerShell 5 or PowerShell 4 with PackageManagement installed, you can use the package manager to install posh-git for you.</p>
+
+<p >More information about PowerShell Gallery: <a class="link" href="https://docs.microsoft.com/en-us/powershell/gallery/overview"
+     
+      >https://docs.microsoft.com/en-us/powershell/gallery/overview</a></p>
+
+<figure class="listing" >
+  
+  <pre>&gt; Install-Module posh-git -Scope CurrentUser -Force
+&gt; Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force # Newer beta version with PowerShell Core support</pre>
+</figure>
+
+<p >If you want to install posh-git for all users, use "-Scope AllUsers" instead and execute the command from an elevated PowerShell console.
+If the second command fails with an error like <code>Module 'PowerShellGet' was not installed by using Install-Module</code>, you&#8217;ll need to run another command first:</p>
+
+<figure class="listing" >
+  
+  <pre>&gt; Install-Module PowerShellGet -Force -SkipPublisherCheck</pre>
+</figure>
+
+<p >Then you can go back and try again.
+This happens, because the modules that ship with Windows PowerShell are signed with a different publishment certificate.</p>
+
+</section>
+
+<section class="section" id="_update_powershell_prompt">
+  <h4>Update PowerShell Prompt</h4>
+  <p >To include git information in your prompt, the posh-git module needs to be imported.
+To have posh-git imported every time PowerShell starts, execute the Add-PoshGitToProfile command which will add the import statement into you $profile script.
+This script is executed everytime you open a new PowerShell console.
+Keep in mind, that there are multiple $profile scripts.
+E. g. one for the console and a separate one for the ISE.</p>
+
+<figure class="listing" >
+  
+  <pre>&gt; Import-Module posh-git
+&gt; Add-PoshGitToProfile -AllHosts</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_from_source">
+  <h4>From Source</h4>
+  <p >Just download a posh-git release from (<a class="link" href="https://github.com/dahlbyk/posh-git"
+     
+      >https://github.com/dahlbyk/posh-git</a>), and uncompress it.
+Then import the module using the full path to the posh-git.psd1 file:</p>
+
+<figure class="listing" >
+  
+  <pre>&gt; Import-Module &lt;path-to-uncompress-folder&gt;\src\posh-git.psd1
+&gt; Add-PoshGitToProfile -AllHosts</pre>
+</figure>
+
+<p >This will add the proper line to your <code>profile.ps1</code> file, and posh-git will be active the next time you open PowerShell.
+For a description of the Git status summary information displayed in the prompt see: <a class="link" href="https://github.com/dahlbyk/posh-git/blob/master/README.md#git-status-summary-information"
+     
+      >https://github.com/dahlbyk/posh-git/blob/master/README.md#git-status-summary-information</a>
+For more details on how to customize your posh-git prompt see: <a class="link" href="https://github.com/dahlbyk/posh-git/blob/master/README.md#customization-variables"
+     
+      >https://github.com/dahlbyk/posh-git/blob/master/README.md#customization-variables</a></p>
+
+</section>
+
+</section>
+
+</section>
+
+<section class="section" id="_summary_15">
+  <h2>Summary</h2>
+  <p >You&#8217;ve learned how to harness Git&#8217;s power from inside the tools that you use during your everyday work, and also how to access Git repositories from your own programs.</p>
+
+</section>
+
+</section>
+
+      </div>
+      <div class="paginator">
+        <a href="ch10-git-internals.html" class="paginator-prev ">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="B-embedding-git-in-your-applications.html" class="paginator-next ">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

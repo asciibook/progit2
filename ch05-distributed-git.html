@@ -1,0 +1,2423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Distributed Git - Pro Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="highlight.css" />
+    <link rel="stylesheet" href="html.css" />
+    <script src="html.js" defer></script>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="toolbar-title">
+        <a href="index.html">
+          Pro Git
+        </a>
+      </div>
+      <div class="toolbar-action">
+        <div class="dropdown">
+          <button id="drawer-button" type="button" class="dropdown-toggle button button-icon">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="toolbar-toc" class="dropdown-menu">
+            
+              <ol>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_asciibook_introduction.html">Asciibook Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_table_of_contents.html">Table of Contents</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_licence.html">Licence</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_scott_chacon.html">Preface by Scott Chacon</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_preface_by_ben_straub.html">Preface by Ben Straub</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_dedications.html">Dedications</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_contributors.html">Contributors</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_introduction.html">Introduction</a>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch01-getting-started.html">Getting Started</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_about_version_control">About Version Control</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_a_short_history_of_git">A Short History of Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_what_is_git">What is Git?</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_the_command_line">The Command Line</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_installing_git">Installing Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_first_time">First-Time Git Setup</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_git_help">Getting Help</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch01-getting-started.html#_summary">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html">Git Basics</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_getting_a_repo">Getting a Git Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_recording_changes_to_the_repository">Recording Changes to the Repository</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_viewing_history">Viewing the Commit History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_undoing">Undoing Things</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_remote_repos">Working with Remotes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_tagging">Tagging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_git_aliases">Git Aliases</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch02-git-basics-chapter.html#_summary_2">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch03-git-branching.html">Git Branching</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_git_branches_overview">Branches in a Nutshell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_basic_branching_and_merging">Basic Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branch_management">Branch Management</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_branching_workflows">Branching Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_remote_branches">Remote Branches</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_rebasing">Rebasing</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch03-git-branching.html#_summary_3">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch04-git-on-the-server.html">Git on the Server</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_the_protocols">The Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_getting_git_on_a_server">Getting Git on a Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_generate_ssh_key">Generating Your SSH Public Key</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_setting_up_server">Setting Up the Server</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_git_daemon">Git Daemon</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_smart_http_2">Smart HTTP</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitweb">GitWeb</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_gitlab">GitLab</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_third_party_hosted_options">Third Party Hosted Options</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch04-git-on-the-server.html#_summary_4">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch05-distributed-git.html">Distributed Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_distributed_workflows">Distributed Workflows</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_contributing_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_maintaining_a_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch05-distributed-git.html#_summary_6">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch06-github.html">GitHub</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_account_setup_and_configuration">Account Setup and Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_contributing_to_a_project">Contributing to a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_maintaining_gh_project">Maintaining a Project</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#ch06-github_orgs">Managing an organization</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_scripting_github">Scripting GitHub</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch06-github.html#_summary_7">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch07-git-tools.html">Git Tools</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_revision_selection">Revision Selection</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_interactive_staging">Interactive Staging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_stashing">Stashing and Cleaning</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_signing">Signing Your Work</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_searching">Searching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_reset">Reset Demystified</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_advanced_merging">Advanced Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#ref_rerere">Rerere</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_debugging_with_git">Debugging with Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_git_submodules">Submodules</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_bundling">Bundling</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_replace">Replace</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_credential_caching">Credential Storage</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch07-git-tools.html#_summary_9">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch08-customizing-git.html">Customizing Git</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_config">Git Configuration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_attributes">Git Attributes</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_git_hooks">Git Hooks</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_an_example_git_enforced_policy">An Example Git-Enforced Policy</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch08-customizing-git.html#_summary_10">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html">Git and Other Systems</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_git_as_a_client">Git as a Client</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_migrating">Migrating to Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch09-git-and-other-systems.html#_summary_12">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="ch10-git-internals.html">Git Internals</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_plumbing_porcelain">Plumbing and Porcelain</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_objects">Git Objects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_git_refs">Git References</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_packfiles">Packfiles</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_refspec">The Refspec</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_transfer_protocols">Transfer Protocols</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_maintenance_and_data_recovery">Maintenance and Data Recovery</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_environment_variables">Environment Variables</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="ch10-git-internals.html#_summary_13">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="A-git-in-other-environments.html">Git in Other Environments</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_graphical_interfaces">Graphical Interfaces</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio">Git in Visual Studio</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_visual_studio_code">Git in Visual Studio Code</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_eclipse">Git in Eclipse</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_intellij_pycharm_webstorm_phpstorm_rubymine">Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_sublime_text">Git in Sublime Text</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_bash">Git in Bash</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_in_zsh">Git in Zsh</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_git_powershell">Git in PowerShell</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="A-git-in-other-environments.html#_summary_15">Summary</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html">Embedding Git in your Applications</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_command_line_git">Command-line Git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_libgit2">Libgit2</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_jgit">JGit</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_go_git">go-git</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="B-embedding-git-in-your-applications.html#_dulwich">Dulwich</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="C-git-commands.html">Git Commands</a>
+                    
+                      <ol>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_setup_and_config">Setup and Config</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_getting_and_creating_projects">Getting and Creating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_basic_snapshotting">Basic Snapshotting</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_branching_and_merging">Branching and Merging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_sharing_and_updating_projects">Sharing and Updating Projects</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_inspection_and_comparison">Inspection and Comparison</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_debugging_2">Debugging</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_patching">Patching</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_email">Email</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_external_systems">External Systems</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_administration_2">Administration</a>
+                          </li>
+                        
+                          <li>
+                            <a class="dropdown-menu-item" href="C-git-commands.html#_plumbing_commands">Plumbing Commands</a>
+                          </li>
+                        
+                      </ol>
+                    
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-menu-item" href="_index.html">Index</a>
+                    
+                  </li>
+                
+              </ol>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <section class="chapter" id="ch05-distributed-git">
+  <h1>Distributed Git</h1>
+  <p ><a class="indexterm" id="_indexterm_118">&#8203;</a>
+Now that you have a remote Git repository set up as a focal point for all the developers to share their code, and you&#8217;re familiar with basic Git commands in a local workflow, you&#8217;ll look at how to utilize some of the distributed workflows that Git affords you.</p>
+
+<p >In this chapter, you&#8217;ll see how to work with Git in a distributed environment as a contributor and an integrator.
+That is, you&#8217;ll learn how to contribute code successfully to a project and make it as easy on you and the project maintainer as possible, and also how to maintain a project successfully with a number of developers contributing.</p>
+
+<section class="section" id="_distributed_workflows">
+  <h2>Distributed Workflows</h2>
+  <p ><a class="indexterm" id="_indexterm_119">&#8203;</a>
+In contrast with Centralized Version Control Systems (CVCSs), the distributed nature of Git allows you to be far more flexible in how developers collaborate on projects.
+In centralized systems, every developer is a node working more or less equally with a central hub.
+In Git, however, every developer is potentially both a node and a hub; that is, every developer can both contribute code to other repositories and maintain a public repository on which others can base their work and which they can contribute to.
+This presents a vast range of workflow possibilities for your project and/or your team, so we&#8217;ll cover a few common paradigms that take advantage of this flexibility.
+We&#8217;ll go over the strengths and possible weaknesses of each design; you can choose a single one to use, or you can mix and match features from each.</p>
+
+<section class="section" id="_centralized_workflow">
+  <h3>Centralized Workflow</h3>
+  <p ><a class="indexterm" id="_indexterm_120">&#8203;</a>
+In centralized systems, there is generally a single collaboration model&#8201;&#8212;&#8201;the centralized workflow.
+One central hub, or <em>repository</em>, can accept code, and everyone synchronizes their work with it.
+A number of developers are nodes&#8201;&#8212;&#8201;consumers of that hub&#8201;&#8212;&#8201;and synchronize with that centralized location.</p>
+
+<figure class="image" >
+  
+    <img src="images/centralized_workflow.png"
+         alt="Centralized workflow."
+         
+          />
+  
+  
+    <figcaption>Figure 54. Centralized workflow.</figcaption>
+  
+</figure>
+
+<p >This means that if two developers clone from the hub and both make changes, the first developer to push their changes back up can do so with no problems.
+The second developer must merge in the first one&#8217;s work before pushing changes up, so as not to overwrite the first developer&#8217;s changes.
+This concept is as true in Git as it is in Subversion<a class="indexterm" id="_indexterm_121">&#8203;</a> (or any CVCS), and this model works perfectly well in Git.</p>
+
+<p >If you are already comfortable with a centralized workflow in your company or team, you can easily continue using that workflow with Git.
+Simply set up a single repository, and give everyone on your team push access; Git won&#8217;t let users overwrite each other.</p>
+
+<p >Say John and Jessica both start working at the same time.
+John finishes his change and pushes it to the server.
+Then Jessica tries to push her changes, but the server rejects them.
+She is told that she&#8217;s trying to push non-fast-forward changes and that she won&#8217;t be able to do so until she fetches and merges.
+This workflow is attractive to a lot of people because it&#8217;s a paradigm that many are familiar and comfortable with.</p>
+
+<p >This is also not limited to small teams.
+With Git&#8217;s branching model, it&#8217;s possible for hundreds of developers to successfully work on a single project through dozens of branches simultaneously.</p>
+
+</section>
+
+<section class="section" id="_integration_manager">
+  <h3>Integration-Manager Workflow</h3>
+  <p ><a class="indexterm" id="_indexterm_122">&#8203;</a>
+Because Git allows you to have multiple remote repositories, it&#8217;s possible to have a workflow where each developer has write access to their own public repository and read access to everyone else&#8217;s.
+This scenario often includes a canonical repository that represents the ``official'' project.
+To contribute to that project, you create your own public clone of the project and push your changes to it.
+Then, you can send a request to the maintainer of the main project to pull in your changes.
+The maintainer can then add your repository as a remote, test your changes locally, merge them into their branch, and push back to their repository.
+The process works as follows (see <a class="xref" href="ch05-distributed-git.html#wfdiag_b">Integration-manager workflow.</a>):</p>
+
+<ol class="olist" >
+  
+    <li>
+      <p>The project maintainer pushes to their public repository.</p>
+      
+    </li>
+  
+    <li>
+      <p>A contributor clones that repository and makes changes.</p>
+      
+    </li>
+  
+    <li>
+      <p>The contributor pushes to their own public copy.</p>
+      
+    </li>
+  
+    <li>
+      <p>The contributor sends the maintainer an email asking them to pull changes.</p>
+      
+    </li>
+  
+    <li>
+      <p>The maintainer adds the contributor&#8217;s repository as a remote and merges locally.</p>
+      
+    </li>
+  
+    <li>
+      <p>The maintainer pushes merged changes to the main repository.</p>
+      
+    </li>
+  
+</ol>
+
+<figure class="image" id="wfdiag_b">
+  
+    <img src="images/integration-manager.png"
+         alt="Integration-manager workflow."
+         
+          />
+  
+  
+    <figcaption>Figure 55. Integration-manager workflow.</figcaption>
+  
+</figure>
+
+<p ><a class="indexterm" id="_indexterm_123">&#8203;</a>
+This is a very common workflow with hub-based tools like GitHub or GitLab, where it&#8217;s easy to fork a project and push your changes into your fork for everyone to see.
+One of the main advantages of this approach is that you can continue to work, and the maintainer of the main repository can pull in your changes at any time.
+Contributors don&#8217;t have to wait for the project to incorporate their changes&#8201;&#8212;&#8201;each party can work at their own pace.</p>
+
+</section>
+
+<section class="section" id="_dictator_and_lieutenants_workflow">
+  <h3>Dictator and Lieutenants Workflow</h3>
+  <p ><a class="indexterm" id="_indexterm_124">&#8203;</a>
+This is a variant of a multiple-repository workflow.
+It&#8217;s generally used by huge projects with hundreds of collaborators; one famous example is the Linux kernel.
+Various integration managers are in charge of certain parts of the repository; they&#8217;re called <em>lieutenants</em>.
+All the lieutenants have one integration manager known as the benevolent dictator.
+The benevolent dictator pushes from their directory to a reference repository from which all the collaborators need to pull.
+The process works like this (see <a class="xref" href="ch05-distributed-git.html#wfdiag_c">Benevolent dictator workflow.</a>):</p>
+
+<ol class="olist" >
+  
+    <li>
+      <p>Regular developers work on their topic branch and rebase their work on top of <code>master</code>.
+The <code>master</code> branch is that of the reference repository to which the dictator pushes.</p>
+      
+    </li>
+  
+    <li>
+      <p>Lieutenants merge the developers' topic branches into their <code>master</code> branch.</p>
+      
+    </li>
+  
+    <li>
+      <p>The dictator merges the lieutenants' <code>master</code> branches into the dictator&#8217;s <code>master</code> branch.</p>
+      
+    </li>
+  
+    <li>
+      <p>Finally, the dictator pushes that <code>master</code> branch to the reference repository so the other developers can rebase on it.</p>
+      
+    </li>
+  
+</ol>
+
+<figure class="image" id="wfdiag_c">
+  
+    <img src="images/benevolent-dictator.png"
+         alt="Benevolent dictator workflow."
+         
+          />
+  
+  
+    <figcaption>Figure 56. Benevolent dictator workflow.</figcaption>
+  
+</figure>
+
+<p >This kind of workflow isn&#8217;t common, but can be useful in very big projects, or in highly hierarchical environments.
+It allows the project leader (the dictator) to delegate much of the work and collect large subsets of code at multiple points before integrating them.</p>
+
+</section>
+
+<section class="section" id="_workflows_summary">
+  <h3>Workflows Summary</h3>
+  <p >These are some commonly used workflows that are possible with a distributed system like Git, but you can see that many variations are possible to suit your particular real-world workflow.
+Now that you can (hopefully) determine which workflow combination may work for you, we&#8217;ll cover some more specific examples of how to accomplish the main roles that make up the different flows.
+In the next section, you&#8217;ll learn about a few common patterns for contributing to a project.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_contributing_project">
+  <h2>Contributing to a Project</h2>
+  <p ><a class="indexterm" id="_indexterm_125">&#8203;</a>
+The main difficulty with describing how to contribute to a project are the numerous variations on how to do that.
+Because Git is very flexible, people can and do work together in many ways, and it&#8217;s problematic to describe how you should contribute&#8201;&#8212;&#8201;every project is a bit different.
+Some of the variables involved are active contributor count, chosen workflow, your commit access, and possibly the external contribution method.</p>
+
+<p >The first variable is active contributor count&#8201;&#8212;&#8201;how many users are actively contributing code to this project, and how often?
+In many instances, you&#8217;ll have two or three developers with a few commits a day, or possibly less for somewhat dormant projects.
+For larger companies or projects, the number of developers could be in the thousands, with hundreds or thousands of commits coming in each day.
+This is important because with more and more developers, you run into more issues with making sure your code applies cleanly or can be easily merged.
+Changes you submit may be rendered obsolete or severely broken by work that is merged in while you were working or while your changes were waiting to be approved or applied.
+How can you keep your code consistently up to date and your commits valid?</p>
+
+<p >The next variable is the workflow in use for the project.
+Is it centralized, with each developer having equal write access to the main codeline?
+Does the project have a maintainer or integration manager who checks all the patches?
+Are all the patches peer-reviewed and approved?
+Are you involved in that process?
+Is a lieutenant system in place, and do you have to submit your work to them first?</p>
+
+<p >The next variable is your commit access.
+The workflow required in order to contribute to a project is much different if you have write access to the project than if you don&#8217;t.
+If you don&#8217;t have write access, how does the project prefer to accept contributed work?
+Does it even have a policy?
+How much work are you contributing at a time?
+How often do you contribute?</p>
+
+<p >All these questions can affect how you contribute effectively to a project and what workflows are preferred or available to you.
+We&#8217;ll cover aspects of each of these in a series of use cases, moving from simple to more complex; you should be able to construct the specific workflows you need in practice from these examples.</p>
+
+<section class="section" id="_commit_guidelines">
+  <h3>Commit Guidelines</h3>
+  <p >Before we start looking at the specific use cases, here&#8217;s a quick note about commit messages.
+Having a good guideline for creating commits and sticking to it makes working with Git and collaborating with others a lot easier.
+The Git project provides a document that lays out a number of good tips for creating commits from which to submit patches&#8201;&#8212;&#8201;you can read it in the Git source code in the <code>Documentation/SubmittingPatches</code> file.</p>
+
+<p ><a class="indexterm" id="_indexterm_126">&#8203;</a>
+First, your submissions should not contain any whitespace errors.
+Git provides an easy way to check for this&#8201;&#8212;&#8201;before you commit, run <code>git diff --check</code>, which identifies possible whitespace errors and lists them for you.</p>
+
+<figure class="image" >
+  
+    <img src="images/git-diff-check.png"
+         alt="Output of `git diff --check`."
+         
+          />
+  
+  
+    <figcaption>Figure 57. Output of <code>git diff --check</code>.</figcaption>
+  
+</figure>
+
+<p >If you run that command before committing, you can tell if you&#8217;re about to commit whitespace issues that may annoy other developers.</p>
+
+<p >Next, try to make each commit a logically separate changeset.
+If you can, try to make your changes digestible&#8201;&#8212;&#8201;don&#8217;t code for a whole weekend on five different issues and then submit them all as one massive commit on Monday.
+Even if you don&#8217;t commit during the weekend, use the staging area on Monday to split your work into at least one commit per issue, with a useful message per commit.
+If some of the changes modify the same file, try to use <code>git add --patch</code> to partially stage files (covered in detail in <a class="xref" href="ch07-git-tools.html#_interactive_staging">Interactive Staging</a>).
+The project snapshot at the tip of the branch is identical whether you do one commit or five, as long as all the changes are added at some point, so try to make things easier on your fellow developers when they have to review your changes.</p>
+
+<p >This approach also makes it easier to pull out or revert one of the changesets if you need to later.
+<a class="xref" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a> describes a number of useful Git tricks for rewriting history and interactively staging files&#8201;&#8212;&#8201;use these tools to help craft a clean and understandable history before sending the work to someone else.</p>
+
+<p >The last thing to keep in mind is the commit message.
+Getting in the habit of creating quality commit messages makes using and collaborating with Git a lot easier.
+As a general rule, your messages should start with a single line that&#8217;s no more than about 50 characters and that describes the changeset concisely, followed by a blank line, followed by a more detailed explanation.
+The Git project requires that the more detailed explanation include your motivation for the change and contrast its implementation with previous behavior&#8201;&#8212;&#8201;this is a good guideline to follow.
+Write your commit message in the imperative: "Fix bug" and not "Fixed bug" or "Fixes bug."
+Here is a <a class="link" href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html"
+     
+      >template originally written by Tim Pope</a>:</p>
+
+<figure class="listing" >
+  
+  <pre>Capitalized, short (50 chars or less) summary
+
+More detailed explanatory text, if necessary.  Wrap it to about 72
+characters or so.  In some contexts, the first line is treated as the
+subject of an email and the rest of the text as the body.  The blank
+line separating the summary from the body is critical (unless you omit
+the body entirely); tools like rebase can get confused if you run the
+two together.
+
+Write your commit message in the imperative: "Fix bug" and not "Fixed bug"
+or "Fixes bug."  This convention matches up with commit messages generated
+by commands like git merge and git revert.
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+
+- Typically a hyphen or asterisk is used for the bullet, followed by a
+  single space, with blank lines in between, but conventions vary here
+
+- Use a hanging indent</pre>
+</figure>
+
+<p >If all your commit messages follow this model, things will be much easier for you and the developers with whom you collaborate.
+The Git project has well-formatted commit messages&#8201;&#8212;&#8201;try running <code>git log --no-merges</code> there to see what a nicely-formatted project-commit history looks like.</p>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    <h5>Do as we say, not as we do.</h5>
+    <p >For the sake of brevity, many of the examples in this book don&#8217;t have nicely-formatted commit messages like this; instead, we simply use the <code>-m</code> option to <code>git commit</code>.</p>
+
+<p >In short, do as we say, not as we do.</p>
+
+  </div>
+</div>
+
+</section>
+
+<section class="section" id="_private_team">
+  <h3>Private Small Team</h3>
+  <p ><a class="indexterm" id="_indexterm_127">&#8203;</a>
+The simplest setup you&#8217;re likely to encounter is a private project with one or two other developers.
+``Private,'' in this context, means closed-source&#8201;&#8212;&#8201;not accessible to the outside world.
+You and the other developers all have push access to the repository.</p>
+
+<p >In this environment, you can follow a workflow similar to what you might do when using Subversion or another centralized system.
+You still get the advantages of things like offline committing and vastly simpler branching and merging, but the workflow can be very similar; the main difference is that merges happen client-side rather than on the server at commit time.
+Let&#8217;s see what it might look like when two developers start to work together with a shared repository.
+The first developer, John, clones the repository, makes a change, and commits locally.
+(The protocol messages have been replaced with <code>&#8230;&#8203;</code> in these examples to shorten them somewhat.)</p>
+
+<figure class="listing" >
+  
+  <pre># John's Machine
+$ git clone john@githost:simplegit.git
+Cloning into 'simplegit'...
+...
+$ cd simplegit/
+$ vim lib/simplegit.rb
+$ git commit -am 'remove invalid default value'
+[master 738ee87] remove invalid default value
+ 1 files changed, 1 insertions(+), 1 deletions(-)</pre>
+</figure>
+
+<p >The second developer, Jessica, does the same thing&#8201;&#8212;&#8201;clones the repository and commits a change:</p>
+
+<figure class="listing" >
+  
+  <pre># Jessica's Machine
+$ git clone jessica@githost:simplegit.git
+Cloning into 'simplegit'...
+...
+$ cd simplegit/
+$ vim TODO
+$ git commit -am 'add reset task'
+[master fbff5bc] add reset task
+ 1 files changed, 1 insertions(+), 0 deletions(-)</pre>
+</figure>
+
+<p >Now, Jessica pushes her work to the server, which works just fine:</p>
+
+<figure class="listing" >
+  
+  <pre># Jessica's Machine
+$ git push origin master
+...
+To jessica@githost:simplegit.git
+   1edee6b..fbff5bc  master -&gt; master</pre>
+</figure>
+
+<p >The last line of the output above shows a useful return message from the push operation.
+The basic format is <code>&lt;oldref&gt;..&lt;newref&gt; fromref &#8594; toref</code>, where <code>oldref</code> means the old reference, <code>newref</code> means the new reference, <code>fromref</code> is the name of the local reference being pushed, and <code>toref</code> is the name of the remote reference being updated.
+You&#8217;ll see similar output like this below in the discussions, so having a basic idea of the meaning will help in understanding the various states of the repositories.
+More details are available in the documentation for <a class="link" href="https://git-scm.com/docs/git-push"
+     
+      >git-push</a>.</p>
+
+<p >Continuing with this example, shortly afterwards, John makes some changes, commits them to his local repository, and tries to push them to the same server:</p>
+
+<figure class="listing" >
+  
+  <pre># John's Machine
+$ git push origin master
+To john@githost:simplegit.git
+ ! [rejected]        master -&gt; master (non-fast forward)
+error: failed to push some refs to 'john@githost:simplegit.git'</pre>
+</figure>
+
+<p >In this case, John&#8217;s push fails because of Jessica&#8217;s earlier push of <em>her</em> changes.
+This is especially important to understand if you&#8217;re used to Subversion, because you&#8217;ll notice that the two developers didn&#8217;t edit the same file.
+Although Subversion automatically does such a merge on the server if different files are edited, with Git, you must <em>first</em> merge the commits locally.
+In other words, John must first fetch Jessica&#8217;s upstream changes and merge them into his local repository before he will be allowed to push.</p>
+
+<p >As a first step, John fetches Jessica&#8217;s work (this only <em>fetches</em> Jessica&#8217;s upstream work, it does not yet merge it into John&#8217;s work):</p>
+
+<figure class="listing" >
+  
+  <pre>$ git fetch origin
+...
+From john@githost:simplegit
+ + 049d078...fbff5bc master     -&gt; origin/master</pre>
+</figure>
+
+<p >At this point, John&#8217;s local repository looks something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-1.png"
+         alt="John's divergent history."
+         
+          />
+  
+  
+    <figcaption>Figure 58. John&#8217;s divergent history.</figcaption>
+  
+</figure>
+
+<p >Now John can merge Jessica&#8217;s work that he fetched into his own local work:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git merge origin/master
+Merge made by the 'recursive' strategy.
+ TODO |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)</pre>
+</figure>
+
+<p >As long as that local merge goes smoothly, John&#8217;s updated history will now look like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-2.png"
+         alt="John's repository after merging `origin/master`."
+         
+          />
+  
+  
+    <figcaption>Figure 59. John&#8217;s repository after merging <code>origin/master</code>.</figcaption>
+  
+</figure>
+
+<p >At this point, John might want to test this new code to make sure none of Jessica&#8217;s work affects any of his and, as long as everything seems fine, he can finally push the new merged work up to the server:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push origin master
+...
+To john@githost:simplegit.git
+   fbff5bc..72bbc59  master -&gt; master</pre>
+</figure>
+
+<p >In the end, John&#8217;s commit history will look like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-3.png"
+         alt="John's history after pushing to the `origin` server."
+         
+          />
+  
+  
+    <figcaption>Figure 60. John&#8217;s history after pushing to the <code>origin</code> server.</figcaption>
+  
+</figure>
+
+<p >In the meantime, Jessica has created a new topic branch called <code>issue54</code>, and made three commits to that branch.
+She hasn&#8217;t fetched John&#8217;s changes yet, so her commit history looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-4.png"
+         alt="Jessica's topic branch."
+         
+          />
+  
+  
+    <figcaption>Figure 61. Jessica&#8217;s topic branch.</figcaption>
+  
+</figure>
+
+<p >Suddenly, Jessica learns that John has pushed some new work to the server and she wants to take a look at it, so she can fetch all new content from the server that she does not yet have with:</p>
+
+<figure class="listing" >
+  
+  <pre># Jessica's Machine
+$ git fetch origin
+...
+From jessica@githost:simplegit
+   fbff5bc..72bbc59  master     -&gt; origin/master</pre>
+</figure>
+
+<p >That pulls down the work John has pushed up in the meantime.
+Jessica&#8217;s history now looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-5.png"
+         alt="Jessica's history after fetching John's changes."
+         
+          />
+  
+  
+    <figcaption>Figure 62. Jessica&#8217;s history after fetching John&#8217;s changes.</figcaption>
+  
+</figure>
+
+<p >Jessica thinks her topic branch is ready, but she wants to know what part of John&#8217;s fetched work she has to merge into her work so that she can push.
+She runs <code>git log</code> to find out:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log --no-merges issue54..origin/master
+commit 738ee872852dfaa9d6634e0dea7a324040193016
+Author: John Smith &lt;jsmith@example.com&gt;
+Date:   Fri May 29 16:01:27 2009 -0700
+
+   remove invalid default value</pre>
+</figure>
+
+<p >The <code>issue54..origin/master</code> syntax is a log filter that asks Git to display only those commits that are on the latter branch (in this case <code>origin/master</code>) that are not on the first branch (in this case <code>issue54</code>).
+We&#8217;ll go over this syntax in detail in <a class="xref" href="ch07-git-tools.html#_commit_ranges">Commit Ranges</a>.</p>
+
+<p >From the above output, we can see that there is a single commit that John has made that Jessica has not merged into her local work.
+If she merges <code>origin/master</code>, that is the single commit that will modify her local work.</p>
+
+<p >Now, Jessica can merge her topic work into her <code>master</code> branch, merge John&#8217;s work (<code>origin/master</code>) into her <code>master</code> branch, and then push back to the server again.</p>
+
+<p >First (having committed all of the work on her <code>issue54</code> topic branch), Jessica switches back to her <code>master</code> branch in preparation for integrating all this work:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.</pre>
+</figure>
+
+<p >Jessica can merge either <code>origin/master</code> or <code>issue54</code> first&#8201;&#8212;&#8201;they&#8217;re both upstream, so the order doesn&#8217;t matter.
+The end snapshot should be identical no matter which order she chooses; only the history will be different.
+She chooses to merge the <code>issue54</code> branch  first:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git merge issue54
+Updating fbff5bc..4af4298
+Fast forward
+ README           |    1 +
+ lib/simplegit.rb |    6 +++++-
+ 2 files changed, 6 insertions(+), 1 deletions(-)</pre>
+</figure>
+
+<p >No problems occur; as you can see it was a simple fast-forward merge.
+Jessica now completes the local merging process by merging John&#8217;s earlier fetched work that is sitting in the <code>origin/master</code> branch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git merge origin/master
+Auto-merging lib/simplegit.rb
+Merge made by the 'recursive' strategy.
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)</pre>
+</figure>
+
+<p >Everything merges cleanly, and Jessica&#8217;s history now looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-6.png"
+         alt="Jessica's history after merging John's changes."
+         
+          />
+  
+  
+    <figcaption>Figure 63. Jessica&#8217;s history after merging John&#8217;s changes.</figcaption>
+  
+</figure>
+
+<p >Now <code>origin/master</code> is reachable from Jessica&#8217;s <code>master</code> branch, so she should be able to successfully push (assuming John hasn&#8217;t pushed even more changes in the meantime):</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push origin master
+...
+To jessica@githost:simplegit.git
+   72bbc59..8059c15  master -&gt; master</pre>
+</figure>
+
+<p >Each developer has committed a few times and merged each other&#8217;s work successfully.</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-7.png"
+         alt="Jessica's history after pushing all changes back to the server."
+         
+          />
+  
+  
+    <figcaption>Figure 64. Jessica&#8217;s history after pushing all changes back to the server.</figcaption>
+  
+</figure>
+
+<p >That is one of the simplest workflows.
+You work for a while (generally in a topic branch), and merge that work into your <code>master</code> branch when it&#8217;s ready to be integrated.
+When you want to share that work, you fetch and merge your <code>master</code> from <code>origin/master</code> if it has changed, and finally push to the <code>master</code> branch on the server.
+The general sequence is something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/small-team-flow.png"
+         alt="General sequence of events for a simple multiple-developer Git workflow."
+         
+          />
+  
+  
+    <figcaption>Figure 65. General sequence of events for a simple multiple-developer Git workflow.</figcaption>
+  
+</figure>
+
+</section>
+
+<section class="section" id="_private_managed_team">
+  <h3>Private Managed Team</h3>
+  <p ><a class="indexterm" id="_indexterm_128">&#8203;</a>
+In this next scenario, you&#8217;ll look at contributor roles in a larger private group.
+You&#8217;ll learn how to work in an environment where small groups collaborate on features, after which those team-based contributions are integrated by another party.</p>
+
+<p >Let&#8217;s say that John and Jessica are working together on one feature (call this <code>featureA''), while Jessica and a third developer, Josie, are working on a second (say, </code>featureB'').
+In this case, the company is using a type of integration-manager workflow where the work of the individual groups is integrated only by certain engineers, and the <code>master</code> branch of the main repo can be updated only by those engineers.
+In this scenario, all work is done in team-based branches and pulled together by the integrators later.</p>
+
+<p >Let&#8217;s follow Jessica&#8217;s workflow as she works on her two features, collaborating in parallel with two different developers in this environment.
+Assuming she already has her repository cloned, she decides to work on <code>featureA</code> first.
+She creates a new branch for the feature and does some work on it there:</p>
+
+<figure class="listing" >
+  
+  <pre># Jessica's Machine
+$ git checkout -b featureA
+Switched to a new branch 'featureA'
+$ vim lib/simplegit.rb
+$ git commit -am 'add limit to log function'
+[featureA 3300904] add limit to log function
+ 1 files changed, 1 insertions(+), 1 deletions(-)</pre>
+</figure>
+
+<p >At this point, she needs to share her work with John, so she pushes her <code>featureA</code> branch commits up to the server.
+Jessica doesn&#8217;t have push access to the <code>master</code> branch&#8201;&#8212;&#8201;only the integrators do&#8201;&#8212;&#8201;so she has to push to another branch in order to collaborate with John:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push -u origin featureA
+...
+To jessica@githost:simplegit.git
+ * [new branch]      featureA -&gt; featureA</pre>
+</figure>
+
+<p >Jessica emails John to tell him that she&#8217;s pushed some work into a branch named <code>featureA</code> and he can look at it now.
+While she waits for feedback from John, Jessica decides to start working on <code>featureB</code> with Josie.
+To begin, she starts a new feature branch, basing it off the server&#8217;s <code>master</code> branch:</p>
+
+<figure class="listing" >
+  
+  <pre># Jessica's Machine
+$ git fetch origin
+$ git checkout -b featureB origin/master
+Switched to a new branch 'featureB'</pre>
+</figure>
+
+<p >Now, Jessica makes a couple of commits on the <code>featureB</code> branch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ vim lib/simplegit.rb
+$ git commit -am 'made the ls-tree function recursive'
+[featureB e5b0fdc] made the ls-tree function recursive
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ vim lib/simplegit.rb
+$ git commit -am 'add ls-files'
+[featureB 8512791] add ls-files
+ 1 files changed, 5 insertions(+), 0 deletions(-)</pre>
+</figure>
+
+<p >Jessica&#8217;s repository now looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/managed-team-1.png"
+         alt="Jessica's initial commit history."
+         
+          />
+  
+  
+    <figcaption>Figure 66. Jessica&#8217;s initial commit history.</figcaption>
+  
+</figure>
+
+<p >She&#8217;s ready to push her work, but gets an email from Josie that a branch with some initial <code>`featureB'' work on it was already pushed to the server as the `featureBee</code> branch.
+Jessica needs to merge those changes with her own before she can push her work to the server.
+Jessica first fetches Josie&#8217;s changes with <code>git fetch</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git fetch origin
+...
+From jessica@githost:simplegit
+ * [new branch]      featureBee -&gt; origin/featureBee</pre>
+</figure>
+
+<p >Assuming Jessica is still on her checked-out <code>featureB</code> branch, she can now merge Josie&#8217;s work into that branch with <code>git merge</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git merge origin/featureBee
+Auto-merging lib/simplegit.rb
+Merge made by the 'recursive' strategy.
+ lib/simplegit.rb |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)</pre>
+</figure>
+
+<p >At this point, Jessica wants to push all of this merged <code>`featureB'' work back to the server, but she doesn&#8217;t want to simply push her own `featureB</code> branch.
+Rather, since Josie has already started an upstream <code>featureBee</code> branch, Jessica wants to push to <em>that</em> branch, which she does with:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push -u origin featureB:featureBee
+...
+To jessica@githost:simplegit.git
+   fba9af8..cd685d1  featureB -&gt; featureBee</pre>
+</figure>
+
+<p >This is called a <em>refspec</em>.
+See <a class="xref" href="ch10-git-internals.html#_refspec">The Refspec</a> for a more detailed discussion of Git refspecs and different things you can do with them.
+Also notice the <code>-u</code> flag; this is short for <code>--set-upstream</code>, which configures the branches for easier pushing and pulling later.</p>
+
+<p >Suddenly, Jessica gets email from John, who tells her he&#8217;s pushed some changes to the <code>featureA</code> branch on which they are collaborating, and he asks Jessica to take a look at them.
+Again, Jessica runs a simple <code>git fetch</code> to fetch <em>all</em> new content from the server, including (of course) John&#8217;s latest work:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git fetch origin
+...
+From jessica@githost:simplegit
+   3300904..aad881d  featureA   -&gt; origin/featureA</pre>
+</figure>
+
+<p >Jessica can display the log of John&#8217;s new work by comparing the content of the newly-fetched <code>featureA</code> branch with her local copy of the same branch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log featureA..origin/featureA
+commit aad881d154acdaeb2b6b18ea0e827ed8a6d671e6
+Author: John Smith &lt;jsmith@example.com&gt;
+Date:   Fri May 29 19:57:33 2009 -0700
+
+    changed log output to 30 from 25</pre>
+</figure>
+
+<p >If Jessica likes what she sees, she can merge John&#8217;s new work into her local <code>featureA</code> branch with:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git checkout featureA
+Switched to branch 'featureA'
+$ git merge origin/featureA
+Updating 3300904..aad881d
+Fast forward
+ lib/simplegit.rb |   10 +++++++++-
+1 files changed, 9 insertions(+), 1 deletions(-)</pre>
+</figure>
+
+<p >Finally, Jessica might want to make a couple minor changes to all that merged content, so she is free to make those changes, commit them to her local <code>featureA</code> branch, and push the end result back to the server.</p>
+
+<figure class="listing" >
+  
+  <pre>$ git commit -am 'small tweak'
+[featureA 774b3ed] small tweak
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ git push
+...
+To jessica@githost:simplegit.git
+   3300904..774b3ed  featureA -&gt; featureA</pre>
+</figure>
+
+<p >Jessica&#8217;s commit history now looks something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/managed-team-2.png"
+         alt="Jessica's history after committing on a feature branch."
+         
+          />
+  
+  
+    <figcaption>Figure 67. Jessica&#8217;s history after committing on a feature branch.</figcaption>
+  
+</figure>
+
+<p >At some point, Jessica, Josie, and John inform the integrators that the <code>featureA</code> and <code>featureBee</code> branches on the server are ready for integration into the mainline.
+After the integrators merge these branches into the mainline, a fetch will bring down the new merge commit, making the history look like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/managed-team-3.png"
+         alt="Jessica's history after merging both her topic branches."
+         
+          />
+  
+  
+    <figcaption>Figure 68. Jessica&#8217;s history after merging both her topic branches.</figcaption>
+  
+</figure>
+
+<p >Many groups switch to Git because of this ability to have multiple teams working in parallel, merging the different lines of work late in the process.
+The ability of smaller subgroups of a team to collaborate via remote branches without necessarily having to involve or impede the entire team is a huge benefit of Git.
+The sequence for the workflow you saw here is something like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/managed-team-flow.png"
+         alt="Basic sequence of this managed-team workflow."
+         
+          />
+  
+  
+    <figcaption>Figure 69. Basic sequence of this managed-team workflow.</figcaption>
+  
+</figure>
+
+</section>
+
+<section class="section" id="_public_project">
+  <h3>Forked Public Project</h3>
+  <p ><a class="indexterm" id="_indexterm_129">&#8203;</a>
+Contributing to public projects is a bit different.
+Because you don&#8217;t have the permissions to directly update branches on the project, you have to get the work to the maintainers some other way.
+This first example describes contributing via forking on Git hosts that support easy forking.
+Many hosting sites support this (including GitHub, BitBucket, repo.or.cz, and others), and many project maintainers expect this style of contribution.
+The next section deals with projects that prefer to accept contributed patches via email.</p>
+
+<p >First, you&#8217;ll probably want to clone the main repository, create a topic branch for the patch or patch series you&#8217;re planning to contribute, and do your work there.
+The sequence looks basically like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git clone &lt;url&gt;
+$ cd project
+$ git checkout -b featureA
+  ... work ...
+$ git commit
+  ... work ...
+$ git commit</pre>
+</figure>
+
+<div class="admonition admonition-note" >
+  <div class="admonition-icon">
+  </div>
+  <div class="admonition-content">
+    
+    <p >You may want to use <code>rebase -i</code> to squash your work down to a single commit, or rearrange the work in the commits to make the patch easier for the maintainer to review&#8201;&#8212;&#8201;see <a class="xref" href="ch07-git-tools.html#_rewriting_history">Rewriting History</a> for more information about interactive rebasing.</p>
+
+  </div>
+</div>
+
+<p >When your branch work is finished and you&#8217;re ready to contribute it back to the maintainers, go to the original project page and click the <code>`Fork'' button, creating your own writable fork of the project.
+You then need to add this repository URL as a new remote of your local repository; in this example, let&#8217;s call it `myfork</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git remote add myfork &lt;url&gt;</pre>
+</figure>
+
+<p >You then need to push your new work to this repository.
+It&#8217;s easiest to push the topic branch you&#8217;re working on to your forked repository, rather than merging that work into your <code>master</code> branch and pushing that.
+The reason is that if your work isn&#8217;t accepted or is cherry-picked, you don&#8217;t have to rewind your <code>master</code> branch (the Git <code>cherry-pick</code> operation is covered in more detail in <a class="xref" href="ch05-distributed-git.html#_rebase_cherry_pick">Rebasing and Cherry-Picking Workflows</a>).
+If the maintainers <code>merge</code>, <code>rebase</code>, or <code>cherry-pick</code> your work, you&#8217;ll eventually get it back via pulling from their repository anyhow.</p>
+
+<p >In any event, you can push your work with:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git push -u myfork featureA</pre>
+</figure>
+
+<p ><a class="indexterm" id="_indexterm_130">&#8203;</a>
+Once your work has been pushed to your fork of the repository, you need to notify the maintainers of the original project that you have work you&#8217;d like them to merge.
+This is often called a <em>pull request</em>, and you typically generate such a request either via the website&#8201;&#8212;&#8201;GitHub has its own <code>`Pull Request'' mechanism that we&#8217;ll go over in <a class="xref" href="ch06-github.html">GitHub</a>&#8201;&#8212;&#8201;or you can run the `git request-pull</code> command and email the subsequent output to the project maintainer manually.</p>
+
+<p >The <code>git request-pull</code> command takes the base branch into which you want your topic branch pulled and the Git repository URL you want them to pull from, and produces a summary of all the changes you&#8217;re asking to be pulled.
+For instance, if Jessica wants to send John a pull request, and she&#8217;s done two commits on the topic branch she just pushed, she can run this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git request-pull origin/master myfork
+The following changes since commit 1edee6b1d61823a2de3b09c160d7080b8d1b3a40:
+Jessica Smith (1):
+        added a new function
+
+are available in the git repository at:
+
+  git://githost/simplegit.git featureA
+
+Jessica Smith (2):
+      add limit to log function
+      change log output to 30 from 25
+
+ lib/simplegit.rb |   10 +++++++++-
+ 1 files changed, 9 insertions(+), 1 deletions(-)</pre>
+</figure>
+
+<p >This output can be sent to the maintainer&#8201;&#8212;&#8201;it tells them where the work was branched from, summarizes the commits, and identifies from where the new work is to be pulled.</p>
+
+<p >On a project for which you&#8217;re not the maintainer, it&#8217;s generally easier to have a branch like <code>master</code> always track <code>origin/master</code> and to do your work in topic branches that you can easily discard if they&#8217;re rejected.
+Having work themes isolated into topic branches also makes it easier for you to rebase your work if the tip of the main repository has moved in the meantime and your commits no longer apply cleanly.
+For example, if you want to submit a second topic of work to the project, don&#8217;t continue working on the topic branch you just pushed up&#8201;&#8212;&#8201;start over from the main repository&#8217;s <code>master</code> branch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git checkout -b featureB origin/master
+  ... work ...
+$ git commit
+$ git push myfork featureB
+$ git request-pull origin/master myfork
+  ... email generated request pull to maintainer ...
+$ git fetch origin</pre>
+</figure>
+
+<p >Now, each of your topics is contained within a silo&#8201;&#8212;&#8201;similar to a patch queue&#8201;&#8212;&#8201;that you can rewrite, rebase, and modify without the topics interfering or interdepending on each other, like so:</p>
+
+<figure class="image" >
+  
+    <img src="images/public-small-1.png"
+         alt="Initial commit history with `featureB` work."
+         
+          />
+  
+  
+    <figcaption>Figure 70. Initial commit history with <code>featureB</code> work.</figcaption>
+  
+</figure>
+
+<p >Let&#8217;s say the project maintainer has pulled in a bunch of other patches and tried your first branch, but it no longer cleanly merges.
+In this case, you can try to rebase that branch on top of <code>origin/master</code>, resolve the conflicts for the maintainer, and then resubmit your changes:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git checkout featureA
+$ git rebase origin/master
+$ git push -f myfork featureA</pre>
+</figure>
+
+<p >This rewrites your history to now look like <a class="xref" href="ch05-distributed-git.html#psp_b">Commit history after <code>featureA</code> work.</a>.</p>
+
+<figure class="image" id="psp_b">
+  
+    <img src="images/public-small-2.png"
+         alt="Commit history after `featureA` work."
+         
+          />
+  
+  
+    <figcaption>Figure 71. Commit history after <code>featureA</code> work.</figcaption>
+  
+</figure>
+
+<p >Because you rebased the branch, you have to specify the <code>-f</code> to your push command in order to be able to replace the <code>featureA</code> branch on the server with a commit that isn&#8217;t a descendant of it.
+An alternative would be to push this new work to a different branch on the server (perhaps called <code>featureAv2</code>).</p>
+
+<p >Let&#8217;s look at one more possible scenario: the maintainer has looked at work in your second branch and likes the concept but would like you to change an implementation detail.
+You&#8217;ll also take this opportunity to move the work to be based off the project&#8217;s current <code>master</code> branch.
+You start a new branch based off the current <code>origin/master</code> branch, squash the <code>featureB</code> changes there, resolve any conflicts, make the implementation change, and then push that as a new branch:</p>
+
+<p ><a class="indexterm" id="_indexterm_131">&#8203;</a></p>
+
+<figure class="listing" >
+  
+  <pre>$ git checkout -b featureBv2 origin/master
+$ git merge --squash featureB
+  ... change implementation ...
+$ git commit
+$ git push myfork featureBv2</pre>
+</figure>
+
+<p >The <code>--squash</code> option takes all the work on the merged branch and squashes it into one changeset producing the repository state as if a real merge happened, without actually making a merge commit.
+This means your future commit will have one parent only and allows you to introduce all the changes from another branch and then make more changes before recording the new commit.
+Also the <code>--no-commit</code> option can be useful to delay the merge commit in case of the default merge process.</p>
+
+<p >At this point, you can notify the maintainer that you&#8217;ve made the requested changes, and that they can find those changes in your <code>featureBv2</code> branch.</p>
+
+<figure class="image" >
+  
+    <img src="images/public-small-3.png"
+         alt="Commit history after `featureBv2` work."
+         
+          />
+  
+  
+    <figcaption>Figure 72. Commit history after <code>featureBv2</code> work.</figcaption>
+  
+</figure>
+
+</section>
+
+<section class="section" id="_project_over_email">
+  <h3>Public Project over Email</h3>
+  <p ><a class="indexterm" id="_indexterm_132">&#8203;</a>
+Many projects have established procedures for accepting patches&#8201;&#8212;&#8201;you&#8217;ll need to check the specific rules for each project, because they will differ.
+Since there are several older, larger projects which accept patches via a developer mailing list, we&#8217;ll go over an example of that now.</p>
+
+<p >The workflow is similar to the previous use case&#8201;&#8212;&#8201;you create topic branches for each patch series you work on.
+The difference is how you submit them to the project.
+Instead of forking the project and pushing to your own writable version, you generate email versions of each commit series and email them to the developer mailing list:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git checkout -b topicA
+  ... work ...
+$ git commit
+  ... work ...
+$ git commit</pre>
+</figure>
+
+<p ><a class="indexterm" id="_indexterm_133">&#8203;</a>
+Now you have two commits that you want to send to the mailing list.
+You use <code>git format-patch</code> to generate the mbox-formatted files that you can email to the list&#8201;&#8212;&#8201;it turns each commit into an email message with the first line of the commit message as the subject and the rest of the message plus the patch that the commit introduces as the body.
+The nice thing about this is that applying a patch from an email generated with <code>format-patch</code> preserves all the commit information properly.</p>
+
+<figure class="listing" >
+  
+  <pre>$ git format-patch -M origin/master
+0001-add-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch</pre>
+</figure>
+
+<p >The <code>format-patch</code> command prints out the names of the patch files it creates.
+The <code>-M</code> switch tells Git to look for renames.
+The files end up looking like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ cat 0001-add-limit-to-log-function.patch
+From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001
+From: Jessica Smith &lt;jessica@example.com&gt;
+Date: Sun, 6 Apr 2008 10:17:23 -0700
+Subject: [PATCH 1/2] add limit to log function
+
+Limit log functionality to the first 20
+
+---
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index 76f47bc..f9815f1 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -14,7 +14,7 @@ class SimpleGit
+   end
+
+   def log(treeish = 'master')
+-    command("git log #{treeish}")
++    command("git log -n 20 #{treeish}")
+   end
+
+   def ls_tree(treeish = 'master')
+--
+2.1.0</pre>
+</figure>
+
+<p >You can also edit these patch files to add more information for the email list that you don&#8217;t want to show up in the commit message.
+If you add text between the <code>---</code> line and the beginning of the patch (the <code>diff --git</code> line), the developers can read it, but that content is ignored by the patching process.</p>
+
+<p >To email this to a mailing list, you can either paste the file into your email program or send it via a command-line program.
+Pasting the text often causes formatting issues, especially with <code>`smarter'' clients that don&#8217;t preserve newlines and other whitespace appropriately.
+Luckily, Git provides a tool to help you send properly formatted patches via IMAP, which may be easier for you.
+We&#8217;ll demonstrate how to send a patch via Gmail, which happens to be the email agent we know best; you can read detailed instructions for a number of mail programs at the end of the aforementioned `Documentation/SubmittingPatches</code> file in the Git source code.</p>
+
+<p ><a class="indexterm" id="_indexterm_134">&#8203;</a><a class="indexterm" id="_indexterm_135">&#8203;</a>
+First, you need to set up the imap section in your <code>~/.gitconfig</code> file.
+You can set each value separately with a series of <code>git config</code> commands, or you can add them manually, but in the end your config file should look something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>[imap]
+  folder = "[Gmail]/Drafts"
+  host = imaps://imap.gmail.com
+  user = user@gmail.com
+  pass = YX]8g76G_2^sFbd
+  port = 993
+  sslverify = false</pre>
+</figure>
+
+<p >If your IMAP server doesn&#8217;t use SSL, the last two lines probably aren&#8217;t necessary, and the host value will be <code>imap://</code> instead of <code>imaps://</code>.
+When that is set up, you can use <code>git imap-send</code> to place the patch series in the Drafts folder of the specified IMAP server:</p>
+
+<figure class="listing" >
+  
+  <pre>$ cat *.patch |git imap-send
+Resolving imap.gmail.com... ok
+Connecting to [74.125.142.109]:993... ok
+Logging in...
+sending 2 messages
+100% (2/2) done</pre>
+</figure>
+
+<p >At this point, you should be able to go to your Drafts folder, change the To field to the mailing list you&#8217;re sending the patch to, possibly CC the maintainer or person responsible for that section, and send it off.</p>
+
+<p >You can also send the patches through an SMTP server.
+As before, you can set each value separately with a series of <code>git config</code> commands, or you can add them manually in the sendemail section in your <code>~/.gitconfig</code> file:</p>
+
+<figure class="listing" >
+  
+  <pre>[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = user@gmail.com
+  smtpserverport = 587</pre>
+</figure>
+
+<p >After this is done, you can use <code>git send-email</code> to send your patches:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git send-email *.patch
+0001-added-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch
+Who should the emails appear to be from? [Jessica Smith &lt;jessica@example.com&gt;]
+Emails will be sent from: Jessica Smith &lt;jessica@example.com&gt;
+Who should the emails be sent to? jessica@example.com
+Message-ID to be used as In-Reply-To for the first email? y</pre>
+</figure>
+
+<p >Then, Git spits out a bunch of log information looking something like this for each patch you&#8217;re sending:</p>
+
+<figure class="listing" >
+  
+  <pre>(mbox) Adding cc: Jessica Smith &lt;jessica@example.com&gt; from
+  \line 'From: Jessica Smith &lt;jessica@example.com&gt;'
+OK. Log says:
+Sendmail: /usr/sbin/sendmail -i jessica@example.com
+From: Jessica Smith &lt;jessica@example.com&gt;
+To: jessica@example.com
+Subject: [PATCH 1/2] added limit to log function
+Date: Sat, 30 May 2009 13:29:15 -0700
+Message-Id: &lt;1243715356-61726-1-git-send-email-jessica@example.com&gt;
+X-Mailer: git-send-email 1.6.2.rc1.20.g8c5b.dirty
+In-Reply-To: &lt;y&gt;
+References: &lt;y&gt;
+
+Result: OK</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_summary_5">
+  <h3>Summary</h3>
+  <p >This section has covered a number of common workflows for dealing with several very different types of Git projects you&#8217;re likely to encounter, and introduced a couple of new tools to help you manage this process.
+Next, you&#8217;ll see how to work the other side of the coin: maintaining a Git project.
+You&#8217;ll learn how to be a benevolent dictator or integration manager.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_maintaining_a_project">
+  <h2>Maintaining a Project</h2>
+  <p ><a class="indexterm" id="_indexterm_136">&#8203;</a>
+In addition to knowing how to contribute effectively to a project, you&#8217;ll likely need to know how to maintain one.
+This can consist of accepting and applying patches generated via <code>format-patch</code> and emailed to you, or integrating changes in remote branches for repositories you&#8217;ve added as remotes to your project.
+Whether you maintain a canonical repository or want to help by verifying or approving patches, you need to know how to accept work in a way that is clearest for other contributors and sustainable by you over the long run.</p>
+
+<section class="section" id="_working_in_topic_branches">
+  <h3>Working in Topic Branches</h3>
+  <p ><a class="indexterm" id="_indexterm_137">&#8203;</a>
+When you&#8217;re thinking of integrating new work, it&#8217;s generally a good idea to try it out in a <em>topic branch</em>&#8201;&#8212;&#8201;a temporary branch specifically made to try out that new work.
+This way, it&#8217;s easy to tweak a patch individually and leave it if it&#8217;s not working until you have time to come back to it.
+If you create a simple branch name based on the theme of the work you&#8217;re going to try, such as <code>ruby_client</code> or something similarly descriptive, you can easily remember it if you have to abandon it for a while and come back later.
+The maintainer of the Git project tends to namespace these branches as well&#8201;&#8212;&#8201;such as <code>sc/ruby_client</code>, where <code>sc</code> is short for the person who contributed the work.
+As you&#8217;ll remember, you can create the branch based off your <code>master</code> branch like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git branch sc/ruby_client master</pre>
+</figure>
+
+<p >Or, if you want to also switch to it immediately, you can use the <code>checkout -b</code> option:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git checkout -b sc/ruby_client master</pre>
+</figure>
+
+<p >Now you&#8217;re ready to add the contributed work that you received into this topic branch and determine if you want to merge it into your longer-term branches.</p>
+
+</section>
+
+<section class="section" id="_patches_from_email">
+  <h3>Applying Patches from Email</h3>
+  <p ><a class="indexterm" id="_indexterm_138">&#8203;</a>
+If you receive a patch over email that you need to integrate into your project, you need to apply the patch in your topic branch to evaluate it.
+There are two ways to apply an emailed patch: with <code>git apply</code> or with <code>git am</code>.</p>
+
+<section class="section" id="_applying_a_patch_with_apply">
+  <h4>Applying a Patch with apply</h4>
+  <p ><a class="indexterm" id="_indexterm_139">&#8203;</a>
+If you received the patch from someone who generated it with <code>git diff</code> or some variation of the Unix <code>diff</code> command (which is not recommended; see the next section), you can apply it with the <code>git apply</code> command.
+Assuming you saved the patch at <code>/tmp/patch-ruby-client.patch</code>, you can apply the patch like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git apply /tmp/patch-ruby-client.patch</pre>
+</figure>
+
+<p >This modifies the files in your working directory.
+It&#8217;s almost identical to running a <code>patch -p1</code> command to apply the patch, although it&#8217;s more paranoid and accepts fewer fuzzy matches than patch.
+It also handles file adds, deletes, and renames if they&#8217;re described in the <code>git diff</code> format, which <code>patch</code> won&#8217;t do.
+Finally, <code>git apply</code> is an <code>`apply all or abort all'' model where either everything is applied or nothing is, whereas `patch</code> can partially apply patchfiles, leaving your working directory in a weird state.
+<code>git apply</code> is overall much more conservative than <code>patch</code>.
+It won&#8217;t create a commit for you&#8201;&#8212;&#8201;after running it, you must stage and commit the changes introduced manually.</p>
+
+<p >You can also use <code>git apply</code> to see if a patch applies cleanly before you try actually applying it&#8201;&#8212;&#8201;you can run <code>git apply --check</code> with the patch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git apply --check 0001-seeing-if-this-helps-the-gem.patch
+error: patch failed: ticgit.gemspec:1
+error: ticgit.gemspec: patch does not apply</pre>
+</figure>
+
+<p >If there is no output, then the patch should apply cleanly.
+This command also exits with a non-zero status if the check fails, so you can use it in scripts if you want.</p>
+
+</section>
+
+<section class="section" id="_git_am">
+  <h4>Applying a Patch with <code>am</code></h4>
+  <p ><a class="indexterm" id="_indexterm_140">&#8203;</a>
+If the contributor is a Git user and was good enough to use the <code>format-patch</code> command to generate their patch, then your job is easier because the patch contains author information and a commit message for you.
+If you can, encourage your contributors to use <code>format-patch</code> instead of <code>diff</code> to generate patches for you.
+You should only have to use <code>git apply</code> for legacy patches and things like that.</p>
+
+<p >To apply a patch generated by <code>format-patch</code>, you use <code>git am</code> (the command is named <code>am</code> as it is used to "apply a series of patches from a mailbox").
+Technically, <code>git am</code> is built to read an mbox file, which is a simple, plain-text format for storing one or more email messages in one text file.
+It looks something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001
+From: Jessica Smith &lt;jessica@example.com&gt;
+Date: Sun, 6 Apr 2008 10:17:23 -0700
+Subject: [PATCH 1/2] add limit to log function
+
+Limit log functionality to the first 20</pre>
+</figure>
+
+<p >This is the beginning of the output of the <code>git format-patch</code> command that you saw in the previous section; it also represents a valid mbox email format.
+If someone has emailed you the patch properly using <code>git send-email</code>, and you download that into an mbox format, then you can point <code>git am</code> to that mbox file, and it will start applying all the patches it sees.
+If you run a mail client that can save several emails out in mbox format, you can save entire patch series into a file and then use <code>git am</code> to apply them one at a time.</p>
+
+<p >However, if someone uploaded a patch file generated via <code>git format-patch</code> to a ticketing system or something similar, you can save the file locally and then pass that file saved on your disk to <code>git am</code> to apply it:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git am 0001-limit-log-function.patch
+Applying: add limit to log function</pre>
+</figure>
+
+<p >You can see that it applied cleanly and automatically created the new commit for you.
+The author information is taken from the email&#8217;s <code>From</code> and <code>Date</code> headers, and the message of the commit is taken from the <code>Subject</code> and body (before the patch) of the email.
+For example, if this patch was applied from the mbox example above, the commit generated would look something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log --pretty=fuller -1
+commit 6c5e70b984a60b3cecd395edd5b48a7575bf58e0
+Author:     Jessica Smith &lt;jessica@example.com&gt;
+AuthorDate: Sun Apr 6 10:17:23 2008 -0700
+Commit:     Scott Chacon &lt;schacon@gmail.com&gt;
+CommitDate: Thu Apr 9 09:19:06 2009 -0700
+
+   add limit to log function
+
+   Limit log functionality to the first 20</pre>
+</figure>
+
+<p >The <code>Commit</code> information indicates the person who applied the patch and the time it was applied.
+The <code>Author</code> information is the individual who originally created the patch and when it was originally created.</p>
+
+<p >But it&#8217;s possible that the patch won&#8217;t apply cleanly.
+Perhaps your main branch has diverged too far from the branch the patch was built from, or the patch depends on another patch you haven&#8217;t applied yet.
+In that case, the <code>git am</code> process will fail and ask you what you want to do:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git am 0001-seeing-if-this-helps-the-gem.patch
+Applying: seeing if this helps the gem
+error: patch failed: ticgit.gemspec:1
+error: ticgit.gemspec: patch does not apply
+Patch failed at 0001.
+When you have resolved this problem run "git am --resolved".
+If you would prefer to skip this patch, instead run "git am --skip".
+To restore the original branch and stop patching run "git am --abort".</pre>
+</figure>
+
+<p >This command puts conflict markers in any files it has issues with, much like a conflicted merge or rebase operation.
+You solve this issue much the same way&#8201;&#8212;&#8201;edit the file to resolve the conflict, stage the new file, and then run <code>git am --resolved</code> to continue to the next patch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ (fix the file)
+$ git add ticgit.gemspec
+$ git am --resolved
+Applying: seeing if this helps the gem</pre>
+</figure>
+
+<p >If you want Git to try a bit more intelligently to resolve the conflict, you can pass a <code>-3</code> option to it, which makes Git attempt a three-way merge.
+This option isn&#8217;t on by default because it doesn&#8217;t work if the commit the patch says it was based on isn&#8217;t in your repository.
+If you do have that commit&#8201;&#8212;&#8201;if the patch was based on a public commit&#8201;&#8212;&#8201;then the <code>-3</code> option is generally much smarter about applying a conflicting patch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git am -3 0001-seeing-if-this-helps-the-gem.patch
+Applying: seeing if this helps the gem
+error: patch failed: ticgit.gemspec:1
+error: ticgit.gemspec: patch does not apply
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.</pre>
+</figure>
+
+<p >In this case, without the <code>-3</code> option the patch would have been considered as a conflict.
+Since the <code>-3</code> option was used the patch applied cleanly.</p>
+
+<p >If you&#8217;re applying a number of patches from an mbox, you can also run the <code>am</code> command in interactive mode, which stops at each patch it finds and asks if you want to apply it:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git am -3 -i mbox
+Commit Body is:
+--------------------------
+seeing if this helps the gem
+--------------------------
+Apply? [y]es/[n]o/[e]dit/[v]iew patch/[a]ccept all</pre>
+</figure>
+
+<p >This is nice if you have a number of patches saved, because you can view the patch first if you don&#8217;t remember what it is, or not apply the patch if you&#8217;ve already done so.</p>
+
+<p >When all the patches for your topic are applied and committed into your branch, you can choose whether and how to integrate them into a longer-running branch.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_checking_out_remotes">
+  <h3>Checking Out Remote Branches</h3>
+  <p ><a class="indexterm" id="_indexterm_141">&#8203;</a>
+If your contribution came from a Git user who set up their own repository, pushed a number of changes into it, and then sent you the URL to the repository and the name of the remote branch the changes are in, you can add them as a remote and do merges locally.</p>
+
+<p >For instance, if Jessica sends you an email saying that she has a great new feature in the <code>ruby-client</code> branch of her repository, you can test it by adding the remote and checking out that branch locally:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git remote add jessica git://github.com/jessica/myproject.git
+$ git fetch jessica
+$ git checkout -b rubyclient jessica/ruby-client</pre>
+</figure>
+
+<p >If she emails you again later with another branch containing another great feature, you could directly <code>fetch</code> and <code>checkout</code> because you already have the remote setup.</p>
+
+<p >This is most useful if you&#8217;re working with a person consistently.
+If someone only has a single patch to contribute once in a while, then accepting it over email may be less time consuming than requiring everyone to run their own server and having to continually add and remove remotes to get a few patches.
+You&#8217;re also unlikely to want to have hundreds of remotes, each for someone who contributes only a patch or two.
+However, scripts and hosted services may make this easier&#8201;&#8212;&#8201;it depends largely on how you develop and how your contributors develop.</p>
+
+<p >The other advantage of this approach is that you get the history of the commits as well.
+Although you may have legitimate merge issues, you know where in your history their work is based; a proper three-way merge is the default rather than having to supply a <code>-3</code> and hope the patch was generated off a public commit to which you have access.</p>
+
+<p >If you aren&#8217;t working with a person consistently but still want to pull from them in this way, you can provide the URL of the remote repository to the <code>git pull</code> command.
+This does a one-time pull and doesn&#8217;t save the URL as a remote reference:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git pull https://github.com/onetimeguy/project
+From https://github.com/onetimeguy/project
+ * branch            HEAD       -&gt; FETCH_HEAD
+Merge made by the 'recursive' strategy.</pre>
+</figure>
+
+</section>
+
+<section class="section" id="_what_is_introduced">
+  <h3>Determining What Is Introduced</h3>
+  <p ><a class="indexterm" id="_indexterm_142">&#8203;</a>
+Now you have a topic branch that contains contributed work.
+At this point, you can determine what you&#8217;d like to do with it.
+This section revisits a couple of commands so you can see how you can use them to review exactly what you&#8217;ll be introducing if you merge this into your main branch.</p>
+
+<p >It&#8217;s often helpful to get a review of all the commits that are in this branch but that aren&#8217;t in your <code>master</code> branch.
+You can exclude commits in the <code>master</code> branch by adding the <code>--not</code> option before the branch name.
+This does the same thing as the <code>master..contrib</code> format that we used earlier.
+For example, if your contributor sends you two patches and you create a branch called <code>contrib</code> and applied those patches there, you can run this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git log contrib --not master
+commit 5b6235bd297351589efc4d73316f0a68d484f118
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri Oct 24 09:53:59 2008 -0700
+
+    seeing if this helps the gem
+
+commit 7482e0d16d04bea79d0dba8988cc78df655f16a0
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Mon Oct 22 19:38:36 2008 -0700
+
+    updated the gemspec to hopefully work better</pre>
+</figure>
+
+<p >To see what changes each commit introduces, remember that you can pass the <code>-p</code> option to <code>git log</code> and it will append the diff introduced to each commit.</p>
+
+<p >To see a full diff of what would happen if you were to merge this topic branch with another branch, you may have to use a weird trick to get the correct results.
+You may think to run this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git diff master</pre>
+</figure>
+
+<p >This command gives you a diff, but it may be misleading.
+If your <code>master</code> branch has moved forward since you created the topic branch from it, then you&#8217;ll get seemingly strange results.
+This happens because Git directly compares the snapshots of the last commit of the topic branch you&#8217;re on and the snapshot of the last commit on the <code>master</code> branch.
+For example, if you&#8217;ve added a line in a file on the <code>master</code> branch, a direct comparison of the snapshots will look like the topic branch is going to remove that line.</p>
+
+<p >If <code>master</code> is a direct ancestor of your topic branch, this isn&#8217;t a problem; but if the two histories have diverged, the diff will look like you&#8217;re adding all the new stuff in your topic branch and removing everything unique to the <code>master</code> branch.</p>
+
+<p >What you really want to see are the changes added to the topic branch&#8201;&#8212;&#8201;the work you&#8217;ll introduce if you merge this branch with <code>master</code>.
+You do that by having Git compare the last commit on your topic branch with the first common ancestor it has with the <code>master</code> branch.</p>
+
+<p >Technically, you can do that by explicitly figuring out the common ancestor and then running your diff on it:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git merge-base contrib master
+36c7dba2c95e6bbb78dfa822519ecfec6e1ca649
+$ git diff 36c7db</pre>
+</figure>
+
+<p >or, more concisely:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git diff $(git merge-base contrib master)</pre>
+</figure>
+
+<p >However, neither of those is particularly convenient, so Git provides another shorthand for doing the same thing: the triple-dot syntax.
+In the context of the <code>git diff</code> command, you can put three periods after another branch to do a <code>diff</code> between the last commit of the branch you&#8217;re on and its common ancestor with another branch:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git diff master...contrib</pre>
+</figure>
+
+<p >This command shows you only the work your current topic branch has introduced since its common ancestor with <code>master</code>.
+That is a very useful syntax to remember.</p>
+
+</section>
+
+<section class="section" id="_integrating_contributed_work">
+  <h3>Integrating Contributed Work</h3>
+  <p ><a class="indexterm" id="_indexterm_143">&#8203;</a>
+When all the work in your topic branch is ready to be integrated into a more mainline branch, the question is how to do it.
+Furthermore, what overall workflow do you want to use to maintain your project?
+You have a number of choices, so we&#8217;ll cover a few of them.</p>
+
+<section class="section" id="_merging_workflows">
+  <h4>Merging Workflows</h4>
+  <p ><a class="indexterm" id="_indexterm_144">&#8203;</a>
+One basic workflow is to simply merge all that work directly into your <code>master</code> branch.
+In this scenario, you have a <code>master</code> branch that contains basically stable code.
+When you have work in a topic branch that you think you&#8217;ve completed, or work that someone else has contributed and you&#8217;ve verified, you merge it into your master branch, delete that just-merged topic branch, and repeat.</p>
+
+<p >For instance, if we have a repository with work in two branches named <code>ruby_client</code> and <code>php_client</code> that looks like <a class="xref" href="ch05-distributed-git.html#merwf_a">History with several topic branches.</a>, and we merge <code>ruby_client</code> followed by <code>php_client</code>, your history will end up looking like <a class="xref" href="ch05-distributed-git.html#merwf_b">After a topic branch merge.</a>.</p>
+
+<figure class="image" id="merwf_a">
+  
+    <img src="images/merging-workflows-1.png"
+         alt="History with several topic branches."
+         
+          />
+  
+  
+    <figcaption>Figure 73. History with several topic branches.</figcaption>
+  
+</figure>
+
+<figure class="image" id="merwf_b">
+  
+    <img src="images/merging-workflows-2.png"
+         alt="After a topic branch merge."
+         
+          />
+  
+  
+    <figcaption>Figure 74. After a topic branch merge.</figcaption>
+  
+</figure>
+
+<p >That is probably the simplest workflow, but it can possibly be problematic if you&#8217;re dealing with larger or more stable projects where you want to be really careful about what you introduce.</p>
+
+<p >If you have a more important project, you might want to use a two-phase merge cycle.
+In this scenario, you have two long-running branches, <code>master</code> and <code>develop</code>, in which you determine that <code>master</code> is updated only when a very stable release is cut and all new code is integrated into the <code>develop</code> branch.
+You regularly push both of these branches to the public repository.
+Each time you have a new topic branch to merge in (<a class="xref" href="ch05-distributed-git.html#merwf_c">Before a topic branch merge.</a>), you merge it into <code>develop</code> (<a class="xref" href="ch05-distributed-git.html#merwf_d">After a topic branch merge.</a>); then, when you tag a release, you fast-forward <code>master</code> to wherever the now-stable <code>develop</code> branch is (<a class="xref" href="ch05-distributed-git.html#merwf_e">After a project release.</a>).</p>
+
+<figure class="image" id="merwf_c">
+  
+    <img src="images/merging-workflows-3.png"
+         alt="Before a topic branch merge."
+         
+          />
+  
+  
+    <figcaption>Figure 75. Before a topic branch merge.</figcaption>
+  
+</figure>
+
+<figure class="image" id="merwf_d">
+  
+    <img src="images/merging-workflows-4.png"
+         alt="After a topic branch merge."
+         
+          />
+  
+  
+    <figcaption>Figure 76. After a topic branch merge.</figcaption>
+  
+</figure>
+
+<figure class="image" id="merwf_e">
+  
+    <img src="images/merging-workflows-5.png"
+         alt="After a topic branch release."
+         
+          />
+  
+  
+    <figcaption>Figure 77. After a project release.</figcaption>
+  
+</figure>
+
+<p >This way, when people clone your project&#8217;s repository, they can either check out <code>master</code> to build the latest stable version and keep up to date on that easily, or they can check out <code>develop</code>, which is the more cutting-edge content.
+You can also extend this concept by having an <code>integrate</code> branch where all the work is merged together.
+Then, when the codebase on that branch is stable and passes tests, you merge it into a <code>develop</code> branch; and when that has proven itself stable for a while, you fast-forward your <code>master</code> branch.</p>
+
+</section>
+
+<section class="section" id="_large_merging_workflows">
+  <h4>Large-Merging Workflows</h4>
+  <p ><a class="indexterm" id="_indexterm_145">&#8203;</a>
+The Git project has four long-running branches: <code>master</code>, <code>next</code>, and <code>pu</code> (proposed updates) for new work, and <code>maint</code> for maintenance backports.
+When new work is introduced by contributors, it&#8217;s collected into topic branches in the maintainer&#8217;s repository in a manner similar to what we&#8217;ve described (see <a class="xref" href="ch05-distributed-git.html#merwf_f">Managing a complex series of parallel contributed topic branches.</a>).
+At this point, the topics are evaluated to determine whether they&#8217;re safe and ready for consumption or whether they need more work.
+If they&#8217;re safe, they&#8217;re merged into <code>next</code>, and that branch is pushed up so everyone can try the topics integrated together.</p>
+
+<figure class="image" id="merwf_f">
+  
+    <img src="images/large-merges-1.png"
+         alt="Managing a complex series of parallel contributed topic branches."
+         
+          />
+  
+  
+    <figcaption>Figure 78. Managing a complex series of parallel contributed topic branches.</figcaption>
+  
+</figure>
+
+<p >If the topics still need work, they&#8217;re merged into <code>pu</code> instead.
+When it&#8217;s determined that they&#8217;re totally stable, the topics are re-merged into <code>master</code>.
+The <code>next</code> and <code>pu</code> branches are then rebuilt from the <code>master</code>.
+This means <code>master</code> almost always moves forward, <code>next</code> is rebased occasionally, and <code>pu</code> is rebased even more often:</p>
+
+<figure class="image" >
+  
+    <img src="images/large-merges-2.png"
+         alt="Merging contributed topic branches into long-term integration branches."
+         
+          />
+  
+  
+    <figcaption>Figure 79. Merging contributed topic branches into long-term integration branches.</figcaption>
+  
+</figure>
+
+<p >When a topic branch has finally been merged into <code>master</code>, it&#8217;s removed from the repository.
+The Git project also has a <code>maint</code> branch that is forked off from the last release to provide backported patches in case a maintenance release is required.
+Thus, when you clone the Git repository, you have four branches that you can check out to evaluate the project in different stages of development, depending on how cutting edge you want to be or how you want to contribute; and the maintainer has a structured workflow to help them vet new contributions.
+The Git project&#8217;s workflow is specialized.
+To clearly understand this you could check out the <a class="link" href="https://github.com/git/git/blob/master/Documentation/howto/maintain-git.txt"
+     
+      >Git Maintainer&#8217;s guide</a>.</p>
+
+</section>
+
+<section class="section" id="_rebase_cherry_pick">
+  <h4>Rebasing and Cherry-Picking Workflows</h4>
+  <p ><a class="indexterm" id="_indexterm_146">&#8203;</a>
+Other maintainers prefer to rebase or cherry-pick contributed work on top of their <code>master</code> branch, rather than merging it in, to keep a mostly linear history.
+When you have work in a topic branch and have determined that you want to integrate it, you move to that branch and run the rebase command to rebuild the changes on top of your current <code>master</code> (or <code>develop</code>, and so on) branch.
+If that works well, you can fast-forward your <code>master</code> branch, and you&#8217;ll end up with a linear project history.</p>
+
+<p ><a class="indexterm" id="_indexterm_147">&#8203;</a>
+The other way to move introduced work from one branch to another is to cherry-pick it.
+A cherry-pick in Git is like a rebase for a single commit.
+It takes the patch that was introduced in a commit and tries to reapply it on the branch you&#8217;re currently on.
+This is useful if you have a number of commits on a topic branch and you want to integrate only one of them, or if you only have one commit on a topic branch and you&#8217;d prefer to cherry-pick it rather than run rebase.
+For example, suppose you have a project that looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/rebasing-1.png"
+         alt="Example history before a cherry-pick."
+         
+          />
+  
+  
+    <figcaption>Figure 80. Example history before a cherry-pick.</figcaption>
+  
+</figure>
+
+<p >If you want to pull commit <code>e43a6</code> into your <code>master</code> branch, you can run</p>
+
+<figure class="listing" >
+  
+  <pre>$ git cherry-pick e43a6
+Finished one cherry-pick.
+[master]: created a0a41a9: "More friendly message when locking the index fails."
+ 3 files changed, 17 insertions(+), 3 deletions(-)</pre>
+</figure>
+
+<p >This pulls the same change introduced in <code>e43a6</code>, but you get a new commit SHA-1 value, because the date applied is different.
+Now your history looks like this:</p>
+
+<figure class="image" >
+  
+    <img src="images/rebasing-2.png"
+         alt="History after cherry-picking a commit on a topic branch."
+         
+          />
+  
+  
+    <figcaption>Figure 81. History after cherry-picking a commit on a topic branch.</figcaption>
+  
+</figure>
+
+<p >Now you can remove your topic branch and drop the commits you didn&#8217;t want to pull in.</p>
+
+</section>
+
+<section class="section" id="_rerere">
+  <h4>Rerere</h4>
+  <p ><a class="indexterm" id="_indexterm_148">&#8203;</a><a class="indexterm" id="_indexterm_149">&#8203;</a>
+If you&#8217;re doing lots of merging and rebasing, or you&#8217;re maintaining a long-lived topic branch, Git has a feature called ``rerere'' that can help.</p>
+
+<p >Rerere stands for ``reuse recorded resolution''&#8201;&#8212;&#8201;it&#8217;s a way of shortcutting manual conflict resolution.
+When rerere is enabled, Git will keep a set of pre- and post-images from successful merges, and if it notices that there&#8217;s a conflict that looks exactly like one you&#8217;ve already fixed, it&#8217;ll just use the fix from last time, without bothering you with it.</p>
+
+<p >This feature comes in two parts: a configuration setting and a command.
+The configuration setting is <code>rerere.enabled</code>, and it&#8217;s handy enough to put in your global config:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git config --global rerere.enabled true</pre>
+</figure>
+
+<p >Now, whenever you do a merge that resolves conflicts, the resolution will be recorded in the cache in case you need it in the future.</p>
+
+<p >If you need to, you can interact with the rerere cache using the <code>git rerere</code> command.
+When it&#8217;s invoked alone, Git checks its database of resolutions and tries to find a match with any current merge conflicts and resolve them (although this is done automatically if <code>rerere.enabled</code> is set to <code>true</code>).
+There are also subcommands to see what will be recorded, to erase specific resolution from the cache, and to clear the entire cache.
+We will cover rerere in more detail in <a class="xref" href="ch07-git-tools.html#ref_rerere">Rerere</a>.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_tagging_releases">
+  <h3>Tagging Your Releases</h3>
+  <p ><a class="indexterm" id="_indexterm_150">&#8203;</a><a class="indexterm" id="_indexterm_151">&#8203;</a>
+When you&#8217;ve decided to cut a release, you&#8217;ll probably want to assign a tag so you can re-create that release at any point going forward.
+You can create a new tag as discussed in <a class="xref" href="ch02-git-basics-chapter.html">Git Basics</a>.
+If you decide to sign the tag as the maintainer, the tagging may look something like this:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git tag -s v1.5 -m 'my signed 1.5 tag'
+You need a passphrase to unlock the secret key for
+user: "Scott Chacon &lt;schacon@gmail.com&gt;"
+1024-bit DSA key, ID F721C45A, created 2009-02-09</pre>
+</figure>
+
+<p >If you do sign your tags, you may have the problem of distributing the public PGP key used to sign your tags.
+The maintainer of the Git project has solved this issue by including their public key as a blob in the repository and then adding a tag that points directly to that content.
+To do this, you can figure out which key you want by running <code>gpg --list-keys</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ gpg --list-keys
+/Users/schacon/.gnupg/pubring.gpg
+---------------------------------
+pub   1024D/F721C45A 2009-02-09 [expires: 2010-02-09]
+uid                  Scott Chacon &lt;schacon@gmail.com&gt;
+sub   2048g/45D02282 2009-02-09 [expires: 2010-02-09]</pre>
+</figure>
+
+<p >Then, you can directly import the key into the Git database by exporting it and piping that through <code>git hash-object</code>, which writes a new blob with those contents into Git and gives you back the SHA-1 of the blob:</p>
+
+<figure class="listing" >
+  
+  <pre>$ gpg -a --export F721C45A | git hash-object -w --stdin
+659ef797d181633c87ec71ac3f9ba29fe5775b92</pre>
+</figure>
+
+<p >Now that you have the contents of your key in Git, you can create a tag that points directly to it by specifying the new SHA-1 value that the <code>hash-object</code> command gave you:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git tag -a maintainer-pgp-pub 659ef797d181633c87ec71ac3f9ba29fe5775b92</pre>
+</figure>
+
+<p >If you run <code>git push --tags</code>, the <code>maintainer-pgp-pub</code> tag will be shared with everyone.
+If anyone wants to verify a tag, they can directly import your PGP key by pulling the blob directly out of the database and importing it into GPG:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git show maintainer-pgp-pub | gpg --import</pre>
+</figure>
+
+<p >They can use that key to verify all your signed tags.
+Also, if you include instructions in the tag message, running <code>git show &lt;tag&gt;</code> will let you give the end user more specific instructions about tag verification.</p>
+
+</section>
+
+<section class="section" id="_build_number">
+  <h3>Generating a Build Number</h3>
+  <p ><a class="indexterm" id="_indexterm_152">&#8203;</a><a class="indexterm" id="_indexterm_153">&#8203;</a>
+Because Git doesn&#8217;t have monotonically increasing numbers like 'v123' or the equivalent to go with each commit, if you want to have a human-readable name to go with a commit, you can run <code>git describe</code> on that commit.
+In response, Git generates a string consisting of the name of the most recent tag earlier than that commit, followed by the number of commits since that tag, followed finally by a partial SHA-1 value of the commit being described (prefixed with the letter "g" meaning Git):</p>
+
+<figure class="listing" >
+  
+  <pre>$ git describe master
+v1.6.2-rc1-20-g8c5b85c</pre>
+</figure>
+
+<p >This way, you can export a snapshot or build and name it something understandable to people.
+In fact, if you build Git from source code cloned from the Git repository, <code>git --version</code> gives you something that looks like this.
+If you&#8217;re describing a commit that you have directly tagged, it gives you simply the tag name.</p>
+
+<p >By default, the <code>git describe</code> command requires annotated tags (tags created with the <code>-a</code> or <code>-s</code> flag); if you want to take advantage of lightweight (non-annotated) tags as well, add the <code>--tags</code> option to the command.
+You can also use this string as the target of a <code>git checkout</code> or <code>git show</code> command, although it relies on the abbreviated SHA-1 value at the end, so it may not be valid forever.
+For instance, the Linux kernel recently jumped from 8 to 10 characters to ensure SHA-1 object uniqueness, so older <code>git describe</code> output names were invalidated.</p>
+
+</section>
+
+<section class="section" id="_preparing_release">
+  <h3>Preparing a Release</h3>
+  <p ><a class="indexterm" id="_indexterm_154">&#8203;</a><a class="indexterm" id="_indexterm_155">&#8203;</a>
+Now you want to release a build.
+One of the things you&#8217;ll want to do is create an archive of the latest snapshot of your code for those poor souls who don&#8217;t use Git.
+The command to do this is <code>git archive</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git archive master --prefix='project/' | gzip &gt; `git describe master`.tar.gz
+$ ls *.tar.gz
+v1.6.2-rc1-20-g8c5b85c.tar.gz</pre>
+</figure>
+
+<p >If someone opens that tarball, they get the latest snapshot of your project under a <code>project</code> directory.
+You can also create a zip archive in much the same way, but by passing the <code>--format=zip</code> option to <code>git archive</code>:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git archive master --prefix='project/' --format=zip &gt; `git describe master`.zip</pre>
+</figure>
+
+<p >You now have a nice tarball and a zip archive of your project release that you can upload to your website or email to people.</p>
+
+</section>
+
+<section class="section" id="_the_shortlog">
+  <h3>The Shortlog</h3>
+  <p ><a class="indexterm" id="_indexterm_156">&#8203;</a>
+It&#8217;s time to email your mailing list of people who want to know what&#8217;s happening in your project.
+A nice way of quickly getting a sort of changelog of what has been added to your project since your last release or email is to use the <code>git shortlog</code> command.
+It summarizes all the commits in the range you give it; for example, the following gives you a summary of all the commits since your last release, if your last release was named v1.0.1:</p>
+
+<figure class="listing" >
+  
+  <pre>$ git shortlog --no-merges master --not v1.0.1
+Chris Wanstrath (6):
+      Add support for annotated tags to Grit::Tag
+      Add packed-refs annotated tag support.
+      Add Grit::Commit#to_patch
+      Update version and History.txt
+      Remove stray `puts`
+      Make ls_tree ignore nils
+
+Tom Preston-Werner (4):
+      fix dates in history
+      dynamic version method
+      Version bump to 1.0.2
+      Regenerated gemspec for version 1.0.2</pre>
+</figure>
+
+<p >You get a clean summary of all the commits since v1.0.1, grouped by author, that you can email to your list.</p>
+
+</section>
+
+</section>
+
+<section class="section" id="_summary_6">
+  <h2>Summary</h2>
+  <p >You should feel fairly comfortable contributing to a project in Git as well as maintaining your own project or integrating other users' contributions.
+Congratulations on being an effective Git developer!
+In the next chapter, you&#8217;ll learn about how to use the largest and most popular Git hosting service, GitHub.</p>
+
+</section>
+
+</section>
+
+      </div>
+      <div class="paginator">
+        <a href="ch04-git-on-the-server.html" class="paginator-prev ">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="ch06-github.html" class="paginator-next ">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
